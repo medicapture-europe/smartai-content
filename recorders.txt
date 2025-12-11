@@ -1,0 +1,3175 @@
+Description of the hardware, mechanical, electrical, and environmental specifications of MediCapture medical video recorders of the MVR and MTR series.
+MVR-series of MediCapture medical video recorders consists of models MVR400, MVR409, MVR420, MVR435, MVR436, MVR450, MVR460. MTR-series of MediCapture medical touch screen video recorders consists of models MTR133, MTR156.
+
+
+The MVR/MTR-series devices are intended to record video and images from various medical imaging systems, like endoscopes, microscopes, ultrasound systems, and other medical and dental cameras over HDMI, DP (Display Port), DVI, SDI, or USB UVC interfaces. Features include live preview, live streaming, video recording, image capturing, editing of the recordings, creating and printing customized reports, sending recordings and reports to PACS over the DICOM interface, sending to NAS, and obtaining the MWL DICOM worklist. (Note: actual video input interfaces are different between models, see details below)
+
+
+MVR and MTR-series devices offer the following advantages:
+
+
+Seamless workflow and easy-to-use products for medical professionals;
+
+Compatibility with a wide range of medical imaging devices, surgical cameras, DICOM PACS, and Hospital Information Systems (HIS) allows easy integration into existing medical workflows;
+
+an integrated suite of options found only in advanced medical imaging systems;
+
+The embedded operation system (OS) is under complete control of the manufacturer.
+
+
+MVR400, MVR409, MVR420, MVR435, MVR450, MVR460 body color is silver grey. MVR436, MTR133, MTR156 body color is black and MTR133W, MTR156W are white.
+
+Parameters and specifications common to all models of the MVR and MTR-series devices are provided below in CSV format:
+Specification parameter name  of a medical video recorder,"Value, common to all models of MVR and MTR-series of medical video recorders" Device type,medical video recorder functional summary,"Record video with audio sound and still images in ultra/high definition from medical video sources to USB storage, Internal storage, or Network storage; review, manage and edit images and videos; create and print reports; send recordings to NAS or PACS." Device grade,medical grade Class 1 Medical Device Classification,Class 1 Device GMDN code (Global Medical Device Nomenclature),18034 Device European Medical Device Nomenclature EMDN code,18034 Intended Use,Record video and images from a variety of medical imaging systems "Operating Temperature Range, °C",-20° to +40° "Operating Humidity Range, %",30 to 75 (non-condensing) "Storage Temperature Range, °C",-40° to +85° "Storage Humidity Range, %",0 to 93 (non-condensing) "Storage and Operation Air Pressure Range, hPa",700 to 1060 Certification and compliance with Medical Equipment Safety standards,"EN 60601-1:2006 + A1:2013 + A12:2014, UL, MDR 2017/745 EU" Certification and compliance with Electromagnetic compatibility EMC standards,"EN 60601-1-2:2015, FCC Part 15B Class B" Certification and compliance with Restriction of hazardous substances,"EN IEC 63000:2018, WEEE" Certification for Radio Equipment European Union,RED 2014/53/EU Certification for Radio Equipment Argentina,RAMATEL C-28771 Certification for Radio Equipment Costa Rica,SUTEL 08645-SUTEL-DGC-2022 Certification for Radio Equipment Paraguay,CONATEL NR: 2022-10-I-0628 Other certification and compliance standards,"IEC 61140:2016, (2014/35/EU) Low Voltage Directive, UKCA" Data protection,Medicapture has not access to stored data and to PHI (Protected Health Information) Operation noise,"silent, fanless" Standard content of the Package Box (included accessories) ,"recorder device, USB flash drive  (except for MTR models), HDMI cable 2 meters, Split Remote Cable Adapter, Power Cord, 4 Rubber Feet, User Guide (English), HDMI to DVI adapter" USB ports at rear panel,"2x USB3.0 type A, for USB storage or HID devices, maximum combined output power 5V 2A" Remote port at rear panel,"Port type: 3-pin 3.5 mm phone jack. Port functions: triggers for image capturing and video recording, footswitches or normally-open switch contacts; use Split Remote Cable Adapter (included) to connect 2 foot pedals. " HDMI output port at rear panel,Port type: HDMI-A. Port function: video output for the user interface operation and recordings review. Supports connected HDMI monitors with the resolution up to 4K UHD 3840x2160. Restrictions of Use,"Diagnostic purposes, life support purposes, radiological images, digital mammography" User Qualification,Healthcare professionals with corresponding specialized qualifications Intended Use Environment,"Indoor, professional healthcare or clinical environment" Intended Patient Population,Not specified Direct Contact with Patient,None Clean and Disinfection Method,Soft cloth moistened with ethanol 75% Quality Management Standard,ISO 13485 Package box material,carton Master pack material,carton Disposal Method,Use local regulations for proper disposal "Product life time, years",3 "Product shelf life, years",3 Contra Indications and side effects,unknown Special maintenance requirements,none Calibration requirements,none Special hygienic precautions,none Consumable materials or components,none Degree of protection in the presence of flammable mixtures,none Mode of operation,continuous Applied Part,"none, no AP/APG" Latex-free,Yes Standard warranty,"1 year limited warranty, 2 years in EU area" Bonus warranty,2 months of warranty extention after the online product registration Extended warranty,3-year extended warranty is available on demand Price,Contact MediCapture for pricing
+
+
+
+Parameters and specifications that are different between device models of the MVR and MTR series are provided below in CSV format:
+Specification parameter of a medical video recorder,MVR400,MVR409,MVR420,MVR435,MVR436,MVR450,MVR460,MTR133,MTR156
+
+Model name,MVR Lite,MVR Pro,MVR,MVR435,MVR436,MVR450,MVR460,MTR133,MTR156
+
+Device description,cost-effective medical video recorder,"premium medical video recorder with a built-in touchscreen monitor, allowing a stand-alone operation",full featured medical video recorder,full featured medical video recorder 4K60,full featured medical video recorder 4K60,premium 4K60 medical video recorder with 12G SDI and other extended video input options,"premium 4K60 medical video recorder with built-in 7-inch touch screen, with 12G SDI and other extended video input options",medical video recorder integrated into a touch screen monitor,medical video recorder integrated into a touch screen monitor
+
+Case Material,"metal, stainless steel","metal, stainless steel, copper","metal, stainless steel, copper","metal, stainless steel, copper","metal, aluminum alloy","metal, aluminum alloy","metal, aluminum alloy","metal, aluminum alloy","metal, aluminum alloy"
+
+Ingress Protection (IP) level,IP20,IP20,IP20,IP30,IP53,IP40,IP40,IP53,IP53
+
+Mount Type,Table top,Table top,Table top,Table top,"Table top, VESA75, VESA100","Table top, VESA100","Table top, VESA100","VESA75, VESA100","VESA75, VESA100"
+
+Internal Storage,None,"128 GB, upgradable up to 1 TB","128 GB, upgradable up to 1 TB","1 TB, upgradable to 2 TB or 4 TB","1 TB, upgradable to 2 TB or 4 TB","2 TB HDD, upgradable to 20 TB","2 TB HDD, upgradable to 20 TB","1 TB, upgradable to 2 TB or 4 TB","1 TB, upgradable to 2 TB or 4 TB"
+
+Display,External HDMI,built-in 5.7 inch AMOLED 1920x1080,External HDMI,External HDMI or Type-C,External HDMI or Type-C,External HDMI or Type-C,built-in 7 inch 1920x1200,built-in 13.3 inch 1920x1080,built-in 15.6 inch 1920x1080
+
+Touchscreen,external USB,5 points,external USB,external USB,external USB,external USB,external USB,10 points,10 points
+
+Wired Network,"none, optional upgrade",Ethernet 1 Gbps,Ethernet 1 Gbps,Ethernet 2.5 Gbps,Ethernet 2.5 Gbps,Ethernet 2.5 Gbps,Ethernet 2.5 Gbps,Ethernet 2.5 Gbps,Ethernet 2.5 Gbps
+
+Wireless network,none,"WiFi, Dual-band 2x IEEE802.11a/b/g/n/ac","WiFi, Dual-band 2x IEEE802.11a/b/g/n/ac",none,none,none,none,none,none
+
+Bluetooth,none,"BT4.1+HS, BLE, 2.402-2.480 GHz","BT4.1+HS, BLE, 2.402-2.480 GHz",External USB BT Dongle,External USB BT Dongle,External USB BT Dongle,External USB BT Dongle,External USB BT Dongle,External USB BT Dongle
+
+AC Power supply type,built-in,built-in,built-in,"external, 12V 3A","external, 12V 3A",built-in,built-in,"external, 12V 3A","external, 12V 3A"
+
+"Power Consumption, W",20,20,20,30,30,40,40,30,30
+
+Power Rating,"AC 100-240V, 50/60Hz, 0.4-0.2A","AC 100-240V, 50/60Hz, 0.4-0.2A","AC 100-240V, 50/60Hz, 0.4-0.2A",DC 12V 3A 36W,DC 12V 3A 36W,"AC 100-240V, 0.6-0.3A 50/60Hz","AC 100-240V, 0.6-0.3A 50/60Hz",DC 12V 3A 36W,DC 12V 3A 36W
+
+AC Power Inlet Type,IEC C14 3-prong AC jack,IEC C14 3-prong AC jack,IEC C14 3-prong AC jack,IEC C14 3-prong AC jack,IEC C14 3-prong AC jack,IEC C14 3-prong AC jack,IEC C14 3-prong AC jack,IEC C14 3-prong AC jack,IEC C14 3-prong AC jack
+
+Fuse,2 pcs of T1AH 250V,2 pcs of T1AH 250V,2 pcs of T1AH 250V,"internal, non-servicable","internal, non-servicable",T2AH 250V x 2 pcs,T2AH 250V x 2 pcs,"internal, non-servicable","internal, non-servicable"
+
+Protection Against Electric Shock,Class I,Class I,Class I,"Class I, SELV","Class I, SELV",Class I,Class I,"Class I, SELV","Class I, SELV"
+
+FCC ID,NA,2AFDI-ITCNFA324,2AFDI-ITCNFA324,NA,NA,NA,NA,NA,NA
+
+Operating elements at front panel,3 buttons,3 buttons,3 buttons,1 button,none,3 buttons,3 buttons,none,none
+
+Front buttons material,"stainless steel, fuid resistant","stainless steel, fuid resistant","stainless steel, fuid resistant","stainless steel, fuid resistant",none,"stainless steel, fuid resistant","stainless steel, fuid resistant",none,none
+
+Aditional model-specific Package Box Content (included accessories),IR Remote Control,2 WiFi/BT antennas,"IR Remote Control, 2 WiFi/BT antennas","DisplayPort to HDMI cable adapter, Medical Power Supply 12V 3A (IEC 60601-1 certified)","DisplayPort to HDMI cable adapter, Medical Power Supply 12V 3A (IEC 60601-1 certified)","DisplayPort cable, 12G SDI BNC cable","DisplayPort cable, 12G SDI BNC cable","Optical HDMI cable 8 meters, DisplayPort to HDMI cable adapter, Medical Power Supply 12V 3A (IEC 60601-1 certified)","Optical HDMI cable 8 meters, DisplayPort to HDMI cable adapter, Medical Power Supply 12V 3A (IEC 60601-1 certified)"
+
+Power input port at rear panel,IEC C14 AC jack,IEC C14 AC jack,IEC C14 AC jack,DC jack 5.5 x 2.1 mm,DC jack 5.5 x 2.1 mm,IEC C14 AC jack,IEC C14 AC jack,DC jack 5.5 x 2.1 mm,DC jack 5.5 x 2.1 mm
+
+Headset audio port at rear panel,4-pin 3.5 mm phone jack,4-pin 3.5 mm phone jack,4-pin 3.5 mm phone jack,"Headphone audio output: 3-pin 3.5 mm phone jack, Microphone audio input: 1-pin 3.5 mm mono phone jack ","Headphone audio output: 3-pin 3.5 mm phone jack, Microphone audio input: 1-pin 3.5 mm mono phone jack ","Headphone audio output: 3-pin 3.5 mm phone jack, Microphone audio input: 1-pin 3.5 mm mono phone jack ","Headphone audio output: 3-pin 3.5 mm phone jack, Microphone audio input: 1-pin 3.5 mm mono phone jack ","Headphone audio output: 3-pin 3.5 mm phone jack, Microphone audio input: 1-pin 3.5 mm mono phone jack ","Headphone audio output: 3-pin 3.5 mm phone jack, Microphone audio input: 1-pin 3.5 mm mono phone jack "
+
+LINE IN audio input port at rear panel,None,None,None,3-pin 3.5 mm phone jack,3-pin 3.5 mm phone jack,3-pin 3.5 mm phone jack,3-pin 3.5 mm phone jack,3-pin 3.5 mm phone jack,3-pin 3.5 mm phone jack
+
+LINE OUT audio output port at rear panel,None,None,None,3-pin 3.5 mm phone jack,3-pin 3.5 mm phone jack,3-pin 3.5 mm phone jack,3-pin 3.5 mm phone jack,3-pin 3.5 mm phone jack,3-pin 3.5 mm phone jack
+
+Built-in speakers,None,None,None,None,2 x 3W,1 x 3W,1 x 3W,2 x 3W,2 x 3W
+
+USB port at front panel,"USB3.0 type A, for USB storage, maximum output power 5V 0.9 A","USB3.0 type A, for USB storage, maximum output power 5V 0.9 A","USB3.0 type A, for USB storage, maximum output power 5V 0.9 A","USB3.0 type A, for USB storage, maximum output power 5V 0.9 A",none,"USB3.0 type A, for USB storage, maximum output power 5V 2 A","USB3.0 type A, for USB storage, maximum output power 5V 2 A",none,none
+
+RJ45 Ethernet port at rear panel,10/100/1000 BASE-T,10/100/1000 BASE-T,10/100/1000 BASE-T,10/100/1000/2.5G BASE-T,10/100/1000/2.5G BASE-T,10/100/1000/2.5G BASE-T,10/100/1000/2.5G BASE-T,10/100/1000/2.5G BASE-T,10/100/1000/2.5G BASE-T
+
+SMA RF connectors for WiFi and BT antennas at rear panel,None,2,2,None,None,None,None,None,None
+
+HDMI type A video input ports at rear panel,2,2,2,1,1,2,2,1,1
+
+USB Type C port at rear panel,Not for use,Not for use,Not for use,"USB3.0, supports DP (Display Port) video output up to 4Kp60","USB3.0, supports DP (Display Port) video output up to 4Kp60","USB3.0, supports DP (Display Port) video output up to 4Kp60","USB3.0, supports DP (Display Port) video output up to 4Kp60","USB3.0, supports DP (Display Port) video output up to 4Kp60","USB3.0, supports DP (Display Port) video output up to 4Kp60"
+
+USB UVC camera support,None,None,None,Yes,Yes,Yes,Yes,Yes,Yes
+
+Extra connectivity,None,None,None,None,None,"DP Display Port input, 12G SDI input with loop output","DP Display Port input, 12G SDI input with loop output",None,None
+
+Maximum video input and recorded resolution,4K30,4K30,4K30,4K60,4K60,4K60,4K60,4K60,4K60
+
+Compatible MediCapture monitors,"MTS101, MTS156","MTS101, MTS156","MTS101, MTS156",MTS156,MTS156,MTS156,MTS156,MTS156,MTS156
+
+
+MVR and MTR device operation workflow.
+Typical workflow of the MVR device operation:
+
+
+Start the device.
+
+Start a new Study by entering Patient Information, procedure description, and physician name.
+
+During the Active Study: capture images, record videos, and review recordings.
+
+Finish the Study, confirm the automatic export of recordings, and print the auto-generated report.
+
+Archive recordings: edit and annotate images and videos, generate and print reports, and send recordings to NAS or PACS.
+
+Change device Settings when necessary.
+
+Power Off the device.
+
+Start device
+The typical start-up procedure is to supply power to the device - the device boots within 45 seconds when a new patient folder can be created. The front LED ring(s) enclosing the button(s) flash, and the MediCapture logo is displayed during the boot sequence. The device is expected to remain powered on (constant operation), allowing recordings to be taken instantaneously at any time. After booting, the Home screen is displayed, offering three options: Start, Archive, and Information. When User Accounts are enabled, you will need to enter correct credentials to get access to the device.
+
+Start New Study
+Tap the Start button to start a new Study. The Study starts with entering patient information, procedure description, and physician name. A new folder with a unique name is created at the enabled Storage, and all recordings for the current Study will be placed in this folder. Ensure the correct date, time, and time zone are set. We suggest checking the correct date and time before the Start of a Study and including this in the checklist to prepare for the surgical operation.
+
+During the Active Study
+Preview and Select Video Source
+A live image from an external camera is displayed during the active Study and is overlayed with control icons. The icons' position can be re-arranged to the preferred location by swiping with one finger to the left or the right or hidden by swiping again in the same direction. If more than one camera is connected, the image source can be toggled by tapping the Source icon. Two video sources can be combined in PIP (Picture-In-Picture) or Split View style, enabling simultaneous recording.
+
+Capturing images
+Tap the Photo icon to capture the image. The light ring on the front button goes out briefly to indicate image capture. A confirmation sound will be played at the current audio output. The sequential number of the current recording will be displayed next to the icon. When Image Freeze is enabled, the captured image will be shown in a window for a few seconds and minimized to a thumbnail later. Tap on the thumbnail to Review current recordings. To trigger image capture remotely, a standard footswitch or any "normally open" switch can be connected to the REMOTE port on the device's rear panel.
+
+Recording Videos
+Start the video recording by tapping the Video icon. A confirmation sound will be played at the current audio output. The icon will flash while the video recording is in progress. The light ring on the front button will flash to indicate that the recording is in progress. The current recording time and the sequential number of the current recording will be displayed next to the icon. Tap again to stop the video recording. A confirmation sound will be played at the current audio output. To trigger video recording remotely, another standard footswitch or "normally open" switch can be connected to the REMOTE port at the device's rear panel via the provided Y-split cable. Images can be captured without interruption during the video recording. At the moment of image capture, a Tag will be created in the video that can be easily found later during Review. Video recording can be paused and resumed. The pause function can be enabled in Video Settings. It is possible to Pause recording multiple times to eliminate unwanted parts. A Tag will be created in the video during the Pause. Tags are helpful during the Review to identify the different sections of the video. By default, video is recorded without sound. Sound recording can be enabled, and audio source can be selected in Audio Settings. Date and time text overlay can be enabled over the video signal, which will be captured and recorded into the video file. Patient information can be added to the text overlay; however, it is not recommended due to privacy concerns. Recordings can be saved to one or two of the three storage types: USB, Internal, or Network. One or two Storage types can be enabled to save recordings. Icons of the enabled Storages will be displayed during the active Study, with the number indicating the estimated recording time until Storage is full. Video recording will automatically stop when there is no free space left. Long recordings are automatically divided into files of 4GB each to maintain a manageable file size. The process is seamless. When playing back a long recording using "continuous play" (a feature in most media players), there will be no gaps in playback. The information screen can be invoked by tapping the Information icon.
+
+Observing Storage Status
+The Current Storage for the recordings is represented by one of the three distinctive icons for USB, Internal, or Network Storage. Free Storage capacity is displayed under the Storage icon as the remaining recording time or storage capacity. Toggle the display type by tapping on the icon. The remaining recording time is calculated based on the selected video recording quality and resolution. We recommend checking the remaining recording time right after the Start of the Study to ensure enough free storage space for the entire surgical Study.
+
+Checklist for the Active Study
+Before the Study Starts: Ensure the correct date, time, and time zone are set. Right after the Study Starts:
+
+
+Check the live video source quality;
+
+Capture and review testing images;
+
+Record and review short testing video;
+
+Ensure correct Storage is selected for the recordings and that the remaining recording time is sufficient for the entire Study.
+
+Finish the Study
+Tap on the Back icon to Finish the current Study. The confirmation dialogue will show options to return to Study or Review recordings before the Study Finish. The finish of the Study may trigger the automatic export of recordings and the printing of the auto-generated report. The Review feature provides an opportunity to ensure that all necessary events have been captured and to edit, annotate, or delete recordings before the automatic export and reporting. The Archive function allows you to add more recordings to the Study after it has been closed. In Archive, navigate to the Study folder, open it, and tap the Append button.
+
+MediCapture Medical Video Recorders Software Features of MVR and MTR series of medical video recorders
+Main Features of MVR and MTR series devices
+Record high-quality medical images and videos in High Definition (HD).
+
+Optional 4K video recording package AK4K enabling video recording in 4K and including a video signal converter matching the customer's 4K camera signal output type.
+
+Storage for recordings can be selected from the Internal Storage, USB Storage, and Network Storage (NAS).
+
+Parallel recording, when two video inputs can be combined into a single Picture-in-Picture composite video or recorded independently.
+
+Smart workflow including Study management, patient information input, and editing, video recording with simultaneous image capturing, file archive, review of the recordings with the ability to edit and annotate images, create PDF reports, trim videos, copy or delete recordings.
+
+Manual input of the patient data, procedure description, and surgeon name and notes.
+
+Automatic Video Repair (AVR), ensuring that videos are not lost if the recorder loses power or when a USB stick is accidentally removed during a recording session.
+
+USB Storage Disablement feature for health care facilities with the restricted use of removable storage
+
+User management.
+
+Remote control over RS232 using a USB-to-RS232 adapter (not included).
+
+No measurement features, no calibration is required.
+
+Traceability of the Recordings
+All recordings are traceable to the actual device used to acquire these recordings. The best way to trace MVR devices is by using Device ID, which is unique for every MVR device and consists of 8 characters. The Device ID can be found on the supplementary label at the bottom of the MVR device (see attached photo) and in the INFORMATION screen of the user interface. The device ID can be found in files produced by the MVR recorder in the DICOM tag or the EXIF tags when DICOM is not used.
+
+
+DICOM standard defines specific tags for the information of various types. The Device ID is saved in the DICOM tag (0018,1003), and the device firmware version is saved in the DICOM tag (0018,1020). Important note: In order to contain all the information, DICOM files must be produced by the MVR device. This can be achieved by using the "Send to PACS" or "Copy as DICOM" functions. If customer copies plain JPG and MP4 files and later converts them to DICOM at their side - they will lose device and patient information.
+
+
+EXIF information of the captured images and video recordings also contains the Device ID and device firmware version. Metadata in images (JPG and PNG) is stored in the so-called EXIF data structure. EXIF data was created for the photography applications to keep the camera model and parameters. EXIF standard does not define DeviceID, so the store MVR model and Device ID are stored in the tag "Model", for the example "EXIF:Model": "MVR Pro 20bd4b50".
+
+
+Metadata in video files is included as Quicktime MP4 tags. MP4 tags were designed for different purposes, and a model of the producing device was not even defined. We use Composer tag:  QuickTime:Composer": "MVR DeviceID".
+
+
+It's important to note that the device's Serial Number is only printed on the label and is not traceable in software. However, you can use the Device ID, which is also printed on the supplementary device label, for traceability instead.
+
+Video Input Signal Settings for MVR and MTR series devices
+Two options for video input signal settings are BT2020 and Extended Color Range
+
+BT2020 and color range options are set per camera
+
+Only 4K cameras can output BT2020 color; typically, 4K cameras are connected to HDMI 1
+
+Once the BT2020 color gamut is enabled, still images and videos are recorded with the color space set to BT2020
+
+Only some viewers support the BT2020 color gamut; however, it will be shown in the default color gamut BT709 when BT2020 is not supported
+
+While reviewing by MVR devices themselves, you will not be able to see any difference with the BT2020 option enabled or disabled - it will be displayed in BT709
+
+Select the color range to "extended" to match a specific camera. When not sure, keep "normal."
+
+Technically, the extended range means 0-255, while the normal range is 16-234 for the 8-bits colors
+
+Network Features of MVR and MTR series devices
+Connection to the wired or wireless network allows more features
+
+Recording to the Network Storage (NAS) or Send to NAS;
+
+Video and audio streaming;
+
+Integration with hospital information and imaging systems via optional DICOM upgrade package AKDICOM;
+
+Remote control over the network from the web browser, tablet, or smartphone with MVR Remote App or API;
+
+The ability to connect wireless BT devices: BT headsets for audio recording, BT HID devices for UI.
+
+Video Playback Speed Control Feature of MVR and MTR series devices
+Allows selecting video playback speed from 0.1x to 10x.
+
+Speed steps: 0.1x, 0.2x, 0.3x, 0.4x, 0.5x, 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x.
+
+Speed control buttons look like "<< " and ">>":
+
+During Pause, these buttons change into "<1" and ">1" for frame-by-frame stepping.
+
+Touch button functions are duplicated by the keys "-" and "+":
+
+Short tap reduces/advances video playback speed by one step.
+
+Long press adjusts play speed to the slowest/fastest value.
+
+Video Edit Feature Description of MVR and MTR series devices
+Allows selection of several segments from the original video recording.
+
+Saves selected segments as a new video with desired parts only.
+
+NOT available for MVR Lite (MVR400).
+
+Quick Manual on Video Edit using MVR and MTR series devices
+Press the "video edit" button (the one with scissors) in the video player
+
+The video player changes into an editor with additional controls
+
+The primary tool is an axis with time segments below the seek bar
+
+Each video segment is drawn in yellow, with start and end thumbs
+
+The video segment represents the time range on the seek bar, which will be included in a new video file
+
+Initially, there is one segment covering the entire video duration
+
+Edit the segments as needed, using the provided controls
+
+Editing Controls of MVR and MTR series devices
+Drag the start or end thumb of the video segment to change its time range
+
+Merging adjacent segments is possible by dragging their ends
+
+Click the segment to select it, then click the delete button to delete it
+
+Click a segment to select it, then click the cut button to split it into two parts
+
+Two modes: if the seek bar is positioned in the segment, the cut is done at seek bar position; otherwise, the segment is cut at its center
+
+To create a new segment, click on the empty space right below the seek bar (not occupied by another segment) and move/touch to the left or right; a new segment will be created
+
+Fine-tune selected segment thumb's position using the blue previous/next buttons on the left and right side of the seek bar
+
+Notes on Editing using MVR and MTR series devices
+Segment start/end times can be positioned only on keyframes
+
+Keyframe: a special type of picture frame stored in a video file, occurring when a drastic change of video picture happens, or periodically approximately every 5 seconds
+
+Granularity of selectable segment start/end times is about 5 seconds
+
+Each tag in the video, created by capturing the still image, also contains a keyframe so that the video cut can be positioned precisely at the tag
+
+Zooming is impossible in the video editor, and the saved video is in its original resolution
+
+The edit area (below seek bar) contains information about the selected segment and the total time of all segments (= time of final video clip)
+
+The play button behaves differently in the video editor - it previews the final video
+
+Seek bar still shows the original video timespan but with defined segments, and seeking in preview works only within the segments
+
+Fast skip forward/backward using blue buttons as usual
+
+Press the Pause button to stop the preview and return to the editor
+
+Saving edited video:
+
+Button on the top right part of the screen allows you to save the final video
+
+The video is saved in the same folder as the original video, with appended incremented counters
+
+A new video file is created each time you use the Save button
+
+The save button indicates unsaved changes with a yellow asterisk
+
+If you try to exit the video editor with unsaved changes, a dialog will prompt you to save the changes (or just quit)
+
+Cut positions are preserved in the resulting video as tags and visible in the player
+
+Merge Selected Video Files into a Single Video using MVR and MTR series devices
+From the Review screen: select several videos and click the Edit button
+
+Files appear in the editor as one continuous video with green tags showing the start of each video
+
+Portions can be cropped out as during regular video editing
+
+Preview of the resulting video is available
+
+The result may be saved as one continuous video file
+
+Limitations:
+
+Result file cannot exceed 4GB
+
+All videos should be recorded with the same settings (codec, resolution, bitrate, audio, etc.)
+
+Description of Features for MVR/MTR recorders
+
+External Apps
+Applicable device models: MVR435, MVR436, MVR450, MVR460, MTR133, MTR156.
+
+Available since firmware version FW 250603.
+
+Category: New feature.
+
+Workflow stages: Start screen, Settings..
+
+Purpose: Enables control of the external smart devices on the local network via a built-in web browser, such as a video switch matrix, intelligent camera controller, surgical light controller, etc.
+
+This feature, External Apps, is intended to control video sources, such as smart camera controllers, video switches, and routers, over the web interface, or provide web help or guidance for the device operation.
+
+Usage
+An external app is a browser window with a preset URL. In other words, an external app is a shortcut to a specific website or web application. 
+
+When enabled, the vertical scroll of the external apps is available on the left side of the Start screen. Tap on the app icon to open a browser window. 
+
+It is possible to navigate through the connected website or web app in the same way as using a regular web browser. External apps behave like tabs in a regular browser. Closing the browser window by tapping the “X” button in the top left corner of the screen will keep the browsing progress in the background, allowing you to continue from the same point after reopening the same external app. The background activity of the external apps will remain active until the user logs out or the device restarts.
+
+The browser window starts with the upper navigation bar hidden. Scroll the video down to reveal the navigation bar.
+
+To refresh the current web page content, tap the “Reload” icon in the screen header on the right side, next to the app icon. To browse back, tap the “<” button in the right corner of the screen header.
+
+
+To set up and customize the list of external apps, open the “External apps” setup page in “Settings > Advanced Settings > Connections”, then tap on the “Enabled” slider.
+
+Tap the plus sign “+” in the screen header to add a new app or tap the existing app to edit its parameters. Select the type from HTTP or HTTPS, enter the URL, such as “www.medicapture.com”, or the IP address and port for external smart devices on the local network, like “192.168.2.13:3333”.
+
+The “Test” button will open the built-in browser with the specified URL.
+
+Tap the “Update” button to save changes.
+
+Tap the “Remove” button to delete the currently selected app.
+
+
+The app's icon is automatically fetched from the website. If the icon cannot be found, the default “Globe” icon is used. The icon is obtained by searching for the “favicon.ico” file link on the landing page or in the root page. 
+
+
+Each external app can be enabled or disabled individually by tapping its “Enabled” slider. 
+
+The sequence in which external apps are listed can be changed by tapping on the “^” button to move the current entry upwards or tapping on the “v” button to move it downwards.
+
+
+
+One app can be selected as the default home app, and it will start automatically once the device starts and the user logs in. Select the default app from the drop-down list at the bottom of the External Apps settings screen.
+
+In Portrait orientation, an External App can run under the live camera view at the bottom half of the screen.
+
+             
+
+
+Support for multiple USB cameras
+Applicable device models: MVR435, MVR436, MVR450, MVR460, MTR133, MTR156.
+
+Available since firmware version FW 250603.
+
+Category: New usability feature.
+
+Workflow stages: Live Study.
+
+Purpose: Enable simultaneous use of two USB cameras..
+
+Usage
+Up to six USB cameras can be connected simultaneously, enumerated as “USB camera”, “USB camera 2”, “USB camera 3”, and so on. 
+
+All connected USB cameras will appear in the list of available inputs on the “VIDEO INPUT SETTINGS” screen. Select the camera first, and later select the desired resolution. 
+
+Video settings, such as resolution and Area of Interest, will be automatically stored for each camera individually. 
+
+
+
+Adding new cameras, changing the USB port, or adding a hub will alter the enumeration of cameras. Connect all USB cameras before powering on the device and keep them connected at all times, as it may become very confusing when USB cameras are plugged in and unplugged live. If the physical connection has been changed, reboot the device and then make the proper selections and settings.
+
+
+When two USB cameras are intended for simultaneous use (PIP, Split, Dual View, Parallel recording), one camera should be connected to the USB-C port, while the other should be connected to the USB-A port of the device. When both cameras are connected to USB-A ports or via the same USB hub, simultaneous use is possible only for lower resolutions, typically 720p30 and below, due to USB bandwidth limitations, especially when the cameras are USB 2.0.
+
+When USB cameras are intended to be used separately (Live Study recording with a single video source), there is no limitation on using USB ports or hubs. 
+
+Custom logo stamp
+Applicable device models: MVR435, MVR436, MVR450, MVR460, MTR133, MTR156.
+
+Available since firmware version FW 250415.
+
+Category: New branding feature.
+
+Workflow stages: Study.
+
+Purpose: Enable branding of the recordings and the live view with the hospital, system, or personal logo.
+
+
+The branding logo stamp will be shown during the Live Study, recorded in videos, and captured images when enabled.
+
+
+Logo settings are available at the bottom of the “PATIENT INFO SETTINGS” screen.
+
+Copy the custom logo image in the JPG or PNG format to the USB flash stick and plug it into the USB connector on the device. Tap the “Pick” button and select the desired file from the list.
+
+To replace the logo, tap the “View” button, and then select “Replace” or “Delete” from the pop-up menu. Select the desired logo file from the list of image files on the USB flash stick. 
+
+Tap the “Show logo” slider to enable logo overlay.
+
+Select the logo position relative to the Area Of Interest (AOI): top-left, top-right, bottom-left, or bottom-right. The logo size can be adjusted using a “Size” slider, which ranges from 5% to 40% relative to the AOI vertical size, in 5% increments. Set the logo size and position so that it does not overlap the date stamp.
+
+
+
+
+
+Dual View in Portrait Screen Orientation
+Applicable device models: MVR435, MVR436, MVR450, MTR133, MTR156.
+
+Available since firmware version FW 250326.
+
+Category: New usability feature.
+
+Workflow stages: Study, Archive, Settings.
+
+Purpose: Enable comparison of the two cameras, live (real-time) camera view with a previous recording, and comparison of two recordings. Application examples: review recordings “Before” and “After” looped playback of the recordings from the fluorescence camera or ICG (IndoCyanine Green) video as a reference to the live surgery footage.
+
+
+There are recorders on the market that allow for the simultaneous recording and review of two video channels. Typically, the standard landscape layout is used, featuring two small windows - one for each camera's live preview or playback. Our solution maximizes the usage of the screen area by taking advantage of a portrait orientation.
+
+
+Dual View is compatible with all new device models; however, some models may not be suitable for this feature. For example, the MVR460 is unsuitable for portrait orientation, and its built-in 7-inch touchscreen is too tiny for dual-view interaction. The suitable models for the application requiring Dual View are MTR156 and MVR450 or MVR436 with MTS156 monitor. MTR133 can be used when there are restrictions on the device size.
+
+Usage
+Change screen orientation to Portrait: In the Settings screen, navigate to “Settings - System - Display” and set Display rotation to 90 or 270 degrees. An external monitor, MTR156 or another model, should be mounted in portrait orientation. Dual View will be enabled automatically, and more options will be displayed at the bottom of the screen. Typically, the screen is split vertically in half between two views, but the top view occupies 75% of the screen area when no selection is made for the bottom view. The size ratio is automatically controlled and cannot be adjusted by the user. It is possible to interact with both views simultaneously using the touchscreen, and the two views operate independently from each other, in principle. 
+
+
+During the Live Study, several options are available for display at the bottom of the screen, under the live footage of the current camera: another camera or an Archive. The screenshot below on the right shows an example of a comparison between live footage from a microscope camera and recorded footage from the fluorescence camera, which was captured a few minutes earlier.
+
+
+When two cameras are shown live, recordings can be made independently for both cameras unless Parallel Recording is enabled. The bottom camera displays fewer controls: a Capture and Record button, and an ”X” sign to close the camera’s live view. Top and bottom cameras can be easily swapped by tapping on the Input select button (marked as “1/2").
+
+
+The archive screen allows a review of another Study under the current selected Study. The study below can be the same as the one above, or it can be a study recorded at a different time, or a study from a different storage location. For example, a Study on Internal Storage can be compared to a Study on Network Storage. In both views, images and videos can be played, edited, or zoomed independently at the same time. When both videos contain soundtracks, both audio tracks will play simultaneously. All controls and interactions are identical to those in the regular single-view mode.
+
+This allows for comparison between “before” and “after” footage, or footage from different cameras or patients. Portrait screen orientation also allows larger previews of the reports in the portrait layout. Examples are presented in the screenshots below.
+
+WiFi connectivity using USB adapters
+Applicable device models: MVR436, MVR450, MVR460, MTR133, MTR156. Not available for MVR435.
+
+Available since firmware version FW 250326.
+
+Category: Connectivity. Workflow stage: Settings.
+
+Supported USB WiFi adapters: ASUS USB-AC58.
+
+Purpose: Enable wireless connectivity for MVR/MTR devices.
+
+Note: Log in as Administrator, which is required to perform Network Settings.
+
+Usage
+Connect the USB WiFi adapter when the device's power is off. Only one adapter can be used at a time.
+
+The LAN cable must be disconnected; an active wired LAN connection will disable wireless connectivity. Power on the device. On the Settings screen, navigate to Advanced> Connections> Network> Network Settings, then tap More settings. This will show system settings for the Internet.
+
+Hint: Tap and hold the LAN icon on the INFORMATION screen for quick access to the Network Settings.
+
+Tap on the Wi-Fi slider to enable WiFi. The list of available networks will be displayed. If the WiFi enable
+
+slider does not work and turns off automatically, the WiFi adapter is not connected or not supported. Connect
+
+the supported adapter and reboot the device.
+
+
+Tap the desired network from the list and enter the password to establish a connection. Tap on the Advanced options to set the static IP and other parameters. Ensure the status “Connected” is displayed for the desired network.
+
+Return to the device settings and observe the wireless connection status on the INFORMATION screen. The WiFi icon should appear under the wired LAN status, and the current wireless IP address should be displayed. Tap the WiFi icon to view available WiFi networks, change the connected network, adjust settings, or turn off WiFi. Network settings are saved automatically, and the device will reconnect to WiFi at the next power-on.
+
+Video Mode Menu
+Applicable device models: MVR435, MVR436, MVR450, MVR460, MTR133, MTR156.
+
+Available since firmware version FW 250323.
+
+Category: Usability improvement.
+
+Workflow stage: Live (real-time) Study.
+
+Purpose: The video mode menu offers quick access to video compositing features, including Picture-in-Picture, Split View, and Parallel recording.
+
+Usage
+Tap and hold (over a second) on the Input select button (marked as “1/2") until the video mode menu appears. Select the desired combination of two video inputs, Split View or Picture in Picture, or choose Parallel recording to record both video inputs to separate files. Selecting the Picture in Picture option displays a sub-menu to choose the desired position of the picture-in-picture: top left, top right, bottom left, bottom right, or disabled, as shown in the screenshot example. Selection will be applied immediately, and the current layout of the video inputs will be updated.
+
+On-Screen Indicator Tally Light (OTL)
+Feature: Recording Indicator or On-screen Tally Light (OTL).
+
+Devices: MVR-series and MTR-series.
+
+Available in FW250119.
+
+Category: Usability improvement.
+
+Workflow stage: Live (real-time) Study.
+
+Purpose: Provide a clear visual indicator of active recording.
+
+
+The objective of adding OTL is to enhance the operator's visibility of the active recording. Currently, we have a video icon indicating active recording, but it is small and cannot be clearly seen from a distance on a small screen. Additionally, MTR devices do not have front LEDs, so users can only rely on the small icon, which is not obvious enough from a distance.
+
+Usage
+OTL is disabled by default. Enable it on the Settings screen Recording Options by tapping the slider On-screen Tally Light.
+
+
+OTL will appear when the recording is ON (constantly on, no blinking), and it looks like a green rectangle with
+
+the text “REC” in it. OTL will blink once for 1 second during the still image capture (negative blink - the entire
+
+green rectangle off - when recording is ON).
+
+OTL size can be adjusted by tapping on it. A pop-up window titled “Recording Indicator” will offer 11-step sliders for the width and height adjustment of the recording indicator, as shown in the screenshots. Tap on the Close button to complete the OTL size adjustment. OTL size will be automatically saved and applied at the start of the device.
+
+Swiping icon positions will also change the OTL position; OTL is positioned over the Back button. Hiding icons will hide OTL. Screenshot examples demonstrate how OTL size can be adjusted to minimize the obstruction of the live (real-time) camera.
+
+For devices with a small screen, OTL can be adjusted to almost fill the full screen size, allowing for a clear view from a distance. Covering the entire camera footage is beneficial when the primary surgical monitor is available, and the device's small screen serves as a visual indicator for recording. OTL does not cover control buttons.
+
+
+External Tally Light. The “Scroll Lock” LED of the standard keyboard is used to indicate the recording function. The LED indicator logic is precisely the same as the internal on-screen tally light.
+
+Area of Interest AOI
+Feature: Area of Interest AOI within the video input signal.
+
+Devices: MVR-series and MTR-series.
+
+Available in FW250119.
+
+Category: Usability improvement.
+
+Workflow stage: Live (real-time) Study.
+
+Purpose: AOI enables users to select a rectangular area on the screen to be captured in images and videos, thereby improving workflow efficiency.
+
+
+The Area of Interest (AOI) feature allows users to select a rectangular area on the Live Study screen, capturing only the selected area in images and videos. This is useful when the active area of the screen does not cover the whole screen, as is often the case with endoscopes.
+
+For endoscopes, the active area is typically a circle located at the center or side of the screen. The other screen area is black or contains some camera settings. Often, the black area is not desired for the recordings or reports. For reporting, the doctor copies all images to a PC, crops them using PC tools, and later uses these images to generate the report. This is not productive, as the crop area is always the same.
+
+Implementation details
+To activate AOI, tap and hold (over a second) on the live (real-time) screen until guiding symbols appear, as shown in the screenshot example. The intuitive guide symbols will be displayed, and the screen area outside the AOI will be slightly dimmed.
+
+
+Change AOI size by dragging a circle symbol in the top-left or bottom-right corner.
+
+Move the AOI rectangle to a different position by dragging the four-arrow symbol.
+
+Confirm the AOI selection by tapping the “✓”
+
+symbol.
+
+Cancel (deactivate) AOI by tapping the “X” symbol.
+
+A cross mark in the center of the AOI helps to position the AOI accurately across the live video.
+
+
+All images and videos will capture only the selected AOI.
+
+The AOI coordinates are automatically saved for future use.
+
+The AOI cannot be changed during the recording process.
+
+AOI is different for each of the two input video channels and can be set individually.
+
+AOI is also used during PIP and parallel recording.
+
+Stamps, overlays, and PIP: all are aligned to the AOI.
+
+AOI settings do not affect live Study preview or streaming - Live is showing in the same way as it is now. AOI only affects image and video capture. Visually, the area outside of the AOI is slightly dimmed.
+
+FAQs
+Can the AOI be deactivated if it is no longer needed?
+
+Answer: Yes. Long-press on the Live screen to invoke the guide symbols and tap the “X” symbol to deactivate AOI. In principle, AOI is always active and covers the entire screen by default; when enabled, AOI covers a portion of the screen.
+
+
+Can the AOI be applied to previously captured images or videos?
+
+Answer: No. AOI is applied only to the recording taken while AOI is active.
+
+
+Does AOI affect the quality or resolution of the captured images and videos?
+
+Answer: No, the recordings are taken using all the original pixels within the AOI area. However, when the AOI resolution is higher than defined by the Storage Settings, the final recordings will be scaled down to the limits set in the Storage Settings.
+
+
+How does AOI work with multiple video sources?
+
+Answer: AOI is defined individually for each of the two input video sources.
+
+
+How to save AOI settings as default for future use?
+
+Answer: AOI settings are automatically saved for future use of the current video source on this device.
+
+
+How to change the AOI shape (e.g., from rectangle to circle)?
+
+Answer: AOI can be defined only in a rectangular shape.
+
+Split View SV
+Feature: Split View of two cameras side by side.
+
+Devices: MVR-series and MTR-series. Not applicable for MVR, MVR Pro, MVR Lite.
+
+Available in FW 250126.
+
+Category: Usability improvement.
+
+Workflow stage: Live (real-time) Study.
+
+Purpose: SV allows for the simultaneous display and recording of two camera inputs side-by-side for required
+
+procedures.
+
+
+The Split View feature displays two camera inputs side by side, each scaled to fit half the screen without cropping any content.
+
+This feature is designed for procedures requiring simultaneous use of two video cameras, such as video laryngoscopy-assisted bronchoscopy intubation for managing difficult airways or ultrasound-assisted laparoscopy.
+
+
+Implementation details
+The Storage Settings determine the SV resolution, and if multiple storages are enabled, the highest resolution setting will be used (see the Storage Settings screen). If a higher or lower SV resolution is desired, change it in the Storage Settings screen. When Storage Settings are set to “Only images”, the default 1920x1080 resolution will be used for the SV.
+
+After the SV resolution is defined, for example, 1920x1080, the relevant AOI (Area of Interest) is first applied to every camera video input. Then it is automatically scaled to fit half the SV screen, for example, 960x1080. Black bands may be added horizontally or vertically when the AIO aspect ratio differs from the half-screen aspect. A vertical separation line in the center of the screen clearly defines the view area of each camera, avoiding possible confusion. The camera separation line is fixed and cannot be adjusted.
+
+The AOI of every input video channel can be adjusted by a long touch to the image (see AOI feature description).
+
+The SV screen is updated when an image frame is received from the camera, which reports the highest frame rate. Thus, the SV framerate equals the fastest framerate from the attached camera sources.
+
+Recordings are saved, as you can see on the screen, at the SV resolution and SV framerate.
+
+Sound can be chosen from any audio source on the Audio Settings screen menu.
+
+Cameras can be swapped from left to right using the on-screen input select button.
+
+When a camera has no signal, the relative SV area is black.
+
+The SV feature cannot be used simultaneously with the PIP (Picture-in-Picture) or Parallel Recording features.
+
+SV is intended for use with two cameras. Half the screen will be black when SV is activated with a single video source.
+
+
+The SV can be activated from the Settings screen Video Input Settings by tapping the Split View slider.
+
+
+FAQs
+Does SV support a vertical layout (cameras arranged vertically instead of side-by-side)?
+
+Answer: No. For the vertical uncropped layout of two cameras, change the screen orientation to portrait and use
+
+the Dual View feature.
+
+
+Can the size of each camera's view be adjusted individually in SV (e.g., make one camera's view larger than the
+
+other)?
+
+Answer: No. When you need a smaller image, use the PIP feature.
+
+
+What happens when the resolutions of the two cameras are different? How does SV handle this?
+
+Answer: Yes, the resolutions and framerates of the two cameras can be different. Every camera input is automatically scaled to fit half the SV screen.
+
+
+Can each camera's video feed be saved separately in SV mode?
+
+Answer: No. Use the Parallel Recording feature to save each camera's video feed separately.
+
+
+Can SV be used with more than two cameras?
+
+Answer: Only two active video input channels can be selected, so only two cameras can be shown on the SV
+
+screen. However, some MVR/MTR devices allow several video sources for each input channel.
+
+
+Is it possible to get rid of the black bands?
+
+Answer: Adjust each camera's AOI Area of Interest to fit half the screen without black bands.
+
+On-Screen Keyboard
+A new on-screen keyboard (Gboard) is Available in FW 250126 to enable support of the Asian languages and
+
+more.
+
+
+Tap the icon in the top-left corner to show the keyboard control menu.
+
+It is possible to adjust the keyboard's style, size, and position, and make it float. 
+
+
+Tap the Settings icon to bring up the keyboard settings screen.
+
+
+Add the desired input language by tapping the “Add keyboard”. Use a search tool to search for the language among hundreds of options. 
+
+
+The on-screen keyboard layout can be changed to another language by tapping the Globe key.
+
+Remote LDAP Authentication
+Applicable device models: MVR435, MVR436, MVR450, MVR460, MTR133, MTR156.
+
+Introduced since firmware version FW 250225. Available free of charge as a core security feature for new devices and via a firmware update for the devices in the field.
+
+
+Description: LDAPS is the security feature of the MVR Medical Video Recorder. It allows access to the MVR/MTR device using authentication over the central directory, such as Active Directory. The central authority can grant access to the MVR devices by assigning users to specific groups in the central directory, such as the "MVR operator." Using existing group assignments, such as “surgeons, nurses,” is also possible. 
+
+
+MVR Medical Video Recorder implements Role-Based Access Control (RBAC) to the device to protect access to data over the hospital networks and to the local recordings. Three roles are defined:
+
+Guest: Limited to accessing the Archive for review only and to the live video stream; no access to the MVR device or data;
+
+User: Access to the MVR device to record, review, document video content, and view live video stream;
+
+Admin: Access all the above features, device settings, users management, and device maintenance.
+
+LDAP Administrator Workflow
+Before setting up the device, communicate with the central LDAP administrator to perform the following actions and obtain the following information:
+
+LDAPS server URL or IP address
+
+Port number, if it is different from the default port 636.
+
+Naming context. Example: ‘cn=accounts,dc=demo1,dc=freeipa,dc=org’
+
+Create several test users. Example: mvrAdmin1, mvrAdmin2, mvrUser1, mvrUser2, mvrGuest.
+
+Provide an example of full DN for user authentication, like: 'uid=mvrAdmin1,cn=users,cn=accounts,dc=demo1,dc=freeipa,dc=org'
+
+Create 3 groups: mvradmins, mvrusers, mvrguests corresponding to the roles: admin, user, guest. It is possible to use existing groups. Provide an example of the full group DN, like:
+'cn=mvradmins,cn=groups,cn=accounts,dc=demo1,dc=freeipa,dc=org'. Create
+
+Add users mvrAdmin1, mvrAdmin2 to the group mvradmins; mvrUser1, mvrUser2 to group mvrusers; and mvrGuest to group mvrguests.
+
+Workflow on the MVR/MTR device
+Workflow of the remote LDAPS user authentication:
+
+A user enters credentials (user name and password) on the MediCapture MVR/MTR device login screen;
+
+The MVR/MTR device tries to bind (authenticate) the user to the remote LDAPS server (e.g., AzureAD). If binding is successful, an LDAPS search is performed to determine whether the user belongs to a particular group (“MVR,” for example). After all checks are passed, the LDAPS connection is closed, and the user can access the MVR device.
+
+Logout is performed automatically by the timeout or by tapping the logout button.
+
+
+The LDAP(S) implementation for MVR does not require a special service account and does not store a copy of the LDAP user information in bulk. Instead, the MVR implementation of the LDAP client authenticates every user individually and does not read and store any other information from the LDAP server. The LDAP(S) server connection is closed immediately after the login authentication attempt.
+
+Offline Authentication
+Upon successful LDAPS authentication, the user is added to the local list of users for offline authentication with a timeout. The timeout can be set in hours from 0 to 10,000, with the default being 168 hours (one week). When the timer expires, the user is deleted. 
+
+Offline authentication is used only when the LDAPS server is unavailable (offline). Why can the device be offline? The MVR/MTR device may be installed on a mobile trolley—a surgical tower—which is moved from one operating room to another. During surgery, the mobile trolley may not be connected to the network, and the device should be able to authenticate the user offline.
+
+When LDAPS is online, authentication and group checks are enforced. Successful authentication resets the user's timeout. Failed authentication (when user rights have been removed centrally) deletes the user immediately from the local list, disregarding the timeout. 
+
+The admin can manually review the list of users and delete users when necessary in the same way as managing local users.
+
+MVR Admin Workflow: LDAP Server Setup
+There are several fields for the LDAP server setup:
+
+“Enabled” switch: turn it on to enable the use of the LDAP server and the ability to enter or edit other fields.
+
+“Server”: input the URL or IP address of the remote LDAP server.
+
+“Port”: input port number; leave blank for default port numbers: 389 or 636 with SSL.
+
+“Use SSL”: Turn it on to use the secure LDAPS protocol (recommended).
+
+“Naming context”: The naming context will be appended to the “Auth path” for user authentication and group paths for group search. This field will be automatically entered after the server Test; edit it to add extra context when necessary. The warning message will show “Authentication is required” when the Test button is pressed and the LDAP server does not allow anonymous binding. In this case, enter the “Naming context” manually.
+
+“Auth path”: optional extra path when the full authentication path is longer than the “Naming context”.
+
+“Admin groups”, “User groups”, “Guest groups”: These three groups determine the user role as Admin/User/Guest. groupDN (Distinguished Name) is built using a group path appended with the “Naming context”. Keep empty to avoid this group; for example, no one can get an Admin role. Use * symbol to allow this role for any user with valid credentials; for example, authenticated users can get a Guest role. Group check is performed from top to bottom: Admin, User, Guest. A user in multiple groups is assigned the highest priority role.
+
+“Caching time” (hours): This specifies how long the logged-in LDAP user can log in again while the device is offline. The default is 168 hours or one week. Enter 0 to disable offline authentication.
+
+The “Cancel” button will return to the previous screen without saving changes.
+
+The “Test” button performs an anonymous authentication test on the LDAP server connection. The Server, Port, and Use SSL fields are used for server tests. The server may not allow anonymous binding and will respond with the warning “Authentication required”. This also means successful access to the LDAP server.
+
+The “Test user” button performs user authentication and group checks.
+
+The “Save” button must be used to save all changes. Changes will be lost if not saved.
+
+The recommended LDAP Server Setup flow:
+
+Input Server, Port, Use SSL, and tap the “Test” button.
+
+Enter or edit the “Naming context” field, input the optional “Auth path”, and tap the “Test user” button. 
+
+Input group paths and “Test user” again for different roles.
+
+
+Detailed examples are available in a separate document.
+
+User Login
+When user accounts are enabled, the device starts on the login screen. Entering incorrect credentials will cause an error “LDAP: invalid credentials”.
+
+After the successful authentication by the LDAP server, a user (“manager” in the following example) will be allowed to use the MVR/MTR device with the User role. (See role definitions and privileges in the above text). 
+
+The user name, “manager,” will be shown in the top left corner of the screen. “(LDAP)” note means that the LDAP server performed authentication. An icon on the left of the user name indicates a role: Admin, User, or Guest.
+
+Users Management
+Guest users have limited access to functions. Regular Users have no access to the Advanced settings. Log in with the Admin role to access “User accounts” to manage users.
+
+LDAP-authenticated users will be cached in the local (on-device) list of users for offline authentication. When the last user login time is older than the “Caching time”, the user will be automatically deleted from the list. It is also possible to delete any user manually by tapping the user entry and selecting “Delete” from the pop-up dialogue, followed by an extra confirmation.
+
+Enabling and using an LDAP server does not affect existing local accounts. 
+
+One local Admin account should always exist on the device to manage LDAP server misconfiguration or faults.
+
+While the number of local user accounts is limited to 20, the number of temporarily authenticated LDAP users is not limited.
+
+Shortcut keys
+Applicable models: MVR435, MVR436, MVR450, MVR460, MTR133, MTR156.
+Shortcut Keys for System Integrators to remotely control MVR and MTR series devices from the Network, RS232, and USB keyboard. MVR/MTR shortcut keys definitions for different modes of operation are below:
+
+Start Screen shortcut Keys (added 250527)
+0: set screen rotation to 0 degrees (landscape);
+
+9: set screen rotation to 90 degrees (portrait);
+
+3: set screen rotation to 270 degrees (portrait);
+
+6: set screen rotation to 180 degrees (landscape);
+
+F3, n: Start Study;
+
+i: Information screen;
+
+s: Settings.
+
+Live Mode shortcut Keys (reviewed 251118)
+F1/F4: capture still.
+
+F2/F5: start/stop recording.
+
+Enter: Pause on/off.
+
+Long F2: Pause on/off.
+
+PageUp or PageDn: information screen.
+
+Esc: End of Study confirmation.
+
+e: Stop recording and End of Study without confirmation.
+
+F3: End of Study.
+
+Left/Right arrows: UI buttons position change/hide.
+
+Home: Video input change.
+
+F6: stop recording or no action.
+
+F7: start recording or no action.
+
+F9: capture an image from the secondary video input.
+
+F10: record start/stop of the secondary video input.
+
+'1': change the input to HDMI 1 or no action.
+
+'2': change the input to HDMI 2 or no action.
+
+'c', F12: to switch camera input from 1 to 2 or from 2 to 1.
+
+'r' to review the last captured image or play the last captured video directly without the Review screen with thumbnails.
+
+Ctrl+H: change the color range for the current input: full/limited.
+
+'s': Split view;
+
+'p': PIP (Picture In Picture) enable, default Top left or previously selected;
+
+'=': enable/disable parallel recording
+
+'t': show other camera (valid only for portrait layouts).
+
+Video Review, Image Editor, Report Preview Modes shortcut Keys
+PageUp/PageDn keys to zoom in/out.
+
+ASDW keys to pan.
+
+Shortcut Keys for the Video Playback
+Space key: Pause/Play mode.
+
+"< ": move the play position to the previous video tag.
+
+">": move the play position to the next video tag.
+
+"-", "_": Play mode: decrease video playback speed; Pause mode: move to the previous frame.
+
+"+", "=": Play mode: increase video playback speed; Pause mode: move to the next frame.
+
+Press and hold key '1' for slow play 0.1x, and press and hold key '2' for fast play 5x (slow/fast playback while the key is pressed).
+
+Universal Keys (added on 250603)
+Universal keys work system-wide and are particularly useful for external apps.
+
+
+Volume control: Ctrl+’>’, Ctrl+’<’; Ctrl+PgUp, Ctrl+PgDn; Alt+’+’, Alt+’-’.
+
+Back: Ctrl+ESC, Ctrl+’b’, Ctrl+NUMPAD_1.
+
+Back: gesture: quick swipe from the left or right edge of the screen (added on 250903).
+
+Home (back to the MVR app, which is the HOME app): Ctrl+’h’, Ctrl+’~’, Ctrl+NUMPAD_7.
+
+ARCHIVING feature of MVR and MTR series devices
+Internal Storage / USB Storage / External Network Storage
+General storage rules & and advice for MVR and MTR series devices
+Internal Storage is the fastest and most reliable destination for recordings; however, it serves as a buffer or temporary Storage only.
+
+The internal storage needs to be activated for DICOM export and sending studies to PACS.
+
+Data should be copied from the Internal Storage to USB Storage, or Sent to PACS or NAS; there is an Internal Storage Backup feature to copy the entire Internal Storage to external USB drive.
+
+Internal Storage has auto-cleaning rules, user should setup rules and manage data, user is solely responsible of the data loss or leak.
+
+Size of the Internal Storage: MVR Pro (MVR409) & MVR (MVR420): 128 GB, upgradable up to 512 GB or 1 TB; 1 TB for MVR435 upgradable to 2 TB; None for MVR Lite (MVR400).
+
+USB storage is portable and an excellent way to save studies for presentations or for handing out data to the patient. It can also be used to copy or back up recordings from Internal Storage.
+
+USB flash sticks, SSDs, HDDs, or card readers can be connected as USB storage devices.
+
+MVR recorders support USB Storage formatted as exFAT, FAT32, or NTFS.
+
+Due to the large capacities of external USB hard drives, it may take approximately 20-60 seconds to recognize the device. Please be patient and wait until the external hard drive has been recognized. The external hard drive is recognized when the USB icon appears on the screen.
+
+Archive selection for MVR and MTR series devices
+Storage locations can be selected for direct (real-time) recording of your studies:
+
+
+Internal Storage
+
+USB Storage
+
+Network Storage (NAS)
+
+
+The maximum video recording resolution can be specified separately for each Storage device; the choices are 2160p, 1080p, and 720p. To record for archiving purposes, select 720p, which will also reduce the recording framerate to 30 or 25 frames per second. Selecting "Only images" will turn off video recording for this Storage. MVR recorder offers the flexibility to select one or two Storages simultaneously. When two Storages are chosen, captured images are stored at both locations, and videos are recorded at both locations. For instance, you can select 'Only images' for the Internal Storage and 720p for the Network Storage. This setting ensures that images are stored in both Internal and Network Storages, while the video is recorded only to the Network Storage in the archive resolution. This setup is ideal for capturing images for further reporting and sending them to PACS, while keeping videos in the network archive for insurance or other purposes.
+
+
+Note: The maximum video recording resolution limit may only reduce the resolution of the input video but will never increase it. For example, when 2160p is selected, and the video input is 1080p, the recording will be performed at the original input resolution, which is 1080p.
+
+
+Note to model MVR Lite: Internal storage is unavailable for MVR400 (MVR Lite).
+
+Video Recording Notes for MVR and MTR series devices
+Reliability of the recording using MVR and MTR series devices
+
+The stability of the video recording depends on the writing speed of the media storage. Storage must provide writing speed faster than the current recording bitrate; otherwise, recording video will not be possible, and the recording process will stop abruptly. Testing the writing speed of the new unknown Storage before using it for video recording is recommended. External USB Storage is user-dependant and can vary in brand, size, technology, format, existing file system error, cables and connectors issues, etc. The most reliable method is to record to the Internal Storage. Recording directly to the Network Storage may be affected by the actual network load and server load. Recording over a smaller local network to local NAS within a department might be acceptable. Recording over large hospital networks to distant servers without the knowledge and control of the actual bandwidth and load may not be reliable. Another tip to improve reliability is to avoid parallel recording to different storage media. The most reliable method is to record to Internal Storage. However, consider that any internal memory will be full one day. The later export/copy or Backup to another storage will be necessary. Summary: For reliable recording, choose reliable memory. An internal memory is more reliable than any other memory. Recommended workflow for reliable recording:
+
+
+Set recording to a single storage, preferably Internal Storage.
+
+After some experimentation, set the lowest acceptable video resolution and recording quality. (Users tend to choose the maximum of everything, resulting in huge unmanageable amounts of data, video fragmentation to shorter clips, bandwidth, and storage capacity issues, leading to lower usability and frustration. Intelligent recording resolution and quality selection can significantly improve reliability and customer satisfaction.)
+
+Perform Copy to USB, Send to NAS or Send to PACS, if necessary, after finishing the Study.
+
+Keep external USB Storage plugged only when recording directly to the USB Storage. In other cases, plug USB Storage only when a Copy or Backup is required and unplug it when the process is completed. Keeping USB Storage connected without reason may create usability confusion and increase device heat due to the extra energy consumption.
+
+Testing the writing speed of a Storage on an MVR and MTR medical video recorder
+
+Writing Speed Test is a helpful feature to test the quality of storage media (USB sticks and USB SSD) and network storage.  (Note: Speed test is unavailable when an MVR is under tablet Remote control.) Writing Speed Test function is available on the Information screen by tapping the corresponding storage media icon.A pop-up appears showing Storage details and allowing testing of the write speed of this storage. MVR will run benchmarking that simulates realistic video recording scenarios on an MVR device. Results in green color indicate writing speed suitable for 4K video recording. The typical recording speed required is under 4 MB/s (at 32 Mbps quality settings) with a maximum of 8 MB/s (Super, 64 Mbps, H264, 4K30). Lower resolutions, as well as the HEVC codec, require lower writing speed. The results of the writing speed may be displayed in green (good) or orange (too low). It is not recommended to use Storage when the benchmark result is not green. Note: The reading speed is typically faster than the writing speed and significantly faster for USB flash storage. MVR does not test reading speed but tests writing speed. MVR writing speed test results to the included SanDisk 64GB flash stick are 18-30 MB/s for FAT32/NTFS/ExFAT and are sufficient for video recording. If the writing speed for a USB flash drive or Network Storage is too low - record to the Internal Storage first and copy to USB or Send to NAS afterward. Internal Storage of the MVR medical video recorder is designed to provide sufficient speed to record video in any scenario.
+
+Selecting external USB Storage for MVR and MTR series devices
+
+USB flash stick is included with every MVR device, which provides a write speed sufficient for video recording. It is possible to use other USB Storage devices available from the market: USB flash drive sticks, USB HDDs (Hard Disk Drives), USB SSDs (Solid State Drives), and USB card readers. The typical writing speed of a USB flash is around 13 MB/s, ranging from 8 to 20 MB/s. Larger-size flash may offer faster writing speeds. USB 2.0 is slower in data transfer; however, modern USB 2.0 sticks may have a 10 MB/s writing speed and may serve well for video recording. USB 3.0, 3.1, 3.2, Type-A, and Type-C versions may have different data transfer speeds, and higher versions may deliver higher read speeds. However, the writing speed heavily depends on the underlying flash technology. Typically, all USB flash drives of different USB 3.x versions will have similar writing speeds. When connecting a USB HDD, allow sufficient time to spin up, typically under 1 minute, before it is detected and becomes available for recording.
+
+
+MVR medical video recorders support the following storage formats for external USB Storage: FAT32, NTFS, and ExFAT. Writing speed depends on the file system as well. FAT32 is the most compatible and has a faster implementation in MVR devices, followed by ExFAT and NTFS, which are the slowest. The flash technology limits the USB flash stick write performance and is the same for NTFS/FAT/ExFAT. Once the writing speed of the USB Storage exceeds 70 MB/s, the implementation speed of the file systems matters. Test results of the MVR Pro's writing speed to 1TB SSD flash: 159 MB/s for FAT32, 70 MB/s for NTFS, and 80-100 MB/s for ExFAT.
+
+
+USB Storage may be used for direct recording, copying, and backing up internal Storage. While the USB Flash drive writing speed may be sufficient to perform recording, it may be slow to perform a Copy or Backup of the Internal Storage due to the large amount of data. For Backup, an external USB SSD drive is recommended. USB HDD is also an option for Backup, but the writing speed is slower compared to SSD. USB flash cannot provide higher writing speed due to the flash memory block's long erase time and the operation's sequential nature. In other words, USB flash spends most of its time waiting to be erased during the writing process. The new SSD technology performs many operations in parallel to overcome this problem. There are better options than USB flash for the Backup of the Internal Storage. Backup may require a large amount of data to be transferred (up to 1 TB). Writing this data will require USB Storage to work at the maximum performance for a long time. Maximum performance results in maximum heating. USB flash sticks are small in physical size and do not dissipate heat efficiently, causing the rising temperature of the internal circuits and slowing down the writing process. The longer it takes - the slower it runs. In contrast, SSD drives are larger and typically equipped with additional heat sinks that transfer heat from the inside to the aluminum enclosure. Summary: USB HDD and SSD drives will perform Backup 10-15 times faster than USB flash and are more suitable for data Copying and Backup. For the fastest Backup, use a USB SSD formatted to ExFAT.
+
+
+How to select a "good quality" USB flash drive? The quality level of the USB flash drive may be defined using parameters such as speed, lifetime, data reliability, and physical size.
+
+
+Speed. Typical USB flash sticks can deliver up to 10-30 MB/s or writing speed and 40-130 MB/s or reading speed. USB SSD can deliver 200-500 MB/s or write and read, beating traditional flash 10-20 times in speed.
+
+Lifetime and data reliability. USB flash drives utilize flash memory with limited write cycles. Frequent rewrites will significantly shorten their lifespan. The number of write cycles, or endurance, varies based on the type of NAND flash memory cell, with single-level cell (SLC) NAND flash supporting up to 100,000 write cycles, multi-level cell (MLC) flash sustaining up to 10,000 write cycles, triple-level cell (TLC) flash having as low as 300 write cycles, and quadruple-level cell (QLC) NAND likely supporting a maximum of 1,000 write cycles. Low-cost flash drives and SSDs use the cheapest TLC technology. Traditional USB flash drives do not manage write frequency to the same flash cell, causing the beginning of the drive to be used more often. SSDs, in contrast, do manage write frequency to the same flash cells and attempt to spread rewrite data as evenly as possible to extend the overall lifespan of the drive. This process is achieved through a combination of techniques known as wear leveling.
+
+Physical size. USB thumb drives are significantly smaller than typical USB SSD drives.
+
+"Good quality" modern USB drives could contain SSD technology within the small size and use MLC flash.
+
+Folder names for MVR and MTR series devices
+Folders are named chronologically after CASE numbers CASE0001, CASE0002, etc. If you want the folder to be named using Study date, time, and patient ID, enable the option "Stamp folder names." Since the MVR435 model, the folder name is always time-stamped and contains DeviceID; personal patient data in the folder name is optional and can be enabled in the Settings menu. It is recommended that patient data be avoided in folder names to reduce the possibility of personal data leakage.
+
+Internal Storage of MVR and MTR series devices: Rules for automatic cleaning
+Rules for deleting the internal storage can be set to One of two options for automatic cleaning of the internal storage can be selected.
+
+
+Keeping around 20% of free space, but not more than 50 GB, ensures minimum storage space for the subsequent study.
+
+Keeping the last 7 days should be selected if the internal storage is only a safety backup. MVR435 model offers 28 days instead of 7. Cleaning rules are checked at the Start of the Study to ensure sufficient space for the new Study. Rules are not checked during the active Study. Keep both cleaning options unchecked (not selected) to keep all recordings and delete them manually.
+
+Disabling (locking) the USB storage for MVR and MTR series devices
+USB storage can be completely disabled/locked if portable or removable media is prohibited in your clinical environment. If the USB memory has been deactivated here, it no longer appears in the archive settings for storage selection.
+
+Internal Storage Backup Feature Description for MVR and MTR series devices
+Internal Storage Backup feature is available in the Archive screen and it copies all Studies from MVR Internal Storage to external USB flash stick (or hard disk or SSD).
+
+Note: Internal Storage Backup feature does not backup device settings and Activation Keys; device settings backup is available on the "UPDATE / DEFAULT" screen of the Advanced settings.
+
+A button for the Internal Storage Backup is located at the bottom-left part of the screen, which is shown only when conditions for backup are satisfied: external USB Storage is present.
+
+Internal Storage Backup feature will check the available space on USB drive before start copy.
+
+Internal Storage Backup is incremental. It copies only new or changed files and skips previously copied files.
+
+It does not delete any other files on USB storage; only Study folders (CASExxxx) are created, and files are copied into folders.
+
+Users can repeatedly do backups on the same USB storage.
+
+Internal Storage Backup feature does not delete anything; delete data manually or format Internal Storage when backup is complete.
+
+When file error is encountered during the backup of the Internal Storage, a pop up dialogue will show the error description; tap to "Skip" button to continue Backup process; only corrupted files will be skipped, all good files will be copied from the Internal Storage to USB Storage.
+
+Creating a shared folder on your Network Server (NAS) to use as Network Storage for MVR and MTR recorder
+Create a shared folder per your NAS Server instructions.
+
+Ensure the MVR user has sufficient privileges to read and write to the shared folder.
+
+Take special care if this is a Wi-Fi user connecting via WPA2-Enterprise. They may need additional setup.
+
+Note the User Name, Password, and Shared Folder name (Example: User name: mm, Password: 123412341234, Shared Folder Name: Shared.) You will need this information to connect the MVR to the Network Server Shared Folder.
+
+Settings for Network Storage on MVR and MTR series devices
+After you have created the shared folder on your Network Server, you can match the storage settings and test the connection.
+
+
+Note: Please make sure that Network Storage is enabled in the Archive Settings.
+
+
+The easiest way to achieve the IP address of your server is to tap on Find Server. Available servers with shared folders in your LAN environment get listed:
+
+
+Tap on your server to select it.
+
+
+  Note: If you do not see the expected server, verify that the subnet where the shared folder is located is accessible by the subnet where the MVR is located.
+
+
+  The Server IP-Address will be inserted automatically.
+
+
+Type the properties of your Server and Shared folder for storage:
+
+
+User Name = Name of the logged-in user on this server
+
+Password = Password you are using to start this computer with the entered User Name
+
+Folder Name = Name of the shared folder
+
+Label = Server Name - Optional
+
+Domain = Optional
+
+
+You can set a video resolution limit for network storage and select “Only images.” This limitation will take influence general Archive Storage Settings.
+
+
+Tap on Test to check the settings. When your settings are correct and displayed as OK: Tap on Save to store your settings.
+
+Send to NAS Feature Description of MVR and MTR series devices
+Background: Hospital networks may limit network bandwidth per device to prevent situations where a few devices may occupy the entire bandwidth. Also, the network may not be available at the time of surgery. The solution is the "Send to NAS" feature.
+
+
+Setup "Send to NAS" options on Archive Settings / Export screen:
+
+
+Enable Export to NAS: 'Export to PACS/NAS' set to 'NAS'. When enabled, files saved to Internal Storage can be Sent to NAS. Note: Sending to PACS feature will be disabled. It is impossible to export studies from the Internal Storage to a shared folder (NAS) and PACS simultaneously.
+
+The optional 'Auto Send' feature will automatically send all Study files to NAS upon completing of a Study (End of Study).
+
+The optional 'Auto Delete' feature will automatically remove files from Internal Storage once they have been successfully Sent to NAS.
+
+An orange error message will be displayed at the top of the screen if there are incorrect settings.
+
+
+Details of the "Send to NAS" feature:
+
+
+Network Storage should be configured but turned OFF for the recording to enable the Send to NAS feature.
+
+Send to NAS performs a copy of a folder or files in the background from the Internal Storage to the Network Storage.
+
+Background copy is performed at a lower priority, can be interrupted by New Study or by power off, and will resume automatically.
+
+Auto Send to NAS will send all Study files as soon as Study ends.
+
+When the Auto Delete feature is enabled, the study folder will be deleted as soon as all Study content is sent to NAS.
+
+Sending the same CASE folder again will merge files in the existing folder.
+
+Sending the same files will overwrite existing ones.
+
+Sending a few files will create a new folder with the same CASE folder name.
+
+In the Export settings screen, select Export to NAS to enable this feature.
+
+Sharing the Internal Storage of MVR and MTR series device over network
+This feature enables SAMBA server on MVR device and allows access to the Internal Storage from remote PC. Sharing the Internal Storage is not available for MVR400 (MVR Lite) and MVR435. From the Settings / Advanced/ Storage Rules screen: Tap on Share Internal Storage to enable it; enter password. Address to connect to the internal storage from remote PC will be displayed. Restart MVR device by power off/on after changes been made. From the remote PC point file explorer to the MVR access point, ex: "\\192.168.2.125\storage"; enter credentials: user name: "root" and password for Sharing Internal Storage. Internal Storage of MVR device will appear as folder in PC file explorer.
+
+How to delete recordings?
+Recording can be deleted in the Review screen: select one or several recordings by tapping the right-top corner of the thumbnail and the Delete button. There is also a button to select or unselect ALL recordings. In the Archive screen, the Study folder can be deleted only when it is empty. This prevents the accidental deletion of many recordings at once. When it is necessary to delete a folder, delete all recordings first inside this folder, and then, after returning to the Archive screen, the Detele button will appear to delete the Study folder. There is no feature to delete all the recordings; however, in the Advanced Settings, available to the Administrator only, there is an option to format Internal Storage or USB Storage. The format will delete all the recordings within the selected storage. However, be careful not to lose the important recordings. Ensure all necessary recordings are properly archived—copied, backed up, sent to NAS, sent to PACS, or printed.
+
+
+Folder and File Naming Rules for MVR-series and MTR-series Video Recorders
+Folder Naming Rules
+Current Naming Rule (Stamp Folder Names: ON)
+Folders are named using timestamps and device or patient information to ensure proper sorting and identification.
+
+
+Without Patient ID:
+YYYYMMDD_HHMMSS_DeviceID
+Example: 20240521_161633_20bd4b50
+
+
+With Patient ID:
+YYYYMMDD_HHMMSS_PatientID_DeviceID
+Example: 20240521_162707_AV35674_20bd4b50
+
+
+Notes:
+
+
+YYYYMMDD_HHMMSS helps in sorting folders chronologically.
+
+DeviceID (8 hex digits) distinguishes recordings from different devices, which is crucial when multiple devices record to the same storage location.
+
+Always verify the device's date and time before starting a study.
+
+Legacy Naming Rule (Stamp Folder Names: OFF)
+Under the legacy system, folders were named sequentially:
+
+
+Folder Names: CASE0001, CASE0002, ..., up to CASE9999.
+
+After CASE9999, the folder name resets to CASE10000, and while you can capture images and videos, they cannot be reviewed from the archive.
+
+Subsequent studies after CASE9999 will overwrite previous CASE10000 contents.
+
+
+Recommendation: Use the current naming rule with Stamp Folder Names: ON to avoid overwriting and ensure archive functionality.
+
+File Naming Rules
+Each recording (image, video, or report) follows a specific naming convention for easy identification and management.
+
+File Name Structure
+PSSSS[–FFF].EXT
+
+
+P: One-letter prefix indicating the type and source of the recording.
+
+SSSS: Sequential Capture Number (0001–9999), reflecting the order of recordings.
+
+–FFF: Optional Fragment Number (001–999), used for long recordings or edited files.
+
+EXT: File extension (jpg, png, mp4, pdf, dcm).
+
+Prefix Definitions
+I: Image from the primary video channel.
+
+J: Image from the secondary video channel.
+
+V: Video from the primary video channel.
+
+W: Video from the secondary video channel.
+
+R: Imaging reports.
+
+
+Note: The primary and secondary channels can be swapped during recording. Recordings are made from the primary channel unless parallel recording is enabled.
+
+Sequential Capture Number
+Increments with each recording, regardless of type.
+
+Reflects the chronological order of all captures and recordings.
+
+Example Sequence:
+
+I0001.jpg
+
+V0002.mp4
+
+I0003.jpg
+
+R0004.pdf
+
+Fragment Numbers
+Purpose:
+
+
+Created when a recording exceeds the file size limit (e.g., 4GB).
+
+Saving edits of images or videos.
+
+Capturing images from recorded videos during playback.
+
+
+Format: Appended to the original file name with a dash, e.g., V0001–001.mp4.
+
+Recording Formats
+Image Formats: JPEG (.jpg), PNG (.png), DICOM (.dcm).
+
+Default image format is JPEG.
+
+Video Formats: MP4 (.mp4), DICOM (.dcm).
+
+Report Formats: PDF (.pdf), DICOM (.dcm).
+
+Examples
+Capturing Images and Videos
+Example: Capturing images before, during, and after video recordings.
+
+
+Capture an image
+→ I0001.jpg
+
+
+Start video recording
+→ V0002.mp4
+
+
+Capture images during recording
+
+
+Image 1 → I0003.jpg
+
+Image 2 → I0004.jpg
+
+
+Stop video recording
+
+
+Capture another image
+→ I0005.jpg
+
+Long Recordings (File Size Exceeds 4GB)
+When a video recording exceeds 4GB, new fragment files are created automatically.
+
+
+Example:
+
+
+Original video file: V0001.mp4
+
+Fragments:
+
+V0001–001.mp4
+
+V0001–002.mp4
+
+...
+
+Parallel Recording
+Recording from two video sources simultaneously (primary and secondary channels).
+
+
+Example:
+
+
+Start parallel recording
+
+
+Primary channel (foreground) → V0001.mp4
+
+Secondary channel (background) → W0001.mp4
+
+
+Capture images during recording
+
+
+Primary channel image → I0002.jpg
+
+Secondary channel image → J0002.jpg
+
+
+Stop recording
+
+
+Switch channels
+
+
+Secondary becomes primary, and vice versa.
+
+
+Start new recording
+
+
+New primary channel → V0003.mp4
+
+New secondary channel → W0003.mp4
+
+Appending to Closed Studies
+Add additional recordings to an existing study via the Archive.
+
+
+Example:
+
+
+Existing Files: I0001.jpg, V0002.mp4, I0003.jpg
+
+Append Actions:
+
+Capture image → I0004.jpg
+
+Start recording → V0005.mp4
+
+Stop recording
+
+Editing Images and Videos
+Edited files are saved with fragment numbers to preserve the original files.
+
+
+Example:
+
+
+Edit an image (I0001.jpg)
+
+
+Save edited image → I0001–001.jpg
+
+
+Edit the edited image
+
+
+Save as → I0001–002.jpg
+
+
+Capture image from video (V0002.mp4)
+
+
+Saved image → I0002–001.jpg
+
+
+Save a video clip from original video
+
+
+New clip → V0002–002.mp4
+
+Generating PDF Reports
+Reports are integrated into the study sequence with the prefix R.
+
+
+Example:
+
+
+Generate a report
+→ R0004.pdf
+
+
+Append to study and capture image
+
+
+New image → I0005.jpg
+
+
+Generate another report
+→ R0006.pdf
+
+Archiving and Copying
+Copying Options
+As PNG/MP4/JPG: Original file formats.
+
+As DICOM (.dcm): Converts files to DICOM format during copy.
+
+Copying to USB or NAS
+Folder Naming During Copy:
+
+
+If copying multiple times, a timestamp is appended to the folder name to prevent overwriting.
+
+Example: CASE0001–202405221435
+
+
+File System Considerations:
+
+
+For USB drives, use NTFS to support long folder names and large files.
+
+FAT32 may not support long names and large files (>4GB).
+
+
+Example: Copying as DICOM to USB
+
+
+Original Folder: CASE0001 with I0001.jpg, V0002.mp4
+
+After Copy:
+
+USB:
+
+CASE0001/I0001.dcm
+
+V0002.dcm
+
+
+Example: Copying as PNG/MP4/JPG to NAS with Stamp Folder Names ON
+
+
+Original Folder: 20240522_152927_20bd4b50 with I0001.png, V0002.mp4
+
+After Copy:
+
+NAS:
+
+20240522_152927_20bd4b50/I0001.png
+
+V0002.mp4
+
+Sending to NAS
+Transfers the study folder directly to the NAS without changing file formats.
+
+
+Example:
+
+
+Original Folder: CASE0001 with I0001.png, V0002.mp4, patient_info.json
+
+After Sending to NAS:
+
+NAS:
+
+CASE0001/I0001.png
+
+V0002.mp4
+
+patient_info.json
+
+
+Note: The patient_info.json file may not appear in some cases, depending on system settings.
+
+Important Notes
+Device Time Settings: Ensure the device's date and time are correct before starting a study for accurate chronological sorting.
+
+Storage Compatibility: Use appropriate file systems (e.g., NTFS) for external storage to handle long folder names and large file sizes.
+
+Sequential Number Limits: The Sequential Capture Number ranges from 0001 to 9999. Exceeding this limit may prevent further captures or recordings.
+
+Review Functionality: Certain folder naming conventions or copying methods may affect the ability to review studies on the device.
+
+Automation Reporting Feature
+The Automation Reporting feature is available on all MediCapture MVR and MTR device models. The recommended firmware version is FW 250924 or newer.
+
+1. Report Description
+Report Structure
+Report Header Image (Present only on the first page).
+
+Institution Name and Location. 
+
+Device Name, Model, Device ID, and Firmware Version of the device used to create the report.
+
+Patient Last and First name.
+
+Patient ID Number.
+
+Patient Gender.
+
+Patient Birth Date.
+
+Performing Physician.
+
+Study/Series Description.
+
+Case Folder Name (unique name constructed of the time stamp and Device ID).
+
+Report Creation Date.
+
+Current/Total Number of Report Pages.
+
+Image File Name.
+
+Image Captured Date.
+
+Image Notes. Created in Image Review.
+
+Image to Report. Annotation was done in Image Review.
+
+Report Notes. Ending notes. Written using Markdown.
+
+Institution Stamp or Physician Signature.
+
+Footer Text (present at the bottom of every page).
+
+
+The header table (items 2-12) will be displayed on every page to ensure traceability and prevent pages from being mixed up.
+
+
+2. Creating a Report
+
+To generate a new report, follow these steps:
+
+Go to the Archive and find the case folder you wish to use.
+
+Open the folder and select the images you want to include in the report. You can choose any number of images before or after entering the Report screen. You must select at least one image to create a report.
+
+Press the "Report" button.
+
+Adjust the general report settings as needed.
+
+Click "Save" to save the report as a PDF in the same folder, or click "Print" to send it directly to a connected printer.
+
+Note: To exit the print menu, either swipe left on the screen or choose "Cancel Print" and then press the "<" arrow button.
+
+Alternatively, in Archive mode, tap on the Report button to create a report that includes all images in the selected study folder.
+
+3. Report Customization
+You can customize the appearance of your reports using a variety of settings.
+
+
+General Settings
+These settings are adjusted after you enter the "Report" screen and apply to the current report you are creating.
+
+Page Layout: Choose the page orientation and the number of images per page.
+
+Portrait: 1, 2, 3, 6 (2 x 3), or 8 (2 x 4) images per page.
+
+Landscape: 1, 4 (2 x 2), or 9 (3 x 3) images per page.
+
+Page Size: Select a standardized size for your report and printing (e.g., ISO A4, Letter, ISO A3, ISO A5, ISO A6, or 100 x 148 mm (Hagaki).
+
+Mode: Choose one of three modes:
+
+Default: Standard report with all information.
+
+Anonymize: Excludes all patient information.
+
+Only images: The report contains only images with no accompanying text.
+
+Notes: Add or adjust existing notes in Markdown format. These notes will appear at the end of the report after the images (item 17).
+
+Report Settings and Presets
+
+The Report settings allow you to create a preset, so your preferred settings are applied to every future report. To access these settings, navigate to Settings > Archive > Report Settings, or from the "Report" screen, click the Report settings button in the top right.
+
+Report preview: View a simulated version of a report before it's finalized. Patient info excluded.
+
+Header image (1): Upload an image in JPG or PNG format from the root folder of the USB storage to be used as a header on the first page of the report. The recommended image resolution is around 2048 x 256, or an approximate aspect ratio of 8:1 to 10:1. The image will be scaled to fit the page width.
+
+Image at the end of the report (18): Upload an image from the root folder of USB storage to appear after the notes (e.g., a doctor's signature or hospital stamp). The recommended image resolution is around 2048 x 256, or an approximate aspect ratio of 8:1 to 10:1. The image will be scaled to fit the page width.
+
+Footer text (19): Write text with Markdown to be placed at the bottom left of each page.
+
+Notes text (17): Create a default Markdown note that will automatically appear at the end of every report. This note will be used as a template and can be edited for individual reports by tapping Notes.
+
+Page Layout and Page Size: These settings function the same as the general settings, but apply as a default for all future reports.
+
+Auto reporting: When enabled, a report will be created automatically after each study. You can choose to automatically save it as a PDF in the case folder or open the print directory. This feature is disabled by default.
+
+4. Notes
+To set up the institution name, Department name, Location, and Device title, navigate to Settings > System > Patient info.
+
+
+Following your medical institution's document formatting guidelines, you might need to format your document in Markdown. Here's a quick cheat sheet for common Markdown formatting.
+
+
+Accession Number auto-encoding
+
+
+Specification: automatic encoding of 12-character Accession Number
+1. Overview
+
+This document specifies the process for encoding a unique, time-sortable, 12-character alphanumeric code.
+
+Output Format: 12-character string.
+
+Character Set: A-Z, 0-9 (Base36).
+
+Uniqueness Source: Combination of a timestamp and a unique device identifier.
+
+2. Data Structure
+
+The code is derived from a 62-bit unsigned integer. The bits are allocated as follows:
+
+bit_fields:
+
+  - bits: 61..32
+
+    component: Timestamp
+
+    description: Seconds elapsed since the custom epoch.
+
+    bit_length: 30
+
+  - bits: 31..0
+
+    component: Device ID
+
+    description: The full 8-character hexadecimal device ID.
+
+    bit_length: 32
+
+
+Visual Layout:
+
+[ t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t | d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d ]
+
+(t = timestamp bit, d = device ID bit)
+
+3. Component Definitions
+
+Timestamp:
+
+Unit: Seconds.
+
+Epoch Start: 2025-01-01 00:00:00 UTC (Unix timestamp: 1735689600).
+
+Calculation: floor(current_unix_timestamp_seconds) - 1735689600.
+
+Lifespan: Approximately 34 years from the epoch start.
+
+Device ID:
+
+Source: A unique 8-character hexadecimal string (e.g., 1A2B3C4D).
+
+Representation: The full 32-bit integer value of the hexadecimal string.
+
+4. Encoding Procedure
+
+Calculate Timestamp: Get the current UTC time in seconds and subtract the epoch timestamp (1735689600) to get the 30-bit timestamp value.
+
+Get Device ID: Convert the 8-character hexadecimal device ID string into its 32-bit integer equivalent.
+
+Combine Values: Use bitwise operations to construct the 62-bit integer.
+
+combined_value = (timestamp_value << 32) | device_id_value
+
+Encode to Base36: Convert the combined_value to a Base36 string. The result must be uppercase.
+
+Pad Result: Prepend leading zeros (0) to the string until it is exactly 12 characters long.
+
+5. Example
+
+Given:
+
+Time: 2025-06-25 02:27:00 UTC (Unix: 1750895220)
+
+Device ID: AABBCCDD
+
+Execution:
+
+Timestamp Value: 1750895220 - 1735689600 = 15205620
+
+Device ID Value: 0xAABBCCDD = 2864434397
+
+Combine: (15205620 << 32) | 2864434397 = 65301827059633373
+
+Encode: (65301827059633373).toString(36).toUpperCase() = "1J3J4A25V5D"
+
+Pad: "01J3J4A25V5D"
+
+Final Code: 01J3J4A25V5D
+
+
+UPDATE / DEFAULT screen
+Location: Settings -> Advanced -> Update & Default "UPDATE / DEFAULT" screen offers a menu with the following features:
+
+
+Update firmware;
+
+Backup settings;
+
+Restore settings;
+
+Format USB Storage;
+
+Format Internal Storage;
+
+Reset settings to default;
+
+Reset device to factory default. To access the "UPDATE / DEFAULT" screen, you need to have Administrator privileges.
+
+Factory Reset Guide for MVR and MTR series devices
+General Information about Factory Reset of MVR and MTR series devices
+Performing a factory default reset resets all user and system settings to default. Factory Reset helps resolve system errors, before upgrading from an old Firmware version. It can also be done before transferring the device to another department or user to clear old settings, user accounts, and other configurations.
+
+
+Information and recordings on the Internal Storage of the MVR device remain preserved during the Factory Reset. When you need to clean the Internal Storage from the recordings, perform "Format Internal Storage" from the "UPDATE / DEFAULT" screen menu.
+
+Lost Passwords
+A deep factory reset is necessary when the Administrator password is lost, which locks the "Advanced Settings" section. MediCapture does not have access to user passwords, nor are there default passwords available. We are unable to assist customers in recovering passwords or user accounts. If only one User Account password is lost and the Administrator has locked the Advanced Settings with their password, a full factory reset is not required. The Administrator can log in to the MVR using their own password without requiring a User Name. From there, they can delete User Accounts, create new User Accounts, or disable the User Account function.
+
+Reset device to factory default procedure for MVR and MTR series devices
+From the "UPDATE / DEFAULT" screen menu select "Reset device to factory default".
+
+Confirmation dialogue will pop up. "Are you sure? You may want to backup settings first". If desired, tap the "Backup settings" button to save settings (including Activation Keys) to the USB Storage, because Reset device to factory default procedure will erase all settings, including Activation Keys.
+
+After Reset contirmation, device will automatically restart, floating circles will be displayed during the reset procedure, and device will restart again to a normal working mode. The process may take 3-5 minutes to complete.
+
+Once back to working mode, you may restore saved settings from the USB Storage.
+
+It is recommended to restart device after restoring settings.
+
+Deep Factory Reset Procedure for MVR (MVR420), MVR Pro (MVR409) and MVR Lite (MVR400) devices
+Deep Factory Reset can be performed when settings menu is not available due to the lost passwords and other unexpected condition.
+
+
+Turn MVR device with the main switch on the back panel.
+
+Press and hold the Video Recording button on the front (middle button).
+
+Hold down the button on the front and turn on MVR device with the main switch on the back panel.
+
+Hold the button until the front rings stop blinking (after approx. 15 seconds).
+
+MVR Maintenance screen will be shown.
+
+
+Navigation on the MVR Maintenance screen:
+
+
+Use the same Video Recording button to navigate the cursor line to: Reset to Factory Defaults
+
+Press the Patient button to confirm.
+
+Use the Video Recording button again to navigate the cursor line to: Yes
+
+Press the Patient button to confirm and activate the reset.
+
+
+MVR device is re-booting with factory default settings (time approx. 50 seconds).
+
+How to upgrade/update an MVR and MTR Recorder
+Upgrading the MVR and MTR Recorder to new firmware is a quick and easy procedure, taking only a few minutes. You'll need a USB stick and the new firmware file. Your settings and activated keys will remain unchanged.
+
+
+The terms "update" and "upgrade" are interchangeable. Some newer firmware versions may include additional features, making them an "upgrade" by providing extra functionality to the MVR device.
+
+Getting the latest MVR firmware for MVR and MTR series devices
+Get the latest MVR firmware, with free improvements and new features, from your sales representative or directly from MediCapture. Request it from the https://medicapture.com/support/ website or contact your regional MediCapture office. Firmware is delivered as a digital download, in a single file of approximately 900MB in size.
+
+
+The latest MVR firmware version is 231225.
+
+Check the actual firmware version of MVR and MTR series device
+• Switch on your MVR device. • Once the boot sequence has been completed, access the INFORMATION page by using the internal touchscreen, monitor or a connected USB mouse. Tap on the icon. You can see the actual firmware version, e.g., APP=230220. • If the latest MediCapture Firmware Update Report recommends updating this firmware version, please continue with steps 2 or 3.
+
+Upgrade the firmware of MVR and MTR series device using USB flash drive stick
+• Create an “Upgrade Flash Drive.” We recommend using an empty USB stick. • Download the upgrade file from the MediCapture customer's portal or from the link, provided by your sales representative. • Download the latest firmware and copy it to the USB Flash Drive. The MVR or MVR Pro update file is MVR409-yymmdd.upd where “yymmdd” indicates the firmware version. For MVR Lite, the update file is called MVR405-yymmdd.upd. MVR435 update file names as MVR435-yymmdd.upd. Files with wrong name or name structure will be rejected. • Insert the USB Flash Drive into the front panel. • Access the INFORMATION screen again and tap on the icon for SETTINGS. • Go to Settings/Advanced/Update & Default. • Tap the “Update” button in the section Update firmware and follow the instructions. • Please re-confirm that you are using the correct firmware version when it is displayed. During the upgrade, the MVR requires USB removal. Follow on-screen instructions. After upgrade, that may take 3-5 minutes, MVR reboots automatically. Wait for startup screen, then wait 2 minutes. Turn recorder off and on using back panel switch. Once device is in the normal working mode - new firmware is now ready for use.
+
+
+Access the INFORMATION screen once more to check the new firmware version has been installed.
+
+Check your system settings for Time zone, Date, and Time. Settings/System/Date and Time.
+
+Check if your (optional) activation keys are unlocked. Settings/Advanced/Activation key.
+
+
+When error happened during update:
+
+
+Do not worry, your data is safe and MVR device will stay with the current firmware.
+
+Make sure that firmware update file is copied to USB stick without errors; download firmware update file again; format USB flash drive or use another USB flash to ensure firmware file is not corrupted.
+
+Upgrade firmware of MVR series device from remote PC using MVR Remote Configuration
+Open a web browser on your PC or portable device and type in the device address, shown on MVR Remote Access Settings, example: http://192.168.1.233:3333/config and enter password.
+
+
+Check your actual installed firmware version by going to ►Information ►System Information.
+
+
+Start update/upgrade process from ► System ► Upgrade Firmware tab; select firmware file and confirm update. Sending the firmware file to your MVR may take a few minutes. Once the upgrade screen on your device changes back to the login screen, the remote update procedure of the recorder has started. Wait 5 minutes, and log in again to verify that the new firmware version has been installed.
+
+USER ACCOUNTS for security protection of MVR and MTR series devices
+MVR Medical Video Recorder implements Role-Based Access Control (RBAC) to the device to protect access to data over the hospital networks and to the local recordings. MVR devices can be locked with User accounts for advanced device protection and data security of recorded studies.
+
+
+Warning: Once user accounts are enabled, you must know your User Names and passwords to operate the MVR device. MediCapture company has no access to user account information, and there is no “Master Password” existing. If you do not remember your user account information, MVR device requires a complete setup to factory default settings, meaning much of your information will get lost.
+
+
+As a first action, it is advised to create an administrator account to log in at any time.
+
+
+Go to the User accounts page: ➤ Settings ➤ Advanced ➤ User Accounts
+
+Enable User accounts
+
+Enter the User Name
+
+Enter a password for this User account
+
+
+As of firmware release FW220602, User Roles can be assigned. The ADMIN role must be assigned to at least one created User. Different user account levels (roles) protect Settings and Advanced Settings from misuse. Migration from previous MVR software: All existing users are assigned USER roles when an update is installed. An administrator can configure users in Advanced settings, where adding, deleting, renaming users, and changing their roles is possible.
+
+Roles:
+ADMIN: User that has access to all parts of the MVR. At least one user account must be created as ADMIN. MVR checks this and ensures that this condition is met. Only ADMIN has access to Advanced Settings, including setup screens for Connections, Storage Rules, Update and Default, User Accounts, Activation keys, Audit Trail.
+
+USER: Standard user. Limitation: Access to Advanced Settings is blocked.
+
+GUEST: Limited to access Archive for reviewing only.
+
+
+All user roles allow connecting to the device stream using a web browser. Emergency login is a unique role called “Break the glass.”: Anybody who can log in from the home screen can create a study but has no rights to do anything else. Emergency User is not configurable.
+
+Starting an MVR and MTR recorder with a User Account:
+Users can LOG IN with their User Name and Password. If the User account information is lost, the administrator can log in with his password and manage the list of users.
+
+Security feature “Break The Glass” of MVR and MTR series devices
+From Firmware 210126. When user accounts are enabled on the MVR, this new feature allows emergency studies to be started without user login and activated in case of emergency if a password is lost or unavailable. Tap the icon at the top right of the login screen with a cross to start a Study. The Remote App’s Emergency button is available ONLY during direct USB tethering. This function is limited only to the execution of a study; archive information and settings can NOT be viewed. Patient information can be edited afterward using proper login.
+
+Advanced Security features of MVR and MTR series devices
+From firmware 210126: New section “Security” in Advanced Settings for Administrators. Passwords are crucial for safeguarding hospital information systems. It's vital to create secure passwords (minimum eight characters, mixing uppercase and lowercase) and manage them appropriately. The Chief Information Officer enforces these standards. MediCapture, Inc. isn't liable for password misuse by unauthorized parties accessing your LAN or Wi-Fi.
+
+Renew password
+Renewing the password is an optional setting, after which period the user is notified to change the password for his User Account. The MVR only reminds to renew the password but does not force a block of user accounts. Range: From 1 week to 6 months. Default: Never.
+
+Strength of password
+When entering the password for a User Account, the user gets information about the password’s strength. The MVR only informs about the strength but does not block a weak password. Actual enforcement of password strength is the responsibility of the administrator.
+
+Inactivity Timeout.
+The period after which the MVR switches to screen saver mode. Screen saver mode is a black screen with a digital clock showing current time. Clock position is randomly changed to prevent screen burn-through. To quick screen saver mode - tap screen or hit any key. Logged-in user will need to enter his password again. Inactivity times is disabled during the active Study. Range: From 1 minute to 60 minutes. Default: 10 minutes.
+
+Security Feature: Audit Trail for MVR and MTR series devices
+Serves two purposes: compliance with specific regulations, and providing better data (log file) for customer support requests.
+
+Records (logs) all critical events in the device and necessary user actions.
+
+The database keeps the last 5,000 events; older events are automatically deleted.
+
+Audit Trail may be accessed from the Advanced Settings screen, Audit Trail Box.
+
+To comply with common security regulations, Advanced Settings should be locked under the admin password, and only one admin user can access Audit Trail.
+
+Access to the Audit Trail is limited to the local user (using device UI) and remote admin through the web configuration interface.
+
+Locally (at the device), the audit log may be filtered, viewed, exported to USB flash, and erased.
+
+From the remote web interface, the audit log can be exported and erased.
+
+Remote App will not provide access to the Audit Trail; however, all actions performed from the remote App will also be logged.
+
+No patient information is saved in the log.
+
+Network Settings for MVR and MTR series devices
+Wired LAN Settings / Network Settings for MVR and MTR series devices
+General preparations
+Connect the network cable (RJ45) to the LAN connector on the back.
+
+For MVR Lite, a USB-LAN adapter is required.
+
+General Network Settings
+Go to the Network SETTINGS page.
+
+Network settings are automatically assigned when MVR is set to Auto IP settings. It is recommended to apply these settings permanently.
+
+Change to Manual IP setup and tap on Set.
+
+Enter manual IP settings if needed and confirm by tapping on Set.
+
+Control IP settings on the Information screen.
+
+Wi-Fi for MVR series devices
+General Preparations
+Connect the supplied Wi-Fi antennas to the rear connectors "WIFI" and "WiFi/BT".
+
+Turn on your Wi-Fi access point (Wi-Fi Router) and ensure you know the password.
+
+Activating Wi-Fi
+Go to the Wi-Fi SETTINGS page.
+
+Enable Wi-Fi and wait the list of the access points to be populated.
+
+If your Wi-Fi access point is not listed, tap on the search icon.
+
+Once your access point is listed, tap on it.
+
+Type the correct password, paying attention to uppercase and lowercase letters. After successful connection, the Wi-Fi IP address of your MVR device will be displayed. Password will be saved automatically, WiFi will reconnect automatically after the next power on.
+
+WPA2-Enterprises / Setting-up secured Wi-Fi CERTIFICATES on MVR series devices
+WPA2-Enterprise is more secure than WPA2-Personal and provides personalized login and personalized encryption.
+
+To log in, the user must use their identity and password.
+
+Additionally, the IT Administrator may create optional security certificates. These certificates should be installed on the MVR device later.
+
+Preparations and equipment to be used to install security certificates
+
+Equipment to be used: External USB keyboard, USB stick (empty).
+
+Upgrade to the latest firmware version before beginning.
+
+Obtain the Wi-Fi MAC address: open the Information page, Tap on the MVR device icon to see details about MAC addresses.
+
+Creating the certificates for encryption
+
+Follow the requirements of your local authentication server.
+
+MVR supports security standard WPA2, which fully implements the IEEE802.11i security standard with CCMP/AES encryption. Certificates need to be created by the I.T. Administration, following the requirements of the on-sight external authentication server (Remote Authentication Dial-In User Service = RADIUS).
+
+Accepted file formats: .pem for the "CA certificate" and .p12 for the "User certificate."
+
+Installing the WiFi certificates on MVR series devices
+
+Copy the certificates onto an empty USB stick and connect it to the front USB port of MVR.
+
+Goto Settings / Connections / WiFi screen and make sure WiFi is connected. Set MVR in Test mode by pressing Ctrl + W using the external USB keyboard.
+
+Tap on ADVANCED (in right upper corner):, then tap on "Install certificates". The file browser opens. Select your USB stick and search for the folder with certificates for installation.
+
+Select the CA certificate first and name it.
+
+Select and install the User certificate, typing and naming the password.
+
+After the certificates have been installed, connect to your Wi-Fi Enterprise network. Tap on ESC on your USB keyboard to return to the WLAN screen. Select your network from the list of the available networks.
+
+Follow the procedure obtained from your IT Administrator to connect. Example:
+
+Choose the EAP method. It depends on the requested settings of your Authentication Server, (In this example “TLS”).
+
+Scroll down (“ ↓“ key). After selecting EAP method, Phase 2 authentication.
+
+Select a certificate from the list of the installed certificates, if required.
+
+Type your identity. The identity is your User Name for the user which was created on your local authentication server (Windows 2012 server or other software used to create the certificate).
+
+Tap on CONNECT. Your secured Wi-Fi connection gets established.
+
+Following information need to be provided to the user: User Account. User Name and Password; Connection instructions. Your personal instructions, after you have successfully tested the connection of MVR / MVR Pro to your secured Wi-Fi.
+
+Connecting MVR series device to a hidden SSID
+To connect to a hidden SSID, you will need to connect a USB keyboard to the MVR. From the WIFI SETTINGS screen, as shown in your image, press CTRL + W on the keyboard. You will now see the Android WLAN Screen. Tap on Add Network and enter your SSID details. Press escape on the keyboard several times to escape out of the Android menus back to the MVR Pro screens. The new SSID settings will be retained when you power off and on the unit.
+
+Remote Access to MVR and MTR series devices
+MVR device can be controlled remotely from the external PC browser to perform "MVR Remote Configuration" by administrator IT personel; from the remote tablet or smartphone with the MVR Remote App installed for users and administrators; from remote IT device via APIs. Remote Access is disabled by default and may be enabled from Settings / Connections / Remote Access screen: tap slider to enable Remote Access and enter password. When enabled, device can be accessed using IP address and port 3333. Full URL is shown on the screen. Note to MVR Lite (MVR400): For remote access to MVR Lite (MVR400), the Connect Package needs to be installed (consisting of the USB-LAN adapter and Network activation key).
+
+MVR Remote Configuration of MVR and MTR series devices
+MVR Remote Configuration is intended for use by IT administrators and allows to browse all settings and manage files on all storages (watch, delete, download) by using a Web browser. You can also update the MVR firmware remotely. Activate Remote Configuration at ► Settings ► Advanced ► Connections ► Remote Access screen: tap slider to activate, create new password, node IP address of the device. Press the home button to close the Settings menu. The MVR needs to be on the home screen for remote access. Connect your PC or portable device to the same LAN or Wi-Fi as your MVR recorder. Connection can only be established when your MVR is in idle – at the home screen. The connection cannot be started during an open study, when the Archive is open etc. Open a web browser on your PC or portable device and type in the device address, shown on MVR Remote Access Settings, example: http://192.168.1.233:3333/config and enter password. Once the MVR recorder is under Remote Configuration, it cannot be operated and will show a corresponding message. Logout the MVR Remote Configuration when you finished your tasks. The MVR recorder can now be operated normally again. Note: You cannot log in to your MVR when it is in use for recording. Any active study (recording session) must be closed and finished first. Remote access is granted when the MVR displays the home screen, i.e., the start screen after booting.
+
+Remote configuration troubleshooting of MVR and MTR series devices: Login after firmware upgrade is not possible anymore.
+
+Reason: Your MVR recorder is set to Auto-IP in Network settings. After the firmware upgrade, the device address for Remote Access changed.
+
+
+Check the new Device address.
+
+Go to: ► Settings ► Advanced ► Remote Access If you want your MVR recorder to operate with a fixed device address, please change the network settings from Auto IP to Manual IP.
+
+Go to: ► Settings ► Advanced ► Connections ► Network
+
+Obtain your IT administrator’s device IP address and enter it in the Manual IP Setup section.
+
+Press Set to confirm.
+
+MediCapture MVR and MTR Devices OS Protection
+Proprietary Operating System and Architecture of MVR and MTR series devices
+Proprietary iMave operating system, based on Android, with all unnecessary components removed.
+
+ARM64 CPU architecture, which is not compatible with x86 PC architecture.
+
+Closed System and Application Security of MVR and MTR series devices
+Closed system (no direct access to the operating system):
+
+no possibility for either users or IT administrators to gain access to the operating system;
+
+there is no "IT administrator" login or system privilege;
+
+there is no possibility to install additional software and/or change or modify existing software modules which might introduce viruses or malware to the system or damage it;
+
+it is not possible to execute any files on an MVR device that might act as malware as the user and IT administrator have no access to the operating system or file manager;
+
+external storage devices, including USB storage, are mounted without permission to execute any file. (This is a distinctive feature of the Linux OS that is not available in Windows OS)
+
+the application runs in full-screen mode with no access to the generic OS desktop;
+
+no system hotkeys are accepted, and the application processes all key events;
+
+no system-critical tools like Task Manager exist on the MVR OS; all have been removed;
+
+the application allows file manipulation only under the intended use; there is no generic file manipulation available;
+
+the application does not execute or allow the execution of any file.
+
+OS and application files are on the internal, non-removable eMMC flash storage with specific proprietary partitioning.
+
+System Partitions and Storage of MVR and MTR series devices
+System partitions are read-only and are protected from any alteration by the user or IT administrator. There is no way to change the partitions' read/write permissions under any privilege.
+
+OS and application always boot fresh in the "factory mode," retaining only the application's user settings.
+
+User files can be images or videos only. Unlike the OS and applications files, user files are always located on a storage device. No mixup of system and user files on the same storage device.
+
+Boot Security of MVR and MTR series devices
+There is no BIOS on the MVR device. The OS bootloader is encrypted and signed with the proprietary key. Booting from an external device is not possible. Booting of the unauthorized unsigned firmware will be rejected.
+
+Firmware and Remote Access for MVR series devices
+Firmware is a single file, in proprietary format, signed with a security key. Unauthorized unsigned firmware is rejected during the update. Firmware includes OS and application, updating all device software features at once. No separate software component updates are possible.
+
+Remote access to the device is disabled by default.
+
+MVR devices have no default user, administrator, or factory passwords. Once the remote access feature is enabled, a new password must be assigned. There is no procedure to recover lost passwords.
+
+User Accounts and Administrator Privileges for MVR and MTR series devices
+Assign administrator name and password upon enabling User Accounts feature. Administrator privileges allow operation of Advanced Settings in application menu, without access to OS partitions or files, altering file permissions, or OS administration rights. Administrator has specific rights within application settings only.
+
+The administrator has the regular "user" rights from the OS point of view.
+
+AKDICOM Feature and Activation Key for MVR and MTR series devices
+This document describes DICOM (Digital Imaging and Communications in Medicine) features for the MediCapture MVR-series medical video recorders.
+
+Product Information
+Product name: AKDICOM
+
+Product type: digital code for feature activation
+
+Product Description: activation key for DICOM worklist import and PACS export
+
+Device grade: none
+
+Medical device classification: none
+
+Compatibility
+Compatible MediCapture MVR-series and MTR-series of medical video recording devices.
+
+Compatible devices of other brands: none
+
+The activation key is specific to the particular MVR device identified by the Device ID and will not work with other devices.
+
+Ordering Process
+Ordering process: can be ordered with a device or ordered any time afterward
+
+Required information: MVR device Serial Number and Device ID which is shown on Information screen.
+
+Ordering code: AKDICOM
+
+Package content: 8-digit hex code number
+
+Price: Contact MediCapture
+
+General functional description of the DICOM Software for MVR series devices
+DICOM connectivity features can be enabled for MVR-series devices. When the MVR device is connected and configured to a worklist server, you can retrieve the worklist designated to your MVR / MVR Pro every time you start a new patient study. After selecting the correct worklist item, check and verify the worklist data to start your recording session. All data obtained from the worklist will be embedded into captured images and recorded videos. Capture images and videos as usual on the live screen. The entire Study will be recorded in the Internal Storage.
+
+
+Images, videos, and PDF reports can be sent to PACS manually or automatically. The acceptance of file types and formats depends on the external PACS server settings and can be tested from the PACS server setup screen.
+
+
+DICOM setup and testing screens are available without activation to ensure all DICOM features can work in specific local environments. This makes it possible to try and test DICOM features before purchasing and obtaining a DICOM activation key for MVR. It is possible to set up a PACS server and send testing images to PACS; it is possible to set up the Worklist server and Test it without DICOM activation. Regular Send to PACS and Worklist Search will become available after DICOM activation. DICOM Activation Key (AKDICOM) can be purchased from authorized distributors or the MediCapture online portal.
+
+Activation and Settings of DICOM Features for MVR and MTR series devices
+Installation: not required.
+
+Users must have Administrator privileges to activate and set up DICOM features.
+
+Internal Storage must be enabled for the recorder to store study files and later export them to PACS. To enable Internal Storage, go to the Storage Settings screen and set the desired video resolution next to 'Internal Storage'. If you prefer not to send videos to PACS, select the 'Only images' option.
+
+Ensure that the MVR device is connected to the network. The network connection status can be viewed on the Information screen.
+
+On the Patient Info Settings Screen, change 'Patient Info' from 'Off' to 'Human'. Then, enter the Hospital Name, Department Name, Location, and Device Title. You may need to consult with your hospital's IT department to determine the specific values for these fields.
+
+If you wish to enable the Worklist Search function, turn it on in the Patient Info Settings Screen and proceed with the Worklist server setup.
+
+Enable DICOM Export to PACS On Archive Settings / Export screen.
+
+Perform PACS Server Setup and Test.
+
+DICOM Activation should be done to use full PACS or Worklist features. To Activate DICOM, in the Advanced Device Settings Activation Keys menu, enter the digital code to activate DICOM features; The word 'Unlocked' will be displayed next to 'DICOM software' in case of success; feature work automatically after activation.
+
+All DICOM features are ready for use.
+
+Advantages
+Advantages of upgrading: gain access to the DICOM features to integrate with the hospital information and imaging systems
+
+Advantages for reliability: can be re-activated at any time without extra charge
+
+Features
+PACS Server Setup screen and Worklist Setup screen are available for testing without AKDICOM activation;
+
+Features available after AKDICOM activation: Send to PACS button in Archive mode, Save as DCM option in Copy to USB dialogue, Worklist Search dialogue, Worklist selection menu;
+
+Certification and compliance standards medical equipment safety: not applicable;
+
+Certification and compliance standards for electromagnetic compatibility EMC: not applicable;
+
+Other certification and compliance standards: not applicable.
+
+DICOM Conformance of MVR and MTR series devices
+Implementation Class UID: 1.2.826.0.1.3680043.9.7572.1.0 
+
+Implementation Version Name: MEDICAPDCM 1.1 
+
+Maximum PDU size: 65536 bytes 
+
+Storage SCP outgoing local port number: 3383
+
+List of supported Transport Streams (TS)
+JPG: JPEG Baseline, UID: 1.2.840.10008.1.2.4.50 
+
+H264: MPEG-4 AVC/H.264 High Profile / Level 4.1, UID: 1.2.840.10008.1.2.4.102 
+
+HEVC: HEVC/H.265 Main Profile / Level 5.1, UID: 1.2.840.10008.1.2.4.107 
+
+IVRLE: Implicit VR Little Endian, UID: 1.2.840.10008.1.2 
+
+EVRLE: Explicit VR Little Endian, UID: 1.2.840.10008.1.2.1
+
+List of supported SOP Classes (YAML)
+supported_sop_classes:
+
+  - sop_class_name: Verification
+
+    sop_class_uid: 1.2.840.10008.1.1
+
+  - sop_class_name: Secondary Capture Image Storage
+
+    sop_class_uid: 1.2.840.10008.5.1.4.1.1.7
+
+  - sop_class_name: Multi-frame True Color Secondary Capture Image Storage
+
+    sop_class_uid: 1.2.840.10008.5.1.4.1.1.7.4
+
+  - sop_class_name: VL Endoscopic Image Storage
+
+    sop_class_uid: 1.2.840.10008.5.1.4.1.1.77.1.1
+
+  - sop_class_name: Video Endoscopic Image Storage
+
+    sop_class_uid: 1.2.840.10008.5.1.4.1.1.77.1.1.1
+
+  - sop_class_name: VL Photographic Image Storage
+
+    sop_class_uid: 1.2.840.10008.5.1.4.1.1.77.1.4
+
+  - sop_class_name: Video Photographic Image Storage
+
+    sop_class_uid: 1.2.840.10008.5.1.4.1.1.77.1.4.1
+
+  - sop_class_name: VL Microscopic Image Storage
+
+    sop_class_uid: 1.2.840.10008.5.1.4.1.1.77.1.2
+
+  - sop_class_name: Video Microscopic Image Storage
+
+    sop_class_uid: 1.2.840.10008.5.1.4.1.1.77.1.2.1
+
+  - sop_class_name: Encapsulated PDF Storage
+
+    sop_class_uid: 1.2.840.10008.5.1.4.1.1.104.1
+
+  - sop_class_name: Modality Worklist Information Model - FIND
+
+    sop_class_uid: 1.2.840.10008.5.1.4.31
+
+Presentation Context Table (YAML)
+presentation_context:
+
+  - abstract_syntax: Modality Worklist Information Model - FIND
+
+    transfer_syntaxes:
+
+      - IVRLE
+
+    role: SCU
+
+  - abstract_syntax: Verification
+
+    transfer_syntaxes:
+
+      - IVRLE
+
+    role: SCU
+
+  - abstract_syntax: Secondary Capture Image Storage
+
+    transfer_syntaxes:
+
+      - JPG
+
+      - EVRLE
+
+    role: SCU
+
+  - abstract_syntax: Multi-frame True Color Secondary Capture Image Storage
+
+    transfer_syntaxes:
+
+      - H264
+
+      - HEVC
+
+    role: SCU
+
+  - abstract_syntax: VL Endoscopic Image Storage
+
+    transfer_syntaxes:
+
+      - JPG
+
+      - EVRLE
+
+    role: SCU
+
+  - abstract_syntax: Video Endoscopic Image Storage
+
+    transfer_syntaxes:
+
+      - H264
+
+      - HEVC
+
+    role: SCU
+
+  - abstract_syntax: VL Photographic Image Storage
+
+    transfer_syntaxes:
+
+      - JPG
+
+      - EVRLE
+
+    role: SCU
+
+  - abstract_syntax: Video Photographic Image Storage
+
+    transfer_syntaxes:
+
+      - H264
+
+      - HEVC
+
+    role: SCU
+
+  - abstract_syntax: VL Microscopic Image Storage
+
+    transfer_syntaxes:
+
+      - JPG
+
+      - EVRLE
+
+    role: SCU
+
+  - abstract_syntax: Video Microscopic Image Storage
+
+    transfer_syntaxes:
+
+      - H264
+
+      - HEVC
+
+    role: SCU
+
+  - abstract_syntax: Encapsulated PDF Storage
+
+    transfer_syntaxes:
+
+      - IVRLE
+
+    role: SCU
+
+
+Images that have been captured in the JPEG image format will be sent using JPG Transport Stream (TS); if server does not support JPG TS, images will be automatically converted into RGB and will be sent using EVRLE TS. Images that have been captured in the uncompressed PNG format, will be sent using EVRLE TS uncompressed. If the image transfer fails, the Storage SCU AE will not retry this send job automatically, user will be notified about the reason of the failure and may retry to send manually. Acquired images will always use the Study Instance UID specified for the Scheduled Procedure Step (if available). When Study Date and Study Time is present in the WL item (meaning that Study has been started already), it will be used in the acquired images; when absent - Study Date and Study Time will be generated automatically. If an acquisition is unscheduled, a Study Instance UID, Study Date and Study Time will be generated locally.
+
+
+All recordings are traceable to the actual device used to acquire these recordings. The Device ID is saved in the DICOM tag (0018,1003), and the device firmware version is saved in the DICOM tag (0018,1020). EXIF information of the captured images and video recordings also contains the Device ID and device firmware version.
+
+
+The device's Serial Number is only printed on the label and is not traceable in software; use the Device ID, which is also printed on the supplementary device label, for traceability instead.
+
+DICOM User Guide for MVR and MTR series devices
+Worklist Server Setup Guide for MVR and MTR series devices
+On the Worklist Server Setup screen:
+
+
+All fields on the left side of the screen are required: Server IP, Server Port, Server Title (Called AET), and Device Title (Calling AET). Consult with your hospital's IT department to determine the specific values for these fields.
+
+
+The Default Character Set is the expected character set used to process incoming worklist results when the Worklist server does not provide the actual character set being used. If you are unsure about what to select, keep the default value of UTF-8. The available settings for the Default Character Set include: UTF-8 (ISO_IR 192), ISO-8859-1 (ISO_IR 100), EUC-KR (for Korean), Big5 (for Traditional Chinese), 'Do not use' (when an older Worklist server does not recognize the Default Character Set).
+
+
+All fields on the right side of the screen are matching keys for the Broad Worklist query. These keys help limit the Worklist search functions to this specific device (station), modality type, and scheduled date.
+
+
+When 'Match by: Scheduled Device Title' is enabled, the Worklist server will filter scheduled procedures only for this device (this modality).
+
+
+Set the Modality to one of the following: XC (External-camera Photography), ES (Endoscopy), GM (General Microscopy), or SC (Secondary Capture). It is recommended to use the same modality for Export to PACS. Note that the Modality obtained from an actual Worklist search will overwrite the Modality value for a single Study.
+
+
+Select a scheduled date to narrow the search to the most relevant results. Ensure that the device's date, time, and time zone are set correctly for this feature to work properly. Several options are available:
+
+
+"Today" will filter procedures scheduled for today and tomorrow.
+
+"Today and newer" will filter results for today and all other dates scheduled in the future 10 days.
+
+"Recent" will use scheduled dates starting from the past 2 days and 10 future days.
+
+"Last week" includes today and the previous 6 days.
+
+"Last month" includes today and the previous 30 days.
+
+
+Note: For testing purposes, start with all matching keys disabled or set to "Any".
+
+
+Tap the Test button to verify the connection with the Worklist server after all parameters have been set. A pop-up window titled "Success" will be displayed when a connection to the Worklist server can be established. Additionally, the Worklist server UID and version information will be shown - provide this information to customer support if you experience compatibility issues with this Worklist server. Tap the "Worklist search" button to verify the settings of the 'Match by' filters. If you see an 'Empty list,' it means that the Worklist server is working but found no matching results. You may temporarily disable filters to make sure that worklist items can be received: turn off 'Scheduled Device title (AET),' clear the 'Modality' field, select 'Any' for the 'scheduled date,' and tap "Test" and perform the Worklist search again. Normally, the first few items will be displayed, followed by the number of remaining list items, for example: '(23)'.
+
+
+Important: Remember to save your settings by tapping the Save button!
+
+Worklist User Guide for MVR and MTR series devices
+At the start of a study, a pop-up 'Worklist search' window will be displayed. Tapping on "Search" – with all fields empty – will search the complete worklist. Note: The Worklist search is limited in the Worklist Server Settings to a specific AET and/or time frame, such as 'Recent'. The MVR device limits the maximum number of Worklist entries to 200. Retrieved results are shown in a table with fields: Accession Number, Patient ID, Name, Scheduled Procedure Date, and Name. You can select a patient from the worklist now or filter a patient using different search criteria. Simply start typing the patient's name or ID, and the list will be filtered down in real time.
+
+
+If you know the specific criteria of the patient information, you can narrow down the worklist search from the server. This is recommended practice, and it is generally suggested to narrow the patient list to under five items to reduce operator mistakes.
+
+
+You can use five search criteria (fields) for specific details of the Worklist Query: Accession number, Patient name (last), Patient ID, Procedure ID, and Scheduled physician. Depending on the actual WL (WorkList) server restrictions, some fields may accept only the exact complete matching of characters (Accession number, Patient ID, Procedure ID). In contrast, other fields can use “wild card” matching, like Patient name, Scheduled physician. For example, “Cl_” in the Patient name field will match the patient with the last name starting from “Cl_”, like “Cleo”, “Claudia”, “Clark”, etc. Note that input text may be case-sensitive depending on the actual WL server, so “cl_” may lead to no results, while “Cl_” will list the actual WL items.
+
+
+Tap on a worklist item to get to the 'Verify Data' screen, which displays the complete set of information for the selected patient. Editing information obtained from the worklist is not allowed. You can ADD missing essential fields – like birth date, Patient-ID, Gender etc. Editing Exceptions:
+
+
+The scheduled Performing Physician is set as Performing Physician and can be edited in case of changes.
+
+Referring Physician´s name and Anatomic Region Information for the procedure. See detailed information about the Anatomic Region below.
+
+The Scheduled procedure step description
+
+
+VERIFY Scheduled Procedure Step Status. It may be that this procedure has been already started at a different station, cancelled, or the patient is not present for this procedure. SCHEDULED, ARRIVED, or READY, will be displayed in normal blue color. Other Status codes, like STARTED, DEPARTED and any other undefined code will be displayed in orange color and should serve as a warning to the operator.
+
+
+Note that Modality for the Scheduled procedure step will overwrite the Modality selected in the DICOM format settings. This situation should be avoided. Always set the correct Modality as a matching key in the Worklist server setup (except for demo and testing). (Settings → System → Patient Info → Worklist server setup). When MVR Pro does not support the Modality from the WL item, it will be replaced with the “universal” modality SC (Secondary Capture). This fact will be highlighted in orange and should serve as a warning to the operator.
+
+
+Please note: You must verify the data to the patient’s identity. Scroll down the screen and tap on Start to begin your recording session.
+
+
+Emergency and unknown patients (not listed on the worklist) can be entered manually. In this case, tap the Unscheduled button in the Worklist search window. Manual entering of an unscheduled patient: The on-screen keyboard will pop up when you tap on a field. Tap on Start to start the new study.
+
+Anatomic Region usage for MVR and MTR series devices
+Anatomic Region must be specified for several Visual Light modalities, including Endoscopy (ES). Anatomic Region fields are available for entering Patient Information: Worklist selection and manually entered patient data. Anatomic Region consists of three fields: The actual anatomic region, Two fields for optional modifiers. All three fields offer input values of fixed lists predefined in the DICOM specifications. Anatomic regions specified in DICOM CID 4040 for Endoscopy. Modifiers specified in DICOM specification table CID 2.
+
+
+Tap on the input field for Anatomic Region. Please note the smart filtering as shown in the example. Typing “C” opens the dialogue with regions that contain a “C”. When a single item is detected during typing, it will be selected automatically. Tap on the item to select if from the list. Continue by selecting optional Modifiers which may define a specific area of the Anatomic Region. Intelligent features: The examined body part will be generated automatically based on the Anatomic Region. It will be displayed under the Anatomic Region and embedded into image and video files. If one of the Modifiers is selected as “Left” or “Right”, the corresponding “Laterality” (L) or (R) will be generated automatically. It will be displayed under the first Modifier and embedded into image and video files.
+
+DICOM Tags and Fields included to MWL Worklist C-FIND request for MVR and MTR series devices
+Accession Number (0008,0050).
+
+Modality (0008,0060).
+
+Referring Physician Name (0008,0090).
+
+Study Description (0008,1030).
+
+Physicians Of Record (0008,1048).
+
+Performing Physician Name (0008,1050).
+
+Referenced Study Sequence (0008,1110).
+
+Patient Name (0010,0010).
+
+Patient ID (0010,0020).
+
+Patient Birth Date (0010,0030).
+
+Patient Sex (0010,0040).
+
+Other Patient IDs (0010,1000).
+
+Patient Address (0010,1040).
+
+Military Rank (0010,1080).
+
+Medical Alerts (0010,2000).
+
+Allergies (0010,2110).
+
+Additional Patient History (0010,21B0).
+
+Pregnancy Status (0010,21C0).
+
+Last Menstrual Date (0010,21D0).
+
+Study ID (0020,0010).
+
+Requesting Physician (0032,1032).
+
+Admission ID (0038,0010).
+
+Special Needs (0038,0050).
+
+Performed Procedure Step ID (0040,0253).
+
+Performed Procedure Step Description (0040,0254).
+
+Scheduled Protocol Code Sequence (0040,0008).
+
+Scheduled Procedure Step Description (0040,0007).
+
+Scheduled Procedure Step ID (0040,0009).
+
+Requested Procedure ID (0040,1001).
+
+Requested Procedure Comments (0040,1400).
+
+Worklist Retrieval Feature from the Patient Information Edit Screen of MVR and MTR series devices
+Often the procedure is performed in an emergency when a formal worklist still needs to be populated
+
+Workflow: tap a Worklist search button at the top of the Edit Patient Info screen, select from a list, populate patient form fields, and continue manual editing.
+
+PACS Server Setup Guide for MVR and MTR series devices
+On Archive Settings / Export screen of MVR and MTR series device:
+Enable DICOM Export to PACS: 'Export to PACS/NAS' set to 'PACS'. When enabled, files saved to Internal Storage can be Sent to PACS. Note: Sending to NAS feature will be disabled. It is impossible to export studies from the Internal Storage to a shared folder (NAS) and PACS simultaneously.
+
+The optional 'Auto Send' feature will automatically send all Study files to PACS upon the completion of a Study (End of Study).
+
+The optional 'Auto Delete' feature will automatically remove files from Internal Storage once they have been successfully Sent to PACS.
+
+If there are incorrect settings, an orange error message will be displayed at the top of the Archive Settings / Export screen. Examples of errors include: 'PACS export cannot be enabled: Internal Storage is disabled' and 'PACS export cannot be enabled: Patient Info must be enabled'.
+
+On PACS Server Setup screen of MVR and MTR series device:
+All fields on the left side of the screen are required: Server IP, Server Port, Server Title (Called AET), and Device Title (Calling AET). Consult with your hospital's IT department to determine the specific values for these fields.
+
+If your PACS server does not accept video files, or if your IT administration does not allow storage of video files on PACS, the video upload can be disabled.
+
+The Specific Character Set can be preset to 'ISO_IR 192', which covers all national and international characters and symbols and is recommended as the default value. Alternatively, you can set it to 'ISO_IR 100' if your PACS only accepts Latin characters and rejects 'ISO_IR 192'.
+
+Set the Modality to one of the following: XC (External-camera Photography), ES (Endoscopy), GM (General Microscopy), or SC (Secondary Capture). It is recommended to use the same modality as for the Worklist settings.
+
+After setting all the required fields, tap the 'Test' button to test the connection to the PACS server. A pop-up window titled Success is displayed when a connection to the PACS server can be established. Additionally, PACS server UID and version information is displayed - provide this information to customer support if you experience compatibility issues with this PACS server. The test result will be displayed in orange at the top of the screen. An example of the test result message is: 'OK (Modality ES formats: JPG, H.264, HEVC, PDF, PNG)'. This means that the connection to the PACS server has been established, the server accepts modality ES, and it supports DICOM image files with JPG encoding (loss) and lossless (from PNG), DICOM video files with H.264 and HEVC encoding as well as DICOM PDF reports. There is a button to Upload a test image to the PACS server to ensure the actual functionality.
+
+Important: Remember to save your settings by tapping the Save button.
+
+Once the PACS server setup is complete and the settings have been saved, the server status will be displayed on the Information screen. The PACS server status may appear as "Ready", "No connection", or "Sending".
+
+Troubleshooting of the PACS Server Setup:
+
+If, after some time trying to connect to the PACS server, the result is displayed as "Error: connect timed out," there are a few possible reasons: the wrong IP address or the wrong port number is set.
+
+If a specified port is not designated for file storage, the error will be displayed as 'OK (No formats supported)'. This means that the port cannot accept image or video files. Consult with your hospital's IT department to verify the correct port number designated for file storage and update the settings accordingly. Remember to save the changes after updating the settings.
+
+While some servers may not be sensitive about the Server title, in many cases it will be required to set the correct Server title. In case of a wrong Server title, an error will be displayed; 'Error: Associate rejected; Called AE-title not recognized'. NOTE: Server title and Device title are case-sensitive.
+
+In many cases, a server may also restrict certain Device Titles. Device Title is used as a login name and may be used in the PACS database to identify the sender (origin of the file). When a wrong Device title is specified, an error will be displayed: 'Error: Associate rejected; Calling AE-title not recognized'
+
+Send to PACS User Guide for MVR and MTR series devices
+MVR offers two ways to send completed studies to PACS for final archiving. Your IT administrator has set MVR device either to Auto Send or to Manual Export.
+
+
+The easiest way to export studies to PACS is to use the Auto Send option. You can still edit images and videos and use the reporting function in the Review screen during your recording session as you normally do in your Archive. Editing in Review is possible– as long as the study was not closed. End your study after all images and videos are recorded. Tap to 'Finish your study' button. Confirm the PACS export by tapping on Send. The entire study will be sent to PACS. If you cancel the sending process, this study will be stored on the internal Archive to be sent later manually. While the sending process is ongoing, you can start the next study by tapping on Start. Please do not turn off MVR / MVR Pro during the export process. If your administrator has set the PACS export to 'Auto Delete', the study will be removed from the internal storage of the MVR device automatically after successful export to the PACS.
+
+
+If your IT administrator has set the MVR device to Manual Export, you can send complete studies to PACS in the Archive screen. Open the Archive. Select a non-exported study and tap on Send to PACS. You can see your recorded studies and their export status. The following statuses are possible:
+
+
+No cloud symbol: Study not sent to PACS yet.
+
+Grey cloud symbol: Sending to PACS is in progress.
+
+Blue cloud symbol: Study was sent to PACS successfully.
+
+Orange cloud symbol: An error occurred during the PACS export. No files or some files were not sent to PACS yet.
+
+
+You can still edit studies after they have been sent to PACS. You can use the Archive editing features as:
+
+
+Taking a snapshot from a video
+
+Magnifying images
+
+Add annotations and text to images
+
+Others
+
+
+Those files added to the study have been stored locally on MVR device. If you want to add them to the exported study on your PACS, simply tap on where to send them. Simply page up to the overview in Archive and tap Send to PACS again to complete your exported study on the PACS. Result: All files are exported to PACS now.
+
+Troubleshooting PACS upload errors for MVR and MTR series devices
+'PACS Error: connect timed out': This message may occur when MVR / MVR Pro was turned off while sending studies to PACS. Another possible reason is an interrupted network connection during the export. After MVR / MVR Pro was turned on and the network connection to the PACS server is established again, the export process may start automatically again. You may have to start the manual PACS export again. Tap on the error message and follow the screen.
+
+
+'PACS upload errors': PACS export was completed but with errors. Tap on the orange message to find out more about the reason. Network is unreachable is a connection error as well as Broken pipe or Socket closed. After the connection to the PACS is restored, tap on Retry.
+
+
+'Server doesn´t support transfer syntax for HEVC': This should not happen if the PACS server was setup and tested correctly. Please contact your IT administrator.
+
+
+'Out of resources': The PACS server does not offer sufficient storage space, memory or other resources. Please contact your IT administrator.
+
+
+'Processing failure': PACS server error. Please contact your IT administrator.
+
+
+In the PACS upload error dialogue you can Tap “Retry” to attempt to send all failed files again or Tap “Ignore” if you do not want to send the failed files. The error status will be cleared. The failed files may be sent later again manually.
+
+
+'No response': File has been uploaded but causes a PACS server error. A possible reason may be that the PACS server is not able to accept large file sizes. Please contact your IT administrator.
+
+Reset PACS database
+
+Reset PACS database in the PACS export screen. A reset will remove all cloud icons (status) from all files and it will reset the internal database. This may be useful when you want to repeat sending the same files to PACS. It is recommended to Reset PACS database when:
+
+
+Changing settings to another PACS server.
+
+During cleaning and maintaining the internal storage.
+
+In case of erratic behavior or dead lock in the PACS database.
+
+Compatible PACS servers with MVR and MTR series devices
+In principle, any PACS server following DICOM standard is compatible. Known tested PACS servers:
+
+
+AGFA Impax.
+
+Offline DICOM Operation for MVR and MTR series devices
+Feature Description
+Offline DICOM operation: offline Worklist, offline Send to PACS
+
+Background
+Surgical towers are often mobile to provide flexible use of surgical equipment across multiple operating rooms, and the network may not be available during the actual operation time. MVR allows flexibility to use WiFi networks and complete offline operation, providing a Worklist and DICOM functionality while disconnected from the network. Move the tower to rest in a walkway between operations and connect power and network cables. Once connected - MVR will automatically resume sending files to PACS and seamlessly update the Worklist without any interaction from the operator.
+
+Principles of Operation
+After powering on, MVR will attempt to obtain Worklist and keep it for possible offline operation. Worklist is obtained using the default filter from the settings page. Worklist will be renewed every 1 hour. When Worklist Search is used at the Study Start - a fresh Worklist will be retrieved from the server if a network connection is available; otherwise, the search will be performed from the offline Worklist. After Finish Study: if Send to PACS or send to NAS is used automatically or manually - the dialogue will not be stuck at the "waiting for network," and files will be silently scheduled and sent when the network becomes available.
+
+Worklist Security (Informative)
+The Worklist is saved and encrypted to the internal device storage, which is not shared or accessible by traditional means. The saved Worklist, older than 24 hours, will be automatically deleted at the start of the device. Every device encrypts the Worklist differently. The administrator can disable the offline feature of the Worklist via the web configuration tool.
+
+Troubleshooting
+Some procedures, like Reset to Factory Defaults, will erase Activation Keys. It is recommended to keep record of your purchased keys or add a sticker to a device listing Activation Keys.
+
+
+If the Activation Key is lost - contact MediCapture representative to help recover it free of charge; you will need to provide Device ID and purchase information. Typically, Activation keys can be found on a sticker on the device and sticker on the Instructions for Use.
+
+After-market support.
+MediCapture provides traceable firmware upgrades to address possible issues and enhance products with better usability and new features. The firmware upgrade process is easy and reliable and can be performed by a user in the field. To maintain integrity, all software parts are changed to a new version at once. To stay in line with modern medical imaging trends, MediCapture releases non-mandatory enhancements every six months. Upgrades are free of charge for the entire product's lifetime. 
+
+
+MediCapture owns all parts of the software and firmware, including the operating system, applications, DICOM, and other communication modules. Once the device or feature is sold, no recurrent fees, license expiration dates, or other time-limited events exist.
+
+
+Integration.
+We know how important integration is. Our video recorders are designed to be part of a bigger medical imaging system. In addition to advanced video recording and image capturing, MediCapture devices can enhance your existing imaging system with network connectivity, user management, patient information, file management, editing, annotation, reporting, printing, streaming, DICOM, remote control with a tablet, and more. 
+
+Medical Video Recorder Streaming Setup and User Guide for MVR and MTR series devices
+Overview of Video Streaming for MVR and MTR series devices
+Video streaming enables external viewers to watch live studies from the MVR recorder with low latency. Utilizing FMP4 (Fragmented MP4) over TCP/IP technology, streaming is accessible on most JavaScript-enabled browsers without additional infrastructure.
+
+
+Using FMP4 over TCP/IP for video streaming has several advantages compared to typical UDP:
+
+
+No need for special network equipment or setup.
+
+Enhanced reliability with error correction and retransmission due to TCP's connection-oriented nature, while UDP, being connectionless, may result in a less reliable streaming experience with packet loss and artifacts.
+
+Better firewall and NAT compatibility, facilitating access to clients behind firewalls.
+
+Increased scalability through CDNs and cloud-based services, which can distribute the stream to a larger audience with lower latency and improved reliability, whereas UDP may face difficulties with CDN support.
+
+
+If audio settings are enabled and a microphone connected, audio playback is also available. Streaming is primarily for educational, training, or consultation purposes and is not intended for diagnostic use.
+
+
+Streaming activation is secure, requiring a password-protected user account on the MVR recorder and active confirmation from the MVR operator. The MVR operator can terminate the stream at any time.
+
+Streaming Features of MVR and MTR series devices
+Resolution: 1280x720p30
+
+Viewing options on the WEB browser:
+
+Full-screen view
+
+Picture-in-picture overlay
+
+Snapshot option (if supported by the browser with right mouse button function)
+
+Maximum simultaneous stream clients: 8
+
+Lower priority compared to other MVR tasks, with automatic reduction in streaming quality if needed
+
+Requirements
+MVR Firmware version 220116 (or later)
+
+Streaming activation on a PC/laptop via network and Android mobile devices using WiFi
+
+Recommended WEB browsers: Google Chrome, Microsoft Edge, and Firefox
+
+Potential compatibility issues with Apple iPhone and MAC Books
+
+Administrator Streaming Setup for MVR and MTR series devices
+Connect the MVR recorder and streaming device to the same network (either LAN or WiFi).
+
+For LAN, check network settings on the MVR device: Settings → Advanced → Connections → Network.
+
+For WiFi, enable and connect to your WiFi network: Settings → Advanced → Connections → WiFi.
+
+Enable user accounts for data protection: Settings → Advanced → User accounts.
+
+Create multiple user accounts as needed.
+
+Remember user account login information; MediCapture does not have a master password for unlocking.
+
+Optional: Protect "Advanced Settings" with an administrator password.
+
+Assign user roles in Settings → Advanced → User accounts (recommended: GUEST for stream viewers).
+
+Activate Streaming on the MVR: Settings → Advanced → Connections → Remote Access.
+
+Enable Remote access and Streaming.
+
+Note the displayed IP address (e.g., http://192.168.2.108:3333) and provide it to each user/client.
+
+Optional: Enable "Always allow" for trusted environments.
+
+Optional: Enable audio if a microphone is connected.
+
+Disable "Stamp function in pictures and videos" to protect patient anonymity: Settings → Video/Audio → Video Input.
+
+User Instructions for Streaming on MVR and MTR series devices
+Start a study with live camera video on the MVR recorder screen.
+
+Open a WEB browser on a remote device and enter the IP address of the MVR recorder with /stream extension (e.g., http://192.168.2.108:3333/stream).
+
+Request to join the streaming session by entering your User Account information.
+
+Wait for the MVR operator's acceptance; the stream will then be active.
+
+Adjust settings (full-screen, audio, etc.) as needed and terminate the stream when finished. A new stream requires a new login.
+
+
+MVR operators can view the list of connected viewers and selectively disconnect any viewer during the live stream.
+
+LDAP Authentication Feature for MVR/MTR devices
+This security feature enables centralized user control on MVR/MTR devices. In addition to the existing local user control on these devices, it authenticates users over the central server.
+
+Applicable device models: MVR435, MVR436, MVR450, MVR460, MTR133, MTR156 and newer.
+
+Introduced since firmware version FW 250225.
+
+Available free of charge as a core security feature for new devices and via a firmware update for the devices in the field. 
+
+
+LDAPS stands for Lightweight Directory Access Protocol Secure. It is a protocol for accessing and managing directory information within a network. Think of it as a phonebook for the network, but instead of just names and numbers, it stores information about users, computers, and other resources.
+
+Description
+MVR Medical Video Recorder implements Role-Based Access Control (RBAC) to the device to protect access to data over the hospital networks and to the local recordings. Three roles are defined:
+
+Guest: Limited to accessing the Archive for review only and to the live video stream; no access to the MVR device or data;
+
+User: Access to the MVR device to record, review, document video content, and view live video stream;
+
+Admin: Access all the above features, device settings, user management, and device maintenance.
+
+
+LDAPS is the security feature of the MVR Medical Video Recorder, allowing access to the MVR device using authentication over the central directory, such as Active Directory. The central authority can grant access to the MVR devices by assigning users to specific groups in the central directory, such as the "MVR operator." It is also possible to use existing group assignments, such as “surgeons, nurses”.
+
+
+The reason for implementing the LDAPS protocol is that more hospitals have started specifying it as a central user management requirement, which could soon become mandatory. A typical requirement is AsureAD authentication with 2FA; however, simplification of the LDAPS is accepted for devices without a browser.
+
+LDAP Administrator Workflow
+Before setting up the device, communicate with the central LDAP administrator to perform the following actions and obtain the following information:
+
+LDAPS server URL or IP address
+
+Port number, if it is different from the default port 636.
+
+Naming context. Example: ‘cn=accounts,dc=demo1,dc=freeipa,dc=org’
+
+Create several test users. Example: mvrAdmin1, mvrAdmin2, mvrUser1, mvrUser2, mvrGuest.
+
+Provide an example of a full DN for user authentication, like: 'uid=mvrAdmin1,cn=users,cn=accounts,dc=demo1,dc=freeipa,dc=org'
+
+Create three groups: mvradmins, mvrusers, mvrguests, corresponding to the roles: admin, user, guest. It is possible to use existing groups. Provide an example of a full group DN, like:
+'cn=mvradmins,cn=groups,cn=accounts,dc=demo1,dc=freeipa,dc=org'. Create
+
+Add users mvrAdmin1, mvrAdmin2 to the group mvradmins; mvrUser1, mvrUser2 to group mvrusers; and mvrGuest to group mvrguests.
+
+Workflow on the MVR/MTR device
+Workflow of the LDAPS user authentication:
+
+A user enters credentials (user name and password) on the MediCapture MVR/MTR device login screen;
+
+The MVR/MTR device tries to bind (authenticate) the user to the remote LDAPS server (e.g., AzureAD). If binding is successful, an LDAPS search is performed to determine whether the user belongs to a particular group (“MVR,” for example). After all checks are passed, the LDAPS connection is closed, and the user can access the MVR device.
+
+Logout is performed automatically by the timeout or by tapping the logout button.
+
+
+The LDAP(S) implementation for MVR does not require a special service account and does not store a copy of the LDAP user information in bulk. Instead, the MVR implementation of the LDAP client authenticates every user individually and does not read and store any other information from the LDAP server. The connection to the LDAP(S) server is closed immediately after the login authentication attempt.
+
+Offline Authentication
+Upon successful LDAPS authentication, the user is added to the local list of users for offline authentication with a timeout. The timeout can be set in hours from 0 to 10,000, with the default being 168 hours (one week). When the timer expires, the user is deleted. 
+
+Offline authentication is used only when the LDAPS server is unavailable (offline). Why can the device be offline? The MVR/MTR device may be installed on a mobile trolley—a surgical tower—which is moved from one operating room to another. During surgery, the mobile trolley may not be connected to the network, and the device should be able to authenticate the user offline.
+
+When LDAPS is online, authentication and group checks are enforced. Successful authentication resets the user's timeout. Failed authentication (when user rights have been removed centrally) deletes the user immediately from the local list, disregarding the timeout. 
+
+The admin can manually review the list of users and delete users when necessary in the same way as managing local users.
+
+LDAP Server Setup
+There are several fields for the LDAP server setup:
+
+“Enabled” switch: turn it on to enable the use of the LDAP server and the ability to enter or edit other fields.
+
+“Server”: input the URL or IP address of the remote LDAP server.
+
+“Port”: input port number; leave blank for default port numbers: 389 or 636 with SSL.
+
+“Use SSL”: Turn it on to use the secure LDAPS protocol (recommended).
+
+“Naming context”: The naming context will be appended to the “Auth path” for user authentication and group paths for group search. This field will be automatically entered after the server Test; edit it to add extra context when necessary. The warning message will show “Authentication is required” when the Test button is pressed and the LDAP server does not allow anonymous binding. In this case, enter the “Naming context” manually. See the test examples below.
+
+“Auth path”: optional extra path when the full authentication path is longer than the “Naming context”.
+
+“Admin groups”, “User groups”, “Guest groups”: These three groups determine the user role as Admin/User/Guest. groupDN (Distinguished Name) is built using a group path appended with the “Naming context”. Keep empty to avoid this group; for example, no one can get an Admin role. Use * symbol to allow this role for any user with valid credentials; for example, authenticated users can get a Guest role. Group check is performed from top to down: Admin, User, Guest. A user in multiple groups is assigned the highest priority role.
+
+“Caching time” (hours): This specifies how long the logged-in LDAP user can log in again while the device is offline. The default is 168 hours or one week. Enter 0 to disable offline authentication.
+
+The “Cancel” button will return to the previous screen without saving changes.
+
+The “Test” button performs an anonymous authentication test on the LDAP server connection. The Server, Port, and Use SSL fields are used for server tests. The server may not allow anonymous binding and will respond with the warning “Authentication required”. This also means successful access to the LDAP server.
+
+The “Test user” button performs user authentication and group checks.
+
+The “Save” button must be used to save all changes. Changes will be lost if not saved.
+
+The recommended LDAP Server Setup flow:
+
+Input Server, Port, Use SSL, and tap the “Test” button.
+
+Edit the “Naming context” field, input the optional “Auth path”, and tap the “Test user” button. 
+
+Input group paths and “Test user” again for different roles.
+
+Test examples
+The User Accounts feature should be enabled first. It is located in Settings - Advanced - User Accounts. At least one user with an Admin role should be created.
+
+After adding the first Admin user, click the Home button and log in as Admin to verify the account immediately. Keep this account safe; it will be impossible to restore it. 
+
+Return to Settings - Advanced - User Accounts and tap the “LDAP” button in the top right corner of the screen.
+
+Turn ON the “Enabled” slider. 
+
+Input the field Server: ldap.forumsys.com (public LDAP server for basic tests). 
+
+Port: default (empty). Use SSL: no. 
+
+Tap the “Test” button to perform the LDAP server connection test.
+
+Observe the error message. Ensure the device is online, the URL is not misspelled, and there are no extra spaces or punctuation.
+
+The example below shows the successful test of the LDAP server and the various information provided by the server. Tap the “OK” button to finish the test. Suggest tapping the “Save” button to save the tested server settings.
+
+The default naming context is obtained and populated in the “Naming context” field during the server test. Edit it when necessary. In this example, the Naming context is “dc=example,dc=com”. The warning message will show “Authentication is required” when the Test button is pressed and the LDAP server does not allow anonymous binding. In this case, enter the “Naming context” manually.
+
+
+
+Tap on “Test user” and enter credentials “tesla/password”. Tick the “Show password” box to verify the correctness of your input.
+
+When credentials are correct and have been authenticated by the LDAP server, the test result will be shown as “User: tesla. Role: GUEST”. The Guest role has been assigned to “tesla” because we have a symbol “*” in the “Guest groups” field, meaning that any user with the correct credentials will get this role. Tap the “OK” button to finish the user test.
+
+
+There are three groups on the server “ldap.forumsys.com”, and we will use them to demonstrate the role assignment:
+
+ou=scientists: einstein, galieleo, tesla, newton.
+
+ou=mathematicians: euclid, riemann, euler, gauss, test.
+
+ou=chemists: curie, boyle, nobel, pasteur.
+
+The complete group DN is “ou=scientists,dc=example,dc=com.” We should enter only “ou=scientists” into our group field, which will later be automatically appended with the Naming context of “dc=example,dc=com.”
+
+The password for any user is “password”. One user, “nogroup”, does not belong to any group. 
+
+The “ldap.forumsys.com” server uses a persistent, read-only test configuration so that you can rely on the consistency of the test results.
+
+
+For the next test, enter “ou=scientists” into the “User groups” field, meaning that users from this group will be assigned the “User” role for the MVR/MTR device. Tap on “Test user” and enter the same credentials, “tesla/password”. The result will show “Role: USER”, because “tesla” indeed belongs to the group “ou=scientists”.
+
+Update the field “Admin groups” with “ou=chemists” and test user “nobel”. Because “nobel” belongs to the group “ou=chemists”, he will be assigned the Admin role. Experiment with other users and groups for the test server “ldap.forumsys.com”.
+
+
+SSL (LDAPS) is recommended for enhanced security. An example of the LDAPS server test with “Use SSL” is below, using the public testing server “ipa.demo1.freeipa.org”. This server can be used with enabled or disabled SSL., It is recommended to use SSL whenever possible. The actual certificate is not verified (always trusted) for the initial implementation.
+
+In this example, the Naming context field will be populated with “dc=demo1,dc=freeipa, dc=org” after the server test. 
+
+Edit the Naming context field as “cn=accounts,dc=demo1,dc=freeipa,dc=org” because this is the common part for the DN (Distinguished Name) for the LDAP server “ipa.demo1.freeipa.org”. Here are examples of the complete DN and group DN:
+
+DN = 'uid=admin,cn=users,cn=accounts,dc=demo1,dc=freeipa,dc=org', which is constructed from three parts: user (uid=admin), Auth path (cn=users), and Naming context (cn=accounts,dc=demo1,dc=freeipa,dc=org).
+
+groupDN = 'cn=employees,cn=groups,cn=accounts,dc=demo1,dc=freeipa,dc=org', which is constructed from two parts: group (cn=employees,cn=groups) and Naming context (cn=accounts,dc=demo1,dc=freeipa,dc=org).
+
+Set the “Auth path” field to “cn=users” because this is part of the authentication path, as explained above.
+
+The list of users for the “ipa.demo1.freeipa.org” demo server: manager, helpdesk, employee, admin, with the password for all users is “Secret123”.
+
+Please note that the “ipa.demo1.freeipa.org” test server is not persistent. Anyone can temporarily modify its content. FreeIPA's demo server resets daily at 05:00 UTC. 
+
+Tap on “Test user” and enter the credentials “ManageR/Secret123”. The test result will show: “User: ManageR; Role: GUEST”. This example demonstrates that the user name is not case-sensitive.
+
+Now test the user with the wrong credentials “ManageR/secret123”. The password is case-sensitive, and authentication will fail, showing the message “Error: invalid credentials”.
+
+Now, populate group fields and perform group roles tests. Set “Admin groups” to “cn=admins,cn=groups”. Set “User groups” to “cn=employees, cn=groups”. Please note that “cn=employees,cn=groups” is a part of the path to a single group 'cn=employees,cn=groups,cn=accounts,dc=demo1,dc=freeipa,dc=org', not two separate groups. 
+
+The group membership is tested against the following LDAP schema attributes: “member”, “uniqueMember”, and “memberUid”.
+
+
+Test user “admin”. The result should be “User: admin; Role: ADMIN”.
+
+
+Test user “manager”. The result should be “User: manager; Role: USER”.
+
+Test user “helpdesk”. The result should be “User: helpdesk; Role: GUEST”.
+
+
+To complete the LDAPS server setup, remember to tap the “Save” button.
+
+
+For the actual LDAPS server, the administrator can create two role-based groups, “ou=MVR admins” and “ou=MVR users”, for example. How to set up users and groups within the LDAP server itself is out of the scope of this document; local IT specialists need to be consulted.
+
+User Login
+When user accounts are enabled, the device starts on the login screen. Entering incorrect credentials will cause an error “LDAP: invalid credentials”.
+
+For login demonstration, we use the last LDAPS settings for the “ipa.demo1.freeipa.org” demo server. Users: manager, admin, helpdesk, all with the same password “Secret123”.
+
+After the successful authentication by the LDAP server, a user (“manager” in the following example) will be allowed to use the MVR/MTR device with the User role. (See role definitions and privileges in the above text). 
+
+The user name, “manager,” will be shown in the top left corner of the screen. “(LDAP)” note means that the LDAP server performed authentication. An icon on the left of the user name indicates an Admin, User, or Guest role.
+
+Users Management
+Guest users have limited access to functions. A Regular User has no access to the Advanced settings. Log in with the Admin role to access “User accounts” to manage users.
+
+LDAP-authenticated users will be cached in the local (on-device) list of users for offline authentication. When the last user login time is older than the “Caching time”, the user will be automatically deleted from the list. It is also possible to delete any user manually by tapping the user entry and selecting “Delete” from the pop-up dialogue, followed by an extra confirmation.
+
+Enabling and using an LDAP server does not affect existing local accounts. 
+
+One local Admin account should always exist on the device to manage LDAP server misconfiguration or faults.
+
+While the number of local user accounts is limited to 20, the number of temporarily authenticated LDAP users is not limited.
+
+Frequently Asked Questions
+Can local and LDAP users log in simultaneously? What happens if a user exists both locally and in LDAP?
+
+Answer: User credentials are first checked against the local database and, when not authenticated, checked against the LDAP server.
+
+
+If the LDAP server is unreachable and a cached user’s timeout hasn’t expired, can they still access the device?
+
+Answer: Yes.
+
+
+How does the device handle revoked permissions during offline mode?
+
+Answer: There is no way to check for the revoked permissions offline. Once online, and the revoked user attempts to log in, rejection from the LDAP server will immediately remove the user from the local list of users.
+
+
+If a user’s group membership changes on the LDAP server, how does the MVR device reflect this change? Is manual intervention required?
+
+Answer. No manual intervention is required; the user will be authenticated to the new role according to the current (not previous) group membership. However, when the group name was changed, manual editing of the group name is required on the LDAP server setup screen.
+
+
+Can we create custom roles beyond Admin/User/Guest or map existing LDAP groups to custom permissions?
+
+Answer: No new roles or custom permissions are available. However, the existing LDAP group, “ou=surgeons,” for example, can be mapped to the standard User role.
+
+
+How do I regain access if the LDAP server is misconfigured and the local Admin account is lost?
+
+Answer: The admin account can be re-created using the Remote configuration feature and a remote access password. If remote access is not configured or the password is lost, the device must be reset to factory defaults, which will wipe all settings.
+
+
+Can LDAP configurations be backed up or transferred to another MVR device?
+
+Answer. Yes. Administrators can back up all device settings to the USB drive or use the Remote configuration feature via the local network.
+
+Glossary of Terms
+LDAPS: Lightweight Directory Access Protocol Secure. An encrypted version of LDAP that uses SSL/TLS to secure communications between clients and directory servers.  
+
+Bind: The LDAP operation to authenticate a client to the directory server.
+
+SSL: Secure Sockets Layer.  
+
+DN: Distinguished Name. A unique identifier for an entry in an LDAP directory, structured hierarchically (e.g., `cn=John Doe,ou=Users,dc=example,dc=com`).  
+
+Base DN: The root entry from which an LDAP search begins (e.g., dc=example,dc=com).
+
+DC: Domain Component. A part of a DN representing a domain name segment (e.g., `dc=example,dc=com` corresponds to the domain `example.com`).  
+
+CN: Common Name. An attribute in a DN specifies the name of an object (e.g., a user, group, or device), such as `cn=Alice Smith`.  
+
+OU: Organizational Unit. A container in a DN used to group entries by function, department, or role (e.g., `ou=Engineering,dc=company,dc=org`). 
+
+UID: User Identifier. A unique attribute for a user account (e.g., uid=jdoe).
+
+ObjectClass: Defines the type of object an entry represents (e.g., person, organizationalUnit).
+
+Attribute: A property of an LDAP entry (e.g., mail, telephoneNumber).
+
+Protection of the operating system of the MVR/MTR series of medical video recorders.
+Proprietary MVR/MTR operating system, based on Android with all unnecessary components removed.
+
+ARM64 CPU architecture, which is not compatible with x86 PC architecture.
+
+Closed system (no direct access to operating system):
+
+No possibility for either users or IT administrators to gain access to the operating system.
+
+There is no “IT administrator” login or system privilege on MVR devices.
+
+There is no possibility to install additional software and/or change or modify existing software modules which might introduce viruses or malware to the system or damage it.
+
+It is not possible to execute any files on an MVR device which might act as malware as the user and IT administrator have no access to the operating system or file manager.
+
+External storage devices, including USB storage, are mounted with no permission to execute any file. (This is a distinctive feature of the Linux OS which is not available in Windows OS)
+
+Application runs in the full-screen mode. There is no access to the generic OS desktop.
+
+No system hotkeys are accepted, all key events are processed by the application. No system-critical tools like Task Manager exist on the MVR OS, all removed.
+
+Application allows file manipulation only under the intended use, there is no generic file manipulation available. Application does not execute and does not allow to execute any files.
+
+OS and application files are located on the internal, non-removable eMMC flash storage with the specific proprietary partitioning. System partitions are read-only and are protected from any alteration by the user or IT administrator. There are no means to change read/write permissions for the partitions under any privilege. OS and application always boot fresh in the “factory mode”, retaining only user settings of the application.
+
+User files can be images or videos only. User files are always located on a storage device, different from the OS and applications files. No mixup of system and user files on the same storage device.
+
+There is no BIOS on the MVR device. The OS bootloader is encrypted and signed with the proprietary key. Booting from the external device is not possible. Booting of the unauthorized unsigned firmware will be rejected. 
+
+Device firmware is a single file in the proprietary format, signed with the security key. Unauthorized unsigned firmware will be rejected during the proprietary update procedure. Device firmware includes OS and application and updates the whole device software features at once. No software component can be updated separately.
+
+Remote access to the device is disabled by default.
+
+MVR?MTR devices do not have default user or administrator or factory passwords. Once the remote access feature is enabled, a new password must be assigned. There is no procedure to recover lost passwords.
+
+Once the User Accounts feature is enabled, administrator name and password should be assigned. Administrator privileges allow to operate Advanced Settings in the application menu, with no privilege to access OS partitions or files, alter file permissions, no administration rights for OS. Administrator has specific rights only within the application settings. Administrator has the regular “user” rights from the OS point of view.
+
+MVR and MTR Time and Date Settings and Clock Keeping
+Ensure the correct date, time, and time zone are set. These settings can be done manually. However, the good practice is connecting to the local NTP server to keep time settings updated. We suggest checking the correct date and time before Start of a Study and include this in the checklist to prepare for the surgical operation.
+
+Manual Setup of the Date, Time and Time Zone on MVR and MTR series devices
+To set up Date and Time manually, tap on the Calendar icon in the top right corner of the Start screen. Calendar icon will be shown when Date or Time is suspected to be incorrect. Alternatively, the Date and Time setup screen can be reached from Settings/System/Date and Time. Ensure you entered the correct Year, Date, Time, and Time Zone, and tap the Set button to confirm. Users can select the Date format from 3 options on the Date and Time setup screen: YYYY-MM-DD, DD/MM/YYYY, or MM/DD/YYYY. The selected date format will be used in the Start screen, Time Stamp, Archive screen, Report, and Patient data edit. The Date and Time setup screen will be displayed automatically when time loss is detected upon power on the MVR device and on the attempt to start the Study with an incorrect Date and Time. MVR device can maintain the clock running without external power for the fully charged time-keeping battery for around a week. Keep the MVR device powered for at least 8 hours to ensure full charge of the time-keeping battery. When the MVR device is not used regularly and powered on for short periods, like 1-2 hours a day, users may often experience date and time loss after power on the MVR device.
+
+NTP – Set Network Time Protocol for MVR and MTR series devices
+The best way to maintain the correct date and time is to connect the MVR recorder to your internal network (LAN or WiFi). NTP, or Network Time Protocol, is a protocol used for synchronizing the clocks of computers on a network to a standard time reference. NTP allows for accurate time-keeping across different devices and systems, which is essential for various applications, including the time and date of the imaging Study.
+
+
+To use NTP, MVR device must be configured to connect to an NTP server, which is a device that broadcasts accurate time signals over the network. There are many public NTP servers available on the internet that can be used for free, or an organization may choose to set up its own internal NTP server over a local network.
+
+
+MVR will pick up an existing local NTP server automatically in most cases. It is possible to set an IP address and port of NTP in Settings/Advanced/Connections/Network/NTP server, for example: 192.168.2.10:123. If there is existing access to the Internet, external NTP can be specified by name, for example, "pool.ntp.org." Tap the Test button to ensure the NTP function works properly - the current date and time from the NTP server should appear green at the top of the screen. Confirm your settings with the Set button.
+
+
+When in doubt - contact the IT specialist or network administrator about the availability of the NTP server and its address and port.
+
+USB Time Dongle for Date and Time Keeping on MVR series devices
+USB Time Dongle is intended for MVR400, MVR409, MVR420 devices for the timekeeping when devices are used rarely and NTP server is not available.
+
+
+Order number: DODT001 – Dongle Date Time Note: Firmware FW220602 (or higher) required on the MVR Recorder.
+
+
+USB Time Dongle Operating Principles
+
+
+Provided to customers affected by time loss free of charge
+
+Plug the USB Time Dongle into the MVR device's rear USB port directly, avoiding USB hubs or splitters
+
+Check the date, time and time zone are all correct
+
+The manual time setting sets the time to the USB Time Dongle and the internal clock
+
+If the MVR device uses a network NTP time server, automatic time updates from NTP will propagate to the USB Time Dongle
+
+When after powering on, the MVR device detects internal time lost, it will automatically restore time from the USB Time Dongle
+
+If after power on, the internal time is different from the Dongle time and both have valid values, the time and date from the USB Time Dongle are used and set to the internal clock because the USB Time Dongle has better time accuracy by the hardware design
+
+I am experiencing frequent loss of date and time on the MVR device.
+Keep the MVR409, MVR420 device running for at least 8 hours daily to allow the clock to run for the following week without external power.
+
+Connect to Network and setup the NTP server - MVR device will synchronize with the NTP server at every power on.
+
+When the above conditions cannot be met - contact MediCapture to obtain USB Time Dongle.
+
+
+AK4K Feature Activation Key Specifications for MVR series devices
+Product Information
+Product name: AK4K
+
+Product type: Digital code for feature activation
+
+Product description: Activation key for 4K video recording for MediCapture MVR series and MTR series medical video recorders.
+
+Product grade: None
+
+Medical device classification: None
+
+Compatibility
+Compatible MediCapture medical video recording devices: MVR Pro (MVR409), MVR (MVR420), MVR Lite (MVR400), MVR435, MVR436, MVR450, MVR460, MTR133, MTR156.
+
+The activation key is specific to the particular MVR device identified by the Device ID and will not work with other devices.
+
+To be compatible with MVR Pro (MVR409), MVR (MVR420), MVR Lite (MVR400), your camera equipment should provide a signal on HDMI in 2160p30. Other models accept 2160p60 video signal over HDMI or DP (Display Port).
+
+If your camera equipment outputs 4x 3G-SDI in Quad-Split (Square Division) or 2-Sample Interleave format 2SI, MediCapture's additional item MVC Pro HDMI to SDI will convert your SDI-signals to HDMI.
+
+If your camera equipment outputs 12G SDI video signal, models MVR450 and MVR460 can accept it directly, other models require additional SDI to HDMI converter. Recommended models from the https://www.blackmagicdesign.com/ are: Teranex Mini SDI to HDMI 12G for models MVR Pro (MVR409), MVR (MVR420), MVR Lite (MVR400); Micro Converter SDI to HDMI 12G for other models.
+
+Some MVR/MTR model variant may come with the AK4K pre-activated. You can find the AK4K code at the labels on the device, IFU (Instructions for Use) and device package box.
+
+Usage
+Installation: not required.
+
+Activation: In advanced device settings Activation Keys menu, enter digital code to activate 4K recording features. The word 'Unlocked' will be displayed next to '4K recording' in case of success. Feature work automatically after activation.
+
+Available after AK4K activation: Ability to select 2160 lines video recording resolution in the Storage Settings screen.
+
+Advantages
+Advantages of upgrading: Gain the ability to record video at the highest UHD resolution
+
+Advantages for reliability: Can be re-activated any time without extra charge
+
+Video Recording Resolution
+Without AK4K activation: Limited to maximum resolution 1920x1200
+
+With AK4K activated: 4096x2160 and 3840x2160p
+
+Resolution of Captured Images
+Always the same as the input resolution, with and without AK4K activated.
+
+Certification and Compliance Standards
+Medical equipment safety: Not applicable
+
+Electromagnetic compatibility EMC: Not applicable
+
+Other certification and compliance standards: Not applicable
+
+Ordering and Pricing
+Ordering code: AK4K
+
+Required information: MVR device Serial Number and Device ID which is shown on Information screen.
+
+Package content: 8-digit hex code number
+
+AK4K price: Contact MediCapture
+
+Troubleshooting
+Some procedures, like Reset to Factory Defaults, will erase Activation Keys. It is recommended to keep record of your purchased keys or add a sticker to a device listing Activation Keys.
+
+
+If Activation Key is lost - contact MediCapture representative to help recover it free of charge; you will need to provide Device ID and purchase information.
+
+MVR Remote App
+Description: MVR Remote App is the software product of MediCapture, intended to be installed on the user's Android device (smartphone or tablet) to provide remote (wired or wireless) control and monitoring of MediCapture's MVR and MTR medical video recorders.
+
+
+Advantages: flexibility and convenience for medical professionals while using MediCapture's medical video recorders.
+
+
+Compatibility: Android 6.0 and newer devices.
+
+
+Availability: Google Play store, link MediCapture MVR Remote App
+
+
+Price: free
+
+
+REMOTE OPERATION: Your tablet will serve as a full remote control that is both ergonomic and efficient.
+
+
+REMOTE MVR MANAGER: Browse and review all patient files, annotate, zoom, report and print. Manage the complete archive of your MVR recorder.
+
+
+IT REMOTE ACCESS: Access your MVR device through the hospital facility network for remote maintenance, set up or equipment upgrades.
+
+
+Additional Information: MediCapture Medical Recorder hardware required: MVR, MVR Pro, MVR Lite, MVR 4K. Important Note: MVR Lite requires the additional Connect Upgrade Package for network connectivity. Please contact MediCapture for more information.
+
+Remote Tablet Use Instruction
+This document describes the remote control of the MVR and MTR series medical video recorders via a remote device (Android tablet) through the MVR Remote App and local archive management through the MVR Local Archive and contains user and administrator instructions.
+
+
+Android remote devices (tablets) can be used for external control.
+
+
+MediCapture recommends connecting a pre-installed and tested MediCapture tablet. Example: TBHI9PRO – MVR Remote Tablet.
+
+
+Note: A system administrator must perform wireless and wired connection setup of a tablet to MVR series device. When using the tablet as a handhold remote control, your tablet must communicate wirelessly with your MVR recorder.
+
+Using a tablet as an external touchscreen monitor (USB cable connection)
+Connecting a tablet as an external touchscreen monitor via USB connection is possible with all types of the MVR Series: MVR Lite (MVR400), MVR (MVR420), and MVR Pro (MVR409).
+
+
+Connecting a tablet via a USB cable is constantly charged as long as the MVR recorder remains powered. It is not necessary to create a User Account and not necessary to activate Remote Access on your MVR. The tablet remains permanently connected and is immediately ready for viewing, operation, and charging. Ensure that a USB cable is connected between the rear USB connection of your MVR recorder and your tablet.
+
+Operating the MVR Remote App
+• Turn on your MVR recorder. • Turn on the tablet. • Open the MVR Remote App. • Check whether the login field is active or grayed out. • If your Login field is grayed out, tap on USB tethering. • Make sure that USB tethering is activated on the tablet. • Close this Settings screen. • Select the connected MVR device on the left and tap on login • Tap on LOG IN. The tablet shows the entire User Interface of your MVR now. Operate your recording device as usual. Start a new study or use the Archive to manage your stored data. The tablet works as an external touchscreen monitor.
+
+Exiting the MVR Remote App
+After you finish your recording session and manage your Archive, go to the MVR home screen and then LOG OUT.
+
+Standby Mode
+It is recommended to leave both devices switched on. The energy consumption of this Tablet Remote System is low. Leaving both devices on has the advantage that the tablet is always charged via USB. If you want to turn off the Tablet Remote System, please turn off both units (Tablet and MVR). The tablet should be powered off entirely, not left in standby mode.
+
+Using a tablet as handheld Remote control
+Direct connection of a tablet as a handheld remote control is possible with MVR devices with networking capabilities: MVR (MVR420) and MVR Pro (MVR409). Note to MVR Lite (MVR400: To operate MVR Lite wirelessly, the Connect Package needs to be installed. It consists of a Network activation key and a USB to a Network adapter. MVR Lite needs to be connected to a WiFi router via LAN.
+
+Preparations for use
+Activated settings on your MVR recorder:
+
+
+Remote Access needs to be activated in Advanced Setting for Connections.
+
+User Account. To ensure that remote control on a handheld device is performed by authorized personnel only, your administrator has activated User Accounts with individual passwords. At least one user account is activated. Activated settings on your tablet.
+
+WiFi: Two options are possible:
+
+A: WiFi connection to a WiFi router. WiFi is On, and the tablet is connected to the same router as your MVR recorder.
+
+B: Turn On a WiFi hotspot on tablet. Connected MVR recorder to this hotspot. Do not turn off your tablet completely; this connection may get lost.
+
+Operating the MVR Remote App
+• Turn on the MVR Recorder • Make sure the MVR shows the home screen • Turn on the tablet • Open the MVR Remote App • Select the connected MVR device on the left. • Choose the method for login your administrator has prepared. 1. The general Remote Access password only or 2. A User Account name and the password • Tap on LOG IN.
+
+
+The tablet shows the entire User Interface of your MVR now. Operate your recording device as usual. Start a new study or use the Archive to manage your stored data. Note: Since you are now working in user account mode, the MVR will automatically stop the application after 10 minutes, and no recording session has been started to prevent unauthorized access to data.
+
+Exiting the MVR Remote App
+• After you finish your recording session and manage your Archive, go to the MVR home screen and then LOG OUT.
+
+Standby Mode
+It is recommended to leave both devices switched on. The energy consumption of the Tablet Remote System is low. Leaving both devices on has the advantage that the WiFi connection remains active. Remember to charge your wireless tablet every time it is not in use.
+
+Downloading data to the tablet
+Important note: When copying information from your MVR to the tablet, sensitive data will be stored on the tablet. You, as the operator, take complete responsibility for handling this data correctly, according to local data security regulations. Your administrator must have enabled this feature, Local storage, in the MVR settings.
+
+Copy of studies from the MVR recorder to the tablet
+Applicable to MVR420 and MVR409 only. When managing data in the MVR Archive, you can copy complete studies, individual/multiple pictures, or videos to the tablet´s internal storage. Archive: • Select the storage you want to copy from, for example, USB storage • Tap on Copy • Choose the tablet as the storage destination • Tap on Continue • Wait for the Success message after the copying process.
+
+MVR LOCAL ARCHIVE: Reviewing stored data on the tablet
+After you close the MVR Remote App, Open the App MVR local archive. You can view and edit the stored data on the tablet in the same way as you are used to from your MVR recorder. Patient data can also be edited locally.
+
+Remote App installation and update
+MVR recorder firmware: Please ensure the latest firmware is installed on your MVR recorder.
+
+
+The MVR Remote App needs to be installed on the tablet. The latest version of the MVR Remote App can be found on Google Play Store. If you can connect your tablet to the internet, update the MVR Remote App. If internet access is denied in your IT environment, please contact MediCapture for a download link, Download the MVR Remote.apk file, copy it to a USB stick, and connect the USB stick to your tablet (you may need a USB type A to USB type C adapter); Browse the USB stick and tap on the .apk file to install or update the app.
