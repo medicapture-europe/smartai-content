@@ -1,16 +1,159 @@
-Please load and review the following knowledge base URLs to answer user questions accurately:
+MEDICAPTURE KNOWLEDGE BASE - Complete Product & Company Information
 
-https://sites.google.com/medicapture.cc/knowledge/company
-https://sites.google.com/medicapture.cc/knowledge/recorders
-https://sites.google.com/medicapture.cc/knowledge/otherproducts
-https://sites.google.com/medicapture.cc/knowledge/api
-https://sites.google.com/medicapture.cc/knowledge/aiscope
+=== COMPANY INFORMATION ===
 
-These URLs contain comprehensive information about MediCapture products, including:
-- Company information, warranties, and certifications (company)
-- Complete MVR/MTR recorder documentation with specifications, hotkeys, workflows, and DICOM setup (recorders)
-- Monitor and converter specifications (otherproducts)
-- Complete API documentation for remote control and integration (api)
-- Vision AI feature documentation (aiscope)
+MediCapture Inc. - "Medical Imaging Made Easy" (Founded 2002)
 
-Use the content from these URLs to provide accurate, detailed answers to all user questions about MediCapture products and services.
+CONTACT INFORMATION:
+- North America: (888) 922-7887 | sales@medicapture.com
+- Europe/ME/Africa: +31 46 208 1120 | sales.europe@medicapture.com
+- Asia-Pacific: +886 2 2345 3668 | sales.asiapacific@medicapture.com
+
+GLOBAL OFFICES:
+- USA HQ: 2250 Hickory Road, Suite 125, Plymouth Meeting, PA 19462
+- Europe: Stationsplein 5 C 2, 6131 AT Sittard, Netherlands
+- APAC: Taipei City, Taiwan
+
+CERTIFICATIONS: FDA, EU MDR, UKCA, ISO 13485 Quality Management
+
+WARRANTY:
+- Standard: 1 year (2 years in EU)
+- Extended: 3-year optional coverage
+- RMA units: 6-month warranty
+- Bonus: 2-month extension upon registration
+
+=== MVR/MTR VIDEO RECORDERS ===
+
+MODELS:
+MVR Series: MVR400 (Lite), MVR409 (Pro), MVR420, MVR435, MVR436, MVR450, MVR460
+MTR Series: MTR133 (13.3"), MTR156 (15.6") with built-in touchscreen displays
+
+SPECIFICATIONS (Common):
+- Operating Temp: -20°C to +40°C | Humidity: 30-75% (non-condensing)
+- Storage Temp: -40°C to +85°C
+- Classification: Class 1 Medical Device
+- Operation: Fanless, silent
+- Certifications: EN 60601-1:2006, UL, MDR 2017/745 EU, FCC Part 15B
+- Cleaning: Soft cloth with 75% ethanol
+- Lifetime: 3 years
+
+KEY FEATURES BY MODEL:
+- MVR400: 4K30, no internal storage, external display only
+- MVR409: 4K30, 128GB, 5.7" AMOLED, WiFi
+- MVR420: 4K30, 128GB, WiFi
+- MVR435/436: 4K60, 1TB, USB UVC cameras, no WiFi
+- MVR450/460: 4K60, 2TB/2TB, 12G SDI input
+- MTR133/156: 4K60, 1TB, 13.3"/15.6" built-in display
+
+VIDEO INPUTS: HDMI (2 ports), DisplayPort (USB-C), 12G SDI (MVR450/460), USB UVC cameras (MVR435+), DVI
+
+KEYBOARD SHORTCUTS & HOTKEYS:
+- "-" key: Reduce playback speed (short press); slowest speed (long press)
+- "+" key: Increase playback speed (short press); fastest speed (long press)
+- Blue prev/next buttons: Fine-tune segment position in editor
+- Scroll Lock LED: External tally light indicator
+- Long-press live screen: Activate Area of Interest (AOI)
+- Long-press Input button: Open video mode menu
+- Swipe left/right: Reposition/hide overlay icons
+
+WORKFLOW: Start Device (45s boot) → Begin Study → Live Recording → Manage Storage → Finish Study → Archive & Review
+
+RECORDING CAPABILITIES:
+- Capture still images (tap or footswitch)
+- Record video with simultaneous image capture
+- Real-time storage monitoring
+- Audio recording (built-in or external mic)
+- Multi-storage recording (Internal/USB/NAS)
+- Date/time overlay
+
+ADVANCED FEATURES:
+- Picture-in-Picture (PIP): Combine two video sources
+- Split View: Two cameras side-by-side without cropping
+- Parallel Recording: Two independent streams to separate files
+- Area of Interest (AOI): Select rectangular capture area
+- Video Editing: Segment selection, cutting, keyframe positioning, file merging (4GB max output)
+- Playback Speed: 0.1x to 10x with frame-by-frame stepping
+- On-Screen Tally Light: Green recording indicator (adjustable size/position)
+- Custom Logo Stamping: Hospital branding (JPG/PNG, 5-40% size, corner placement)
+
+CONNECTIVITY:
+- Network: Wired Ethernet (1Gbps MVR409/420; 2.5Gbps newer models)
+- Wireless: WiFi (MVR409/420 only), WiFi USB adapter support (select models)
+- Remote Control: Footswitches, RS232 (USB adapter), Web-based access, MVR Remote App
+- DICOM PACS: Optional AKDICOM upgrade
+
+STORAGE: Internal (0-2TB), USB 3.0, Network NAS. Long recordings auto-split into 4GB segments.
+
+DEVICE TRACEABILITY: 8-character Device ID on physical label, Info screen, DICOM tags (0018,1003), EXIF metadata, QuickTime MP4 tags
+
+RESTRICTIONS: Not for diagnostic purposes, life support, radiological images, digital mammography
+
+=== MTS MONITORS & MVC CONVERTER ===
+
+MTS SERIES MONITORS:
+- MTS101: 10.1" | 1920×1200 | 260 cd/m² | Capacitive 10-point touch
+- MTS156/156W: 15.6" | 1920×1080 | 320 cd/m² | Capacitive 10-point touch
+- Features: IP54 front protection, medical-grade aluminum/stainless, fanless, VESA mount (75/100)
+- Connectivity: HDMI/DVI, USB Type-C video (MTS156), 3.5mm audio (MTS156)
+- Controls: Menu/Up/Down buttons for brightness (10 steps), input selection
+
+MVC PRO SDI TO HDMI CONVERTER:
+- Models: MVC410 (Quad SDI 4K), MVC4102SI (2SI input)
+- Converts: Single SDI (HD/3G), Quad 3G SDI (4K), reduces 4K from 50/60fps to 30/25fps
+- Power: AC 100-240V, 20W max
+- Compatible: IKEGAMI, Olympus, Panasonic surgical cameras
+
+=== MVR API DOCUMENTATION ===
+
+BASE URL: http://{device-ip}:3333/api/
+(Enable in Advanced Settings > Connections > Remote Access)
+
+AUTHENTICATION: HTTP Basic Auth with MD5-encrypted password
+SESSION MANAGEMENT: POST /api/begin returns X-session header; 5-min timeout
+
+KEY ENDPOINTS:
+- GET /api/device - Device info (no auth)
+- GET /api/cameras - Connected cameras
+- PUT /api/study/start - Start study with patient metadata
+- PUT /api/study/snapshot - Capture image
+- PUT /api/study/record/start|stop|pause|resume - Recording control
+- GET /api/stream/video?pin=<pin> - Video stream (fMP4)
+- GET /api/notify - Real-time notifications (chunked JSON)
+- POST /api/pacs - Schedule DICOM upload
+- GET /api/worklist - Patient list from worklist server
+- PUT /api/system/reboot - Restart device
+- GET /api/settings - Configuration values
+- POST /api/study/overlays - Create custom overlay
+
+RS232 PROTOCOL: Single-line format: <method> <path> [id] [data>\n
+
+ERROR CODES: 2xx=Success, 400=Invalid params, 401=Unauthorized, ≥300=Failure
+
+=== aiSCOPE VISION AI ===
+
+OVERVIEW: Real-time AI object detection/classification for MVR/MTR devices (MTR133, MTR156, MVR436)
+
+FEATURES:
+- Vendor-neutral compatibility
+- Real-time inference via JSON over LAN
+- Optional live video overlay
+- Parallel processing (3 NPU cores)
+
+PERFORMANCE:
+- 1080p: 60fps, 19ms latency
+- 2160p: 60fps, 28ms latency
+- Dual input: 90fps max total
+- Power: ~2W max
+
+WORKFLOW: Fine-tune YOLO models → Convert PyTorch to RKNN → Deploy via USB
+
+SUPPORTED PLATFORMS: RK3562, RK3566, RK3568, RK3576, RK3588
+
+REGULATORY: Medical Class 1 (EN 60601-1). For diagnostic use, follow FDA AI/ML approval process.
+
+=== GENERAL SPECIFICATIONS ===
+
+Product Lifetime: 3 years | Shelf Life: 3 years
+Cleaning: Soft cloth + 75% ethanol | Latex-free design
+Environment: Indoor professional healthcare with trained staff
+No calibration required | No measurement capability
