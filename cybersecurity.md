@@ -20,6 +20,58 @@
 * Once the User Accounts feature is enabled, administrator name and password should be assigned. Administrator privileges allow to operate Advanced Settings in the application menu, with no privilege to access OS partitions or files, alter file permissions, no administration rights for OS. Administrator has specific rights only within the application settings. Administrator has the regular “user” rights from the OS point of view.
 
 ---
+# Appendix x. Cybersecurity
+
+This appendix is intended for the IT network responsible at the organization where the MVR/MTR device is used. It contains technical information regarding the setup of the IT network and the devices connected to the MVR/MTR device. It also contains information regarding the types of data contained in and transmitted from the MVR/MTR device.
+
+The MVR/MTR device is of medium security risk (according to NIST) as:
+
+* The MVR/MTR device does not allow any input from external devices (except video signal devices and secured software updates).  
+* Essential functionality is secured in case of network problems.
+
+## Network setup
+
+When preparing the network for connection to the MVR/MTR device, the following should be considered:
+
+| Overview of the existing ports and their communication protocols |  |  |
+| :---- | :---- | :---- |
+| Item | Used standard | Comment |
+| LAN communication | IEEE 802.3, IEEE 802.3ab, IEEE 802.3az, IEEE 802.3bz, PICMG3.1 | The device uses a standard 2.5 Gigabit Ethernet controller supporting a 2.5GBASE-T interface. |
+| Access test  | ICMP/ping | Allowing ease-of-discovery for hospital IT infrastructure. |
+| Network adaptor configuration | DHCP, Static IP  | Static IP address (IPv4) is configurable in the GUI. |
+| Re-routing |  | The device does not support re-routing traffic between networks and cannot act as a NAT (Network Address Translation) gateway. |
+| PACS servers  | DICOM | To support a broad range of network infrastructures and PACS servers, the device supports DICOM without CMS (Cryptographic Message Syntax) encryption for transporting photo(s), video(s), and report(s) to the PACS server. |
+| Remote control API | TCP/IP, HTTP, HTTPS | Remote control API allows device discovery, and requires authentication for function control. Remote API does not allow any code execution and has no access to the OS. Port 3333 is used for HTTP, and port 3334 is used for HTTPS.
+The remote control is disabled, and ports are closed by default. |
+| Ports |  | There are no other open ports; the device only accepts TCP responses for DICOM, remote control API and replies to ICMP ping requests. |
+
+## Data at rest and in transit
+
+The MVR/MTR device uses SQLite3 databases and a JSON file to secure information about the device configurations, users, and network configurations. The SQLite database and JSON file are inaccessible from the GUI, but photos and videos can be exported to a PACS server, Network Storage, or USB Storage. The audit log can be exported to a USB disk. A JSON file with device and network configurations can be backed up to a USB disk. The following exportable data are stored:
+
+| Item at rest | Format | Comments |
+| :---- | :---- | :---- |
+| Image | JPG, PNG | \- |
+| Video | MP4 | H.264 or HEVC compression |
+| Patient info | TXT, JSON, CSV |  |
+| Audit log | TXT | The exported audit log allows users’ activities and system events to be tracked. The Audit log does not contain patient information and can be exported to a USB flash drive by an Administrator. |
+
+Photos and videos can be transferred to a PACS server, USB flash drive, or Network drive.  
+The following formats and protocols are used during the transfer:
+
+| Item in transit | Export to | Format | Protocol |
+| :---- | :---- | :---- | :---- |
+| Photo | PACS | DICOM | DICOM |
+|  | Network drive | JPG, PNG | SAMBA |
+|  | USB flash drive | JPG, PNG, DICOM |  |
+| Video | PACS | DICOM | DICOM |
+|  | Network drive | MP4 | SAMBA |
+|  | USB flash drive | MP4, DICOM |  |
+| Patient info | Network drive | TXT, JSON, CSV | SAMBA |
+|  | USB flash drive | TXT, JSON, CSV |  |
+| Audit log | USB flash drive | TXT |  |
+
+---
 # Network Security
 
 Applicable device models: MVR435, MVR436, MVR450, MVR460, MTR133, MTR156, MTR245.

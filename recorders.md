@@ -591,58 +591,6 @@ Available on all MediCapture MVR and MTR device models; recommended firmware **F
 
 To set the institution name, department name, location, and device title: **Settings > System > Patient info**.
 
-### Accession Number Auto-Encoding
-
-Specification for automatic encoding of a unique, time-sortable, 12-character alphanumeric code.
-
-* **Output format:** 12-character string.
-* **Character set:** A–Z, 0–9 (Base36).
-* **Uniqueness source:** combination of a timestamp and a unique device identifier.
-
-**Data structure** — derived from a 62-bit unsigned integer:
-
-```
-bit_fields:
-  - bits: 61..32
-    component: Timestamp
-    description: Seconds elapsed since the custom epoch.
-    bit_length: 30
-  - bits: 31..0
-    component: Device ID
-    description: The full 8-character hexadecimal device ID.
-    bit_length: 32
-
-Visual layout:
-[ t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t | d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d ]
-(t = timestamp bit, d = device ID bit)
-```
-
-**Component definitions:**
-
-* **Timestamp:** unit seconds; epoch start 2025-01-01 00:00:00 UTC (Unix timestamp 1735689600); calculation `floor(current_unix_timestamp_seconds) - 1735689600`; lifespan ~34 years from epoch start.
-* **Device ID:** source is the unique 8-character hex string (e.g. `1A2B3C4D`); represented as its full 32-bit integer value.
-
-**Encoding procedure:**
-
-1. Calculate the 30-bit timestamp value (current UTC seconds minus 1735689600).
-2. Convert the 8-character hex Device ID to its 32-bit integer equivalent.
-3. Combine: `combined_value = (timestamp_value << 32) | device_id_value`.
-4. Encode `combined_value` to Base36 (uppercase).
-5. Pad with leading zeros to exactly 12 characters.
-
-**Example:**
-
-```
-Time: 2025-06-25 02:27:00 UTC (Unix: 1750895220)
-Device ID: AABBCCDD
-
-Timestamp Value: 1750895220 - 1735689600 = 15205620
-Device ID Value: 0xAABBCCDD = 2864434397
-Combine: (15205620 << 32) | 2864434397 = 65301827059633373
-Encode: (65301827059633373).toString(36).toUpperCase() = "1J3J4A25V5D"
-Pad: "01J3J4A25V5D"
-
-Final Code: 01J3J4A25V5D
 ```
 
 ## Firmware Update and Factory Reset
