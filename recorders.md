@@ -355,89 +355,6 @@ Configured under **System > Study Info** (Auto start of Study) and **Video/Audio
 * **Auto record ("black-box" mode):** when enabled, video recording begins automatically as soon as a new Study starts and a video input signal is detected. Auto recording saves directly to Internal Storage in HEVC 720p30 format, at an approximate bitrate of 2 Mbps — roughly 0.9 GB of video per hour. If the camera signal is lost or disconnected, the current auto-recording file is immediately saved and closed; a new file automatically starts once the signal is restored. If a video recording is triggered manually, it overrides these auto-recording defaults and records using the custom quality/storage settings instead. Old recordings are removed automatically according to the Internal Storage auto-cleaning rules (see Storage and Archiving below).
 * Combining Auto Study Start with Auto Record enables completely unsupervised, continuous "black-box" style documentation.
 
-### Remote LDAP Authentication
-
-**Applicable models:** MVR435, MVR436, MVR450, MVR460, MTR133, MTR156 and newer. **Introduced since:** FW 250225. Available free of charge as a core security feature for new devices and via firmware update for devices already in the field.
-
-**Description.** LDAPS (Lightweight Directory Access Protocol Secure) is a protocol for accessing and managing directory information within a network — think of it as a phonebook, but for users, computers, and other resources rather than names and numbers. It allows access to the MVR/MTR device using authentication over a central directory such as Active Directory. A central authority can grant access by assigning users to specific groups (e.g. "MVR operator"), including existing group assignments such as "surgeons, nurses." Hospitals increasingly specify LDAPS as a central user-management requirement (potentially becoming mandatory); a typical requirement is Azure AD authentication with 2FA, though a simplified LDAPS flow is accepted for devices without a browser.
-
-MVR implements **Role-Based Access Control (RBAC)** to protect access to data over hospital networks and to local recordings. Three roles are defined:
-
-* **Guest:** limited to accessing the Archive for review only, and the live video stream; no access to the MVR device or its data.
-* **User:** access to the MVR device to record, review, and document video content, and to view the live video stream.
-* **Admin:** all of the above, plus device settings, user management, and device maintenance.
-
-**LDAP Administrator Workflow.** Before setting up the device, coordinate with the central LDAP administrator to obtain:
-
-* LDAPS server URL or IP address.
-* Port number, if different from the default port 636.
-* Naming context, e.g. `cn=accounts,dc=demo1,dc=freeipa,dc=org`.
-* Several test users, e.g. `mvrAdmin1, mvrAdmin2, mvrUser1, mvrUser2, mvrGuest`.
-* An example full DN for user authentication, e.g. `uid=mvrAdmin1,cn=users,cn=accounts,dc=demo1,dc=freeipa,dc=org`.
-* Three groups — `mvradmins, mvrusers, mvrguests` — corresponding to roles admin/user/guest (existing groups can be reused), with example full group DN, e.g. `cn=mvradmins,cn=groups,cn=accounts,dc=demo1,dc=freeipa,dc=org`.
-* Users added to their respective groups (e.g. mvrAdmin1/mvrAdmin2 → mvradmins; mvrUser1/mvrUser2 → mvrusers; mvrGuest → mvrguests).
-
-**Workflow on the MVR/MTR device.**
-
-1. A user enters credentials (user name and password) on the login screen.
-2. The device tries to bind (authenticate) the user to the remote LDAPS server. If binding succeeds, an LDAPS search determines whether the user belongs to a particular group. After all checks pass, the LDAPS connection is closed and the user gains access.
-3. Logout is automatic by timeout or by tapping the logout button.
-
-The LDAP(S) implementation does not require a special service account and does not store a bulk copy of LDAP user information — every user is authenticated individually, no other information is read/stored from the LDAP server, and the connection is closed immediately after each login attempt.
-
-**Offline Authentication.** Upon successful LDAPS authentication, the user is added to a local list for offline authentication with a timeout, configurable from 0 to 10,000 hours (default **168 hours**, one week); when the timer expires the user is deleted. Offline authentication is used only when the LDAPS server is unreachable — relevant because MVR/MTR devices are often mounted on mobile surgical towers that move between operating rooms and may be disconnected from the network mid-procedure. When LDAPS is online, authentication and group checks are enforced normally; successful authentication resets the timeout, while failed authentication (rights revoked centrally) deletes the user immediately regardless of timeout. The admin can manually review and delete users from the list at any time, same as local user management.
-
-**MVR Admin Workflow: LDAP Server Setup.** Fields on the LDAP server setup screen:
-
-* **Enabled:** turn on to enable the LDAP server and allow editing other fields.
-* **Server:** URL or IP address of the remote LDAP server.
-* **Port:** port number; leave blank for default (389, or 636 with SSL).
-* **Use SSL:** enables secure LDAPS (recommended).
-* **Naming context:** appended to the "Auth path" for user authentication and to group paths for group search; auto-populated after a server Test, editable for extra context. A warning "Authentication is required" appears if the server does not allow anonymous binding — in that case enter Naming context manually.
-* **Auth path:** optional extra path when the full authentication path is longer than the Naming context.
-* **Admin groups / User groups / Guest groups:** determine user role. groupDN is built from a group path + Naming context. Leave empty to disable a role entirely; use `*` to allow that role for any authenticated user (e.g. any valid credentials → Guest). Group checks run top-down: Admin, User, Guest — a user in multiple groups gets the highest-priority role.
-* **Caching time (hours):** how long a logged-in LDAP user can log back in while the device is offline. Default 168 hours (one week); enter 0 to disable offline authentication.
-* **Cancel:** returns to the previous screen without saving.
-* **Test:** performs an anonymous authentication test using Server/Port/Use SSL; a server that disallows anonymous binding responds "Authentication required" (which still confirms successful reachability).
-* **Test user:** performs user authentication and group checks.
-* **Save:** must be tapped to persist all changes.
-
-Recommended setup flow: input Server/Port/Use SSL and tap Test; edit Naming context, input optional Auth path, and tap Test user; input group paths and Test user again for each role; finally tap Save.
-
-**Test examples.** User Accounts must be enabled first (Settings > Advanced > User Accounts) with at least one Admin user created and verified by logging in immediately after creation. Then, from User Accounts, tap the "LDAP" button in the top-right corner and turn on "Enabled".
-
-*Public test server 1 — `ldap.forumsys.com`* (basic, persistent, read-only test server): Server `ldap.forumsys.com`, Port default (empty), Use SSL: no. Tap Test to verify connectivity. Naming context auto-populates as `dc=example,dc=com`. Test user credentials `tesla/password` (tick "Show password" to verify input); with `*` in Guest groups, the result is "User: tesla. Role: GUEST". Three test groups exist: `ou=scientists` (einstein, galileo, tesla, newton), `ou=mathematicians` (euclid, riemann, euler, gauss, test), `ou=chemists` (curie, boyle, nobel, pasteur) — the password for all users is "password"; user "nogroup" belongs to no group. Setting User groups to `ou=scientists` and testing `tesla/password` again yields "Role: USER". Setting Admin groups to `ou=chemists` and testing `nobel` yields "Role: ADMIN".
-
-*Public test server 2 — `ipa.demo1.freeipa.org`* (works with SSL on or off; not persistent — resets daily at 05:00 UTC): after Test, Naming context auto-populates as `dc=demo1,dc=freeipa,dc=org`; edit it to `cn=accounts,dc=demo1,dc=freeipa,dc=org`. Example full DN: `uid=admin,cn=users,cn=accounts,dc=demo1,dc=freeipa,dc=org` (built from user `uid=admin` + Auth path `cn=users` + Naming context). Example group DN: `cn=employees,cn=groups,cn=accounts,dc=demo1,dc=freeipa,dc=org`. Set Auth path to `cn=users`. Test users: `manager, helpdesk, employee, admin`, all with password `Secret123` (user names are not case-sensitive; passwords are). Testing `ManageR/Secret123` returns "User: ManageR; Role: GUEST"; testing the wrong-case password `ManageR/secret123` fails with "Error: invalid credentials". Setting Admin groups to `cn=admins,cn=groups` and User groups to `cn=employees,cn=groups` (group membership is checked against LDAP attributes `member`, `uniqueMember`, and `memberUid`): testing `admin` → "Role: ADMIN"; `manager` → "Role: USER"; `helpdesk` → "Role: GUEST". Remember to tap Save.
-
-**User Login.** When user accounts are enabled, the device starts on the login screen; incorrect credentials show "LDAP: invalid credentials". After successful LDAP authentication, the user name is shown in the top-left corner with a "(LDAP)" note indicating LDAP-based authentication, and a role icon (Admin/User/Guest) beside it.
-
-**Users Management.** Guest users have limited access; regular Users have no access to Advanced settings. Log in as Admin to manage users under "User accounts". LDAP-authenticated users are cached locally for offline authentication and auto-deleted once the last login exceeds the Caching time; any user can also be deleted manually (tap the entry > Delete > confirm). Enabling/using LDAP does not affect existing local accounts — one local Admin account should always exist to recover from LDAP misconfiguration. Local user accounts are capped at 20; the number of temporarily cached LDAP users is not limited.
-
-**FAQs**
-
-* **Can local and LDAP users log in simultaneously? What if a user exists both locally and in LDAP?** Credentials are checked against the local database first, then against the LDAP server if not found locally.
-* **If the LDAP server is unreachable and a cached user's timeout hasn't expired, can they still access the device?** Yes.
-* **How does the device handle revoked permissions during offline mode?** There is no way to check for revoked permissions while offline. Once online again, if the revoked user attempts to log in, the LDAP server's rejection immediately removes them from the local user list.
-* **If a user's group membership changes on the LDAP server, is manual intervention required?** No — the user is authenticated to the new role per current group membership automatically. If the group *name* itself changed, the group name must be edited manually on the LDAP server setup screen.
-* **Can custom roles be created beyond Admin/User/Guest, or can LDAP groups be mapped to custom permissions?** No new roles or custom permissions are available, but an existing LDAP group (e.g. "ou=surgeons") can be mapped to the standard User role.
-* **How do I regain access if LDAP is misconfigured and the local Admin account is lost?** Re-create the admin account via Remote Configuration using the remote-access password. If remote access isn't configured or its password is lost, the device must be reset to factory defaults, wiping all settings.
-* **Can LDAP configurations be backed up or transferred to another MVR device?** Yes — back up all device settings to a USB drive, or use the Remote Configuration feature over the local network.
-
-**Glossary**
-
-* **LDAPS:** Lightweight Directory Access Protocol Secure — an encrypted version of LDAP using SSL/TLS.
-* **Bind:** the LDAP operation to authenticate a client to the directory server.
-* **SSL:** Secure Sockets Layer.
-* **DN (Distinguished Name):** a unique, hierarchical identifier for an LDAP entry, e.g. `cn=John Doe,ou=Users,dc=example,dc=com`.
-* **Base DN:** the root entry from which an LDAP search begins, e.g. `dc=example,dc=com`.
-* **DC (Domain Component):** a DN segment representing part of a domain name, e.g. `dc=example,dc=com` = `example.com`.
-* **CN (Common Name):** an attribute naming an object in a DN, e.g. `cn=Alice Smith`.
-* **OU (Organizational Unit):** a DN container grouping entries by function/department/role, e.g. `ou=Engineering,dc=company,dc=org`.
-* **UID:** User Identifier, e.g. `uid=jdoe`.
-* **ObjectClass:** defines the type of object an entry represents (person, organizationalUnit, etc.).
-* **Attribute:** a property of an LDAP entry, e.g. `mail`, `telephoneNumber`.
-
 ## Shortcut Keys
 
 **Applicable models:** MVR435, MVR436, MVR450, MVR460, MTR133, MTR156. Shortcut Keys let System Integrators remotely control MVR and MTR series devices from the Network, RS232, and a USB keyboard.
@@ -499,58 +416,6 @@ Universal keys work system-wide and are particularly useful for external apps.
 * Volume control: `Ctrl+>`, `Ctrl+<`; `Ctrl+PgUp`, `Ctrl+PgDn`; `Alt+'+'`, `Alt+'-'`.
 * Back: `Ctrl+ESC`, `Ctrl+b`, `Ctrl+NUMPAD_1`. Also a gesture: quick swipe from the left or right edge of the screen (added 250903).
 * Home (back to the MVR app, the HOME app): `Ctrl+h`, `Ctrl+~`, `Ctrl+NUMPAD_7`.
-
-## System and Security
-
-### Role-Based Access Control (RBAC) and User Accounts
-
-MVR implements Role-Based Access Control to protect access to data over hospital networks and to local recordings. Roles: **Admin** (full access to all device features, including Advanced Settings — Network, Storage Rules, User Accounts, Audit Trail; no access to the underlying OS), **User** (standard access to record, review, and document; Advanced Settings blocked), **Guest** (limited to reviewing the Archive and viewing live streams — no recording or system-modification rights).
-
-Once User Accounts are enabled, correct User Names/passwords are required to operate the device. MediCapture has no access to user account information and there is no "master password" — losing all account information requires a full factory-default reset. As of firmware **FW220602**, User Roles can be assigned; at least one user must have the ADMIN role (the MVR enforces this). When upgrading from previous software, all existing users are migrated to the USER role. All user roles can connect to the device stream via a web browser.
-
-**Setup:** Settings > Advanced > User Accounts > enable User accounts > enter User Name and password. An Administrator manages users (add, delete, rename, change roles) in Advanced Settings.
-
-**Break the Glass** (from FW 210126): when User Accounts are enabled, this emergency feature allows a Study to be started without login, in case a password is lost or unavailable. Tap the icon with a cross at the top-right of the login screen. The Remote App's Emergency button is available ONLY during direct USB tethering. This function is limited strictly to running a Study — archive information and settings cannot be viewed; patient information can be edited afterward via a proper login. This Emergency role is not configurable.
-
-### Password and Session Management
-
-From firmware 210126, a "Security" section in Advanced Settings lets Administrators configure:
-
-* **Renew password:** an optional reminder period after which the user is prompted to change their password (does not force a lockout). Range: 1 week to 6 months. Default: Never.
-* **Strength of password:** the UI informs about password strength when entering a new password but does not block a weak password — enforcement is the administrator's responsibility. MediCapture, Inc. is not liable for password misuse by unauthorized parties on the hospital's LAN/Wi-Fi.
-* **Inactivity Timeout:** period after which the device enters screen-saver mode (a black screen with a digital clock at a randomly-changing position to prevent burn-in); tap the screen or press any key to wake it, requiring the logged-in user to re-enter their password. Disabled during an active Study. Range: 1–60 minutes. Default: 10 minutes.
-
-### Audit Trail
-
-Serves two purposes: compliance with security regulations, and better diagnostic data for support requests.
-
-* Logs all critical device events and necessary user actions.
-* The database keeps the last 5,000 events; older events are deleted automatically.
-* Accessed from Advanced Settings, Audit Trail box — to comply with common security regulations, Advanced Settings should be locked under the admin password and access limited to a single admin user.
-* Access is limited to the local user (device UI) and a remote admin (web configuration interface); the Remote App does not expose the Audit Trail, though actions performed via the Remote App are still logged.
-* Locally, the log can be filtered, viewed, exported to USB, and erased; remotely, it can be exported and erased.
-* No patient information is saved in the log.
-
-### OS Protection and Malware Prevention
-
-MVR/MTR devices run a **proprietary iMave operating system**, based on Android with all unnecessary components removed, on **ARM64** CPU architecture (not compatible with x86 PC architecture). The system is closed:
-
-* No possibility for users or IT administrators to gain access to the operating system; there is no "IT administrator" login or system privilege.
-* No possibility to install additional software or modify existing software modules that could introduce malware or damage the system.
-* No files can be executed on the device by a user or IT administrator (no OS or file-manager access), and the application itself does not execute or allow execution of any file.
-* External storage (including USB) is mounted with a **no-execute (noexec)** attribute, preventing execution of any file from removable media — a distinctive Linux OS feature not available on Windows.
-* The application runs full-screen with no access to a generic OS desktop; no system hotkeys are accepted (the application processes all key events); no Task-Manager-like system tools exist.
-* The application only allows file manipulation within the intended use — no generic file manipulation is available.
-* OS and application files live on internal, non-removable eMMC flash storage with proprietary partitioning; system partitions are read-only and cannot have their permissions altered under any privilege. OS and application always boot fresh in "factory mode," retaining only the application's user settings.
-* User files (images/videos only) are always kept on a separate storage device from OS/application files — no mixing of system and user files on the same storage.
-* There is no BIOS; the OS bootloader is encrypted and signed with a proprietary key. Booting from an external device is impossible, and unauthorized/unsigned firmware is rejected at boot.
-* Firmware is a single proprietary-format file, signed with a security key; unauthorized/unsigned firmware is rejected during update. Firmware updates the OS and application together — no separate software-component updates are possible.
-* Remote access is disabled by default. Devices have no default user, administrator, or factory passwords; once remote access is enabled, a new password must be assigned, and there is no lost-password recovery procedure.
-* Administrator privileges (once User Accounts are enabled) allow operation of Advanced Settings within the application only — no OS-partition/file access, no file-permission changes, and no OS administration rights. From the OS's point of view, the Administrator has only regular "user" rights.
-
-### Network Security
-
-Network services are **off by default** to minimize the attack surface and provide a secure out-of-the-box experience — Remote Access requires a unique password to be assigned when first enabled. NTP synchronizes automatically with hospital time servers for accurate recording timestamps (see Networking below).
 
 ### Automatic Video Repair (AVR)
 
@@ -927,37 +792,6 @@ On the PACS Server Setup screen: required fields Server IP, Server Port, Server 
 
 *Worklist security (informative):* the Worklist is encrypted and saved to internal device storage (not shared or accessible by traditional means); the saved copy is auto-deleted at device start once older than 24 hours; every device encrypts differently; the administrator can disable the offline Worklist feature via the web configuration tool.
 
-## MVR Remote App
-
-**Description:** MVR Remote App is MediCapture's Android application (smartphone or tablet) providing remote (wired or wireless) control and monitoring of MVR/MTR recorders. **Compatibility:** Android 6.0 and newer. **Availability:** Google Play Store. **Price:** free.
-
-* **Remote operation:** the tablet becomes a full, ergonomic remote control.
-* **Remote MVR manager:** browse and review all patient files, annotate, zoom, report, and print — manage the complete archive of the recorder.
-* **IT remote access:** access the device through the hospital facility network for remote maintenance, setup, or upgrades.
-
-**Compatible hardware:** MVR, MVR Pro, MVR Lite, MVR 4K. MVR Lite requires the additional **Connect Upgrade Package** for network connectivity.
-
-### Using a Tablet as an External Touchscreen Monitor (USB cable)
-
-Available on all MVR-series types: MVR Lite (MVR400), MVR (MVR420), MVR Pro (MVR409). Connecting via USB cable charges the tablet continuously while the MVR is powered; no User Account or Remote Access activation is required — the tablet remains permanently connected, ready for viewing/operation/charging.
-
-**Operating:** turn on the recorder and tablet, open the MVR Remote App; if the Login field is greyed out, tap USB tethering (and ensure USB tethering is enabled on the tablet), close Settings, select the connected device, and tap LOG IN — the tablet now shows the full MVR UI. **Exiting:** go to the MVR home screen and LOG OUT. **Standby:** it's recommended to leave both devices on (low energy use, tablet stays charged); to power down fully, turn off both units rather than leaving them in standby.
-
-### Using a Tablet as a Handheld Remote Control (wireless)
-
-Available for MVR (MVR420) and MVR Pro (MVR409) with networking. MVR Lite requires the Connect Package (network activation key + USB-to-Network adapter) connected to a Wi-Fi router via LAN.
-
-**Preparations:** Remote Access must be activated (Advanced Settings > Connections); User Accounts with individual passwords must be enabled (at least one account). On the tablet: either connect its Wi-Fi to the same router as the MVR, or turn on a Wi-Fi hotspot on the tablet and connect the MVR to it (keep the tablet from powering off completely, or the connection may drop).
-
-**Operating:** turn on the MVR (ensure it shows the Home screen) and the tablet, open the MVR Remote App, select the device, log in with either the general Remote Access password or a User Account name/password. The tablet then shows the full MVR UI. Note: in user-account mode, the MVR automatically stops the application after 10 minutes if no recording session has started, to prevent unauthorized access. **Exiting:** Home screen, then LOG OUT. **Standby:** leave both devices on to keep the Wi-Fi connection active; charge the tablet whenever not in use.
-
-### Downloading Data to the Tablet
-
-Copying data to the tablet stores sensitive data locally on it — the operator is responsible for handling it per local data-security regulations; the administrator must enable "Local storage" in MVR settings first. **Copying studies** (MVR420/MVR409 only): in Archive, select the source storage, tap Copy, choose the tablet as the destination, tap Continue, and wait for the Success message.
-
-**MVR Local Archive:** after closing the Remote App, open the separate "MVR Local Archive" app to view/edit data stored on the tablet the same way as on the recorder itself, including local patient-data editing.
-
-**Installation and updates:** ensure the recorder has the latest firmware. Install/update the MVR Remote App from Google Play if internet access is available on the tablet; otherwise contact MediCapture for a download link, copy the `.apk` to a USB stick (a USB-A to USB-C adapter may be needed), and install/update it by browsing to the file on the tablet.
 
 ## After-Market Support and Integration
 
