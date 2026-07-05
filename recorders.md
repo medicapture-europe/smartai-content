@@ -600,76 +600,7 @@ USB Storage can be used for direct recording, copying, and backing up Internal S
 
 "Good quality" modern USB drives may contain SSD technology in a small form factor using MLC flash.
 
-### Folder Naming Rules
-
-**Current rule (Stamp Folder Names: ON):** folders are named using timestamps and device/patient information for proper sorting/identification.
-
-```
-Without Patient ID:  YYYYMMDD_HHMMSS_DeviceID
-  Example: 20240521_161633_20bd4b50
-
-With Patient ID:     YYYYMMDD_HHMMSS_PatientID_DeviceID
-  Example: 20240521_162707_AV35674_20bd4b50
-```
-
-`YYYYMMDD_HHMMSS` sorts folders chronologically; the 8-hex-digit DeviceID distinguishes recordings from different devices sharing the same storage location. Always verify the device's date/time before starting a Study. Since the MVR435 model, the folder name is always time-stamped and contains the DeviceID; including personal patient data in the folder name is optional (Settings menu) and is recommended to be avoided to reduce the risk of personal-data leakage.
-
-**Legacy rule (Stamp Folder Names: OFF):** folders are named sequentially `CASE0001, CASE0002, ..., CASE9999`. After CASE9999, naming resets to CASE10000, and although images/videos can still be captured, they cannot be reviewed from the Archive — subsequent studies after CASE9999 overwrite the previous CASE10000 contents. **Recommendation:** use the current (timestamped) naming rule to avoid overwriting and ensure archive functionality.
-
-### File Naming Rules
-
-File name structure: `PSSSS[-FFF].EXT`
-
-* `P` — one-letter prefix for recording type/source: `I` = image, primary channel; `J` = image, secondary channel; `V` = video, primary channel; `W` = video, secondary channel; `R` = imaging report.
-* `SSSS` — sequential capture number (0001–9999), reflecting chronological order of all captures/recordings regardless of type.
-* `-FFF` — optional fragment number (001–999), used for long recordings split at the 4GB limit, saved edits, or images captured from video during playback.
-* `.EXT` — file extension: images `jpg`, `png`, `dcm`; videos `mp4`, `dcm`; reports `pdf`, `dcm`.
-
-The primary and secondary channels can be swapped during recording; recordings are made from the primary channel unless parallel recording is enabled.
-
-**Examples:**
-
-```
-Capturing images and video (sequential):
-  Capture image             → I0001.jpg
-  Start video recording     → V0002.mp4
-  Capture image (during rec)→ I0003.jpg
-  Capture image (during rec)→ I0004.jpg
-  Stop video recording
-  Capture another image     → I0005.jpg
-
-Long recording exceeding 4GB — fragments:
-  Original: V0001.mp4
-  Fragments: V0001-001.mp4, V0001-002.mp4, ...
-
-Parallel recording (primary + secondary channel):
-  Start parallel recording
-    Primary   → V0001.mp4
-    Secondary → W0001.mp4
-  Capture images during recording
-    Primary image   → I0002.jpg
-    Secondary image → J0002.jpg
-  Stop recording, switch channels (secondary becomes primary)
-  Start new recording
-    New primary   → V0003.mp4
-    New secondary → W0003.mp4
-
-Appending to a closed Study:
-  Existing: I0001.jpg, V0002.mp4, I0003.jpg
-  Capture image  → I0004.jpg
-  Start recording→ V0005.mp4, then stop
-
-Editing images/videos (fragment numbers preserve originals):
-  Edit I0001.jpg           → save as I0001-001.jpg
-  Edit that edited image   → save as I0001-002.jpg
-  Capture image from V0002.mp4 → saved as I0002-001.jpg
-  Save a video clip from original video → V0002-002.mp4
-
-Generating PDF reports (prefix R):
-  Generate report → R0004.pdf
-  Append + capture image → I0005.jpg
-  Generate another report → R0006.pdf
-```
+---
 
 **Recording formats:** images JPEG (default)/PNG/DICOM; videos MP4/DICOM; reports PDF/DICOM.
 
@@ -745,25 +676,6 @@ Connect the supplied Wi-Fi antennas to the rear "WIFI" and "WiFi/BT" connectors,
 
 **Hidden SSID.** Connect a USB keyboard, go to the WIFI SETTINGS screen, and press `Ctrl+W` to reach the Android WLAN screen. Tap "Add Network" and enter the SSID details, then press Escape repeatedly to return to the MVR screens. The new SSID settings persist across power cycles.
 
-### Remote Access and Remote Configuration
-
-The device can be controlled remotely from a PC browser ("MVR Remote Configuration") by IT administrators, from a tablet/smartphone via the MVR Remote App, or from remote IT systems via the API. Remote Access is **disabled by default** — enable it at **Settings > Connections > Remote Access**, toggle the slider, and set a password. Once enabled, the device is reachable at its IP address on port **3333** (full URL shown on screen). For MVR Lite (MVR400), remote access requires the Connect Package (USB-LAN adapter + Network activation key).
-
-**MVR Remote Configuration** lets IT administrators browse all settings and manage files on all storages (watch, delete, download) via a web browser, and update firmware remotely. Activate at **Settings > Advanced > Connections > Remote Access**, enable, set a password, note the IP address, then return to the Home screen (the device must be idle/at the Home screen for remote access — not during an open Study or Archive browsing). Connect a PC/portable device to the same LAN/Wi-Fi and open a browser to e.g. `http://192.168.1.233:3333/config`, entering the password. While under Remote Configuration, the device cannot be operated locally and shows a corresponding message; log out of Remote Configuration to resume normal local operation.
-
-**Troubleshooting — login stops working after a firmware upgrade:** likely cause is the device set to Auto-IP, so its address changed after the upgrade. Check the new address at **Settings > Advanced > Remote Access**, or switch to Manual IP at **Settings > Advanced > Connections > Network** by entering the fixed IP address from your IT administrator and tapping Set.
-
-### Video Streaming
-
-Video streaming enables external viewers to watch live studies with low latency, using **FMP4 (Fragmented MP4) over TCP/IP** — accessible on most JavaScript-enabled browsers with no extra infrastructure. Advantages of FMP4/TCP over typical UDP streaming: no special network equipment needed; enhanced reliability via TCP's connection-oriented error correction/retransmission (vs. UDP's packet loss/artifacts); better firewall/NAT compatibility for clients behind firewalls; better scalability through CDNs/cloud services. If audio is enabled with a connected microphone, audio playback is also available. Streaming is intended for education, training, and consultation — **not for diagnostic use**. Activation requires a password-protected user account and active confirmation from the MVR operator, who can terminate the stream at any time.
-
-**Streaming features:** resolution **1280x720p30**; browser viewing options include full-screen, picture-in-picture overlay, and snapshot (browser-dependent, via right-click); maximum **8 simultaneous stream clients**; lower task priority than other MVR functions, with automatic quality reduction if needed.
-
-**Requirements:** MVR firmware **220116** or later; streaming activation via PC/laptop over the network, or Android mobile devices via Wi-Fi; recommended browsers Chrome, Edge, Firefox (potential compatibility issues on Apple iPhone/MacBook).
-
-**Administrator setup:** connect the MVR and streaming device to the same network; check Network settings (Settings > Advanced > Connections > Network) or Wi-Fi settings; enable User Accounts, create user accounts, and remember the credentials (no master password exists); optionally protect Advanced Settings with an admin password; assign user roles (GUEST recommended for stream viewers); activate Streaming at Settings > Advanced > Connections > Remote Access (enable Remote access and Streaming); note the displayed address (e.g. `http://192.168.2.108:3333`) and share it with clients; optionally enable "Always allow" for trusted environments and enable audio if a microphone is connected; optionally disable "Stamp function in pictures and videos" to protect patient anonymity (Settings > Video/Audio > Video Input).
-
-**User instructions:** start a Study with live camera video on the recorder; open a browser on the remote device to the IP address with a `/stream` suffix (e.g. `http://192.168.2.108:3333/stream`); request to join by entering User Account credentials; wait for the operator's acceptance; adjust settings (full-screen, audio) and terminate when finished (a new stream requires a new login). MVR operators can view the list of connected viewers and selectively disconnect any of them during the live stream.
 
 ## Reporting
 
