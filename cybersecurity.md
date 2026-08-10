@@ -381,3 +381,25 @@ RMOT-1.2,Is there an indicator for an enabled and active remote session? : Yes
 RMOT-1.3,Can patient data be accessed or viewed from the device during the remote session?: No
 RMOT-2,Does the device permit or use remote service connections for predictive maintenance data?: No
 RMOT-3,"Does the device have any other remotely accessible functionality (e.g. software updates, remote training)?": No
+
+# MTR System Security: OS Protection and Network Security
+
+Scope: MTR-series summary of operating-system hardening and network-service defaults; overlaps the sections above on OS protection and network security.
+
+## OS Protection and Malware Prevention
+
+The MTR recorder uses a proprietary hardened operating system designed for maximum security:
+
+- Kiosk Mode: The MTR recorder operates in a dedicated, full-screen kiosk environment. This ensures that the user is restricted to the medical recording interface, with no access to the underlying operating system desktop, system settings, or third-party applications.
+- Direct Boot: The device is configured to boot directly into the MTR application, ensuring the system is ready for clinical use immediately upon power-on.
+- No-Execute (noexec) Storage: To protect against external threats, MTR recorder mounts all connected external storage—including USB flash drives and NAS—with a noexec attribute. This ensures that even if a connected drive contains malware, viruses, or unauthorized scripts, the system is physically incapable of executing them.
+- Closed System: There is no direct access to the OS, no "IT administrator" shell, and no ability to install third-party software.
+- Read-Only Partitions: System partitions are read-only. The device boots fresh in "factory mode" every time, retaining only user-defined settings.
+- Boot Security: The system uses an encrypted bootloader signed with a proprietary key, rejecting any unauthorized or unsigned firmware.
+- Audit Trail: The MTR recorder maintains a log of the last 5,000 critical events and user actions for regulatory compliance.
+
+## Network Security
+
+- Services Off by Default: To minimize the attack surface and ensure a secure "out-of-the-box" experience, all network services (such as Remote Access, DICOM, and HL7) are turned off by default. They must be explicitly enabled and configured by an administrator.
+- Remote Access: When enabled, it requires a unique password.
+- NTP (Network Time Protocol): Automatically synchronizes the clock with hospital time servers. Accurate time-stamping is critical for security and medical records.

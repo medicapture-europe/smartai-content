@@ -236,3 +236,33 @@ Answer. Yes. Administrators can back up all device settings to the USB drive or 
 **UID**: User Identifier. A unique attribute for a user account (e.g., uid=jdoe).  
 **ObjectClass**: Defines the type of object an entry represents (e.g., person, organizationalUnit).  
 **Attribute**: A property of an LDAP entry (e.g., mail, telephoneNumber).
+
+## MTR System and Security: User Access Control and Session Management
+
+Scope: MTR-series wording of the RBAC, authentication and session rules described above; overlaps the sections on Roles, Break the Glass and Advanced Security features.
+
+### User Access Control (RBAC)
+
+MTR recorder implements Role-Based Access Control (RBAC) to protect local recordings and network access.
+
+- No Default Passwords: For maximum security, our products do not ship with a default password. Upon the first power-on or after a factory reset, the system requires the administrator to create a unique, secure password before any configuration can proceed.
+
+- Roles:
+  Roles:
+  
+  - Admin: Full access to all device features, including Advanced Settings (Network, Storage Rules, User Accounts, Audit Trail). No access is granted to the operating system.
+  - User: Standard access to record, review, and document studies. Access to Advanced Settings is blocked.
+  - Guest: Limited to reviewing the Archive and viewing live streams; no recording or system modification rights.
+
+- Authentication Methods:
+  Authentication Methods:
+  
+  - Local Accounts: Up to 20 local accounts can be managed directly on the device.
+  - LDAP/LDAPS: Centralized authentication via Active Directory. It supports Offline Authentication (temporary caching credentials) to allow logins when the MTR recorder is on a mobile trolley disconnected from the network.
+
+- "Break the Glass" Emergency Login: In urgent situations, an emergency study can be started without a login. This mode is restricted to recording only; the Archive and Settings remain protected.
+
+### Password and Session Management
+
+- Password Policies: Administrators can enforce password strength requirements and set renewal periods (from 1 week to 6 months).
+- Inactivity Timeout: To prevent unauthorized access to an unattended device, the system can be set to automatically enter a password-protected screensaver after 1 to 60 minutes of inactivity.
