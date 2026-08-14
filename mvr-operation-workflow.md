@@ -263,20 +263,6 @@ Tap on the Back icon to Finish the current Study. The confirmation dialogue will
   
   - Note: To enable printing, ask your IT administrator to connect a network printer and configure the printer properties.
 
-## External Web Application
-
-The External Apps feature lets you control external smart devices on your local network directly from the recorder's built-in web browser and acts as a shortcut to specific websites or web applications. It is designed to let medical professionals control devices such as:
-
-- Video switch matrices
-- Intelligent camera controllers
-- Surgical light controllers
-- Web-based help or guidance systems and others.
-  To configure these applications, navigate to: Settings ➤ Advanced Settings ➤ Connections ➤ External apps. Toggle the "Enabled" slider. Tap the "+" icon to add a new app. You can specify the protocol (HTTP or HTTPS), the URL, or the IP address and port. You can select one application to be the "default home app," which will launch automatically when the device starts and a user logs in.
-
-There is a default home web application running on the local host, http://localhost:3335, when enabled. This is a template web application, and it can be replaced with any custom web app. Create a custom web application, zip it, and copy it to a USB drive. Plug the USB drive into the device. Tap to edit the default home app in the EXTERNAL APPS screen. Tap the “Upload web” button and select the zip file from the USB drive. Your custom application will become a new home web app. Rules for creating web applications: must start with index.html; after unzipping, index.html should be in the root directory, not in any subfolder.
-
-When enabled, app icons appear in a vertical scroll on the left side of the Start screen. Tapping an icon opens a browser window. These apps behave like browser tabs; if you close the window, the progress remains active in the background until you log out or restart the device.
-
 ## DICOM package
 
 DICOM package, enabled via the AKDICOM activation key, is designed to integrate MTR recorder seamlessly into the hospital’s imaging network. Key Features include:
