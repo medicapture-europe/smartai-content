@@ -53,8 +53,14 @@ source can go to any number of outputs simultaneously.
 
 A **Switching Mode** setting controls how the picture changes on a route change:
 
-- **Bypass** — fast, clean switch (unscaled path).
-- **Seamless** — glitch-free fade with slight added latency.
+- **Seamless** — any source can be routed to any output; resolution and color are
+  automatically converted (scaled) to the output's setting, and switching an output from
+  one source to another is seamless — the monitor never blinks black. Side effect: minor
+  video latency, around 1 frame.
+- **Bypass** — the signal passes through unscaled, with zero added latency. Side effects:
+  the monitor may show black for a few seconds while re-syncing when the source changes,
+  and the monitor stays black if it does not support the source's signal format (e.g. a
+  4K source on an HD-only monitor).
 
 ### 2.2 Multiview mode
 
@@ -217,8 +223,8 @@ Key 1.
   Multiview).
 - **Language** — English, Traditional Chinese, German, French, Spanish, Russian (more
   planned).
-- **Switching Mode** — Bypass (fast clean switch) / Seamless (glitch-free fade, slight
-  latency).
+- **Switching Mode** — Seamless (auto conversion, no black blink, ~1 frame latency) /
+  Bypass (unscaled, zero latency, brief black on switch; see §2.1 for details).
 - **Theme** — Dark Mode / Light Mode.
 - **Pattern Style** — test/idle pattern for outputs with no source: Black, Blue,
   Color Bar, Gray, Cross, Cross Hatch.
@@ -351,7 +357,7 @@ not protected against explosion (do not use in flammable anesthetic atmospheres)
 | Can't reach the Matrix Control UI                | Press Key 1 for the IP address on the displays; confirm control device is on the same subnet; default IP 192.168.0.100; toggle DHCP/static with Key 2 long-press + reboot.  |
 | "Activation Required" on MTR/MSP                 | The matrix-control feature needs activation key **AKMVX441**.                                                                                                               |
 | Settings ask for a password                      | The administrator set the settings password (see §6.1). Ask the administrator to unlock. Forgotten password → factory reset (erases all settings, presets, password).       |
-| No picture on an output                          | Check source signal indicator on the home page; verify the output is Enabled and its Resolution suits the display (try "auto"); check cables (connect only with power off). |
+| No picture on an output                          | Check source signal indicator on the home page; verify the output is Enabled and its Resolution suits the display (try "auto"); check cables (connect only with power off). In Bypass switching mode a monitor stays black if it cannot handle the source format (e.g. 4K source on HD-only monitor) — switch to Seamless mode for automatic conversion. |
 | Output shows a test pattern                      | No source routed / no signal — pattern style is configurable in Interface Settings.                                                                                         |
 | Routing change ignored right after a mode switch | Wait a few seconds after switching Matrix ↔ Multiview, then repeat the route.                                                                                               |
 | Picture flickers/black after lightning or ESD    | Power off, wait a few seconds, power on.                                                                                                                                    |
