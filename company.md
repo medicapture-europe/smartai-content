@@ -69,12 +69,16 @@ The company maintains a global reach through offices worldwide, including:
 
 * **MVC410** (MVC Pro SDI to HDMI)
 
-### **6\. Video Recording Product Bundles**
+### **6\. MVX Series (Medical Video Matrix)**
+
+* **MVX441** (4×4 seamless 4K60 HDMI matrix)
+
+### **7\. Video Recording Product Bundles**
 
 * **MVR TouchPro:** Includes MVR420 and MTS101  
 * **TRS Pro:** Includes MVR420 and wireless tablet TBHI9PRO
 
-### **7\. Legacy USB Series (USB-Based Image Recorders)**
+### **8\. Legacy USB Series (USB-Based Image Recorders)**
 
 *Note: The AI Assistant does not support legacy products. For details, visit the [MediCapture Support Page](https://medicapture.com/support/).*
 
@@ -83,13 +87,14 @@ The company maintains a global reach through offices worldwide, including:
 * **USB200**  
 * **USB300**
 
-### **8\. Software & Activations**
+### **9\. Software & Activations**
 
 * **MVR Remote App:** Free application for Android phones and tablets to remotely control MVR series recorders.  
 * **Activation Keys (MVR/MTR Series):**  
   * AKDICOM: Activates DICOM features.  
   * AK4K: Activates 4K video recording.  
-  * AKAI: Activates aiScope AI inference.
+  * AKAISCOPE: Activates aiScope AI inference.
+  * AKMVX441: activates video matrix MVX441 control.
 
 ## **Warranty Information**
 

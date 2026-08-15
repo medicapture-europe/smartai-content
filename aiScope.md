@@ -67,7 +67,7 @@ When you are confident of getting the desired outcome while simulating various s
 1. **Download & Fine-tune:** Download the pre-trained model, for example, YOLO11s-RELU, from the MediCapture GitHub in PyTorch format, and fine-tune it on your custom surgical dataset following the guidance published on the GitHub.  
 2. **Convert & Upload:** Convert your new PyTorch model to the aiScope format using tools from the MediCapture GitHub repository. The model, relevant files, and settings will be saved as a zip archive. Upload it to the MTR device using a USB stick containing the archive file.  
 3. **Deploy & Test:** Assign a new model to the video input, start Study, and evaluate the performance and inference results. With the right dataset and fine-tuning, the model will perform on surgical content with actual surgical instruments, yielding performance and results similar to those achieved during simulation using a common fork and knife.  
-4. **Activation:** Demo inference is limited in time. Upon successful evaluation, purchase the aiScope activation key to remove the watermark and inference time limit.
+4. **Activation:** Demo inference is limited in time. Upon successful evaluation, purchase the aiScope activation key (AKAISCOPE) to remove the watermark and inference time limit.
 
 ## **Flexibility**
 
