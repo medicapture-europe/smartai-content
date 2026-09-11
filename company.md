@@ -148,7 +148,15 @@ Registering MediCapture products is quick and easy:
 
 * Payment is due per account terms or by credit card upon repair approval.  
 * **Do not send accessories** or non-MediCapture equipment unless explicitly instructed.  
-* **IMPORTANT WARNING:** Do not send patient records or recordings with the unit. They will be **destroyed immediately without question and cannot be recovered**.  
+* Sensitive personal data / protected health information (PHI), protected by the European GDPR and HIPAA is processed when using the devices of MediCapture. The user of a device of MediCapture is obligated, if the device is sent to MediCapture (i) for maintenance purposes (ii) under warranty, (iii) after its use as a demo/test device, or (iv) for any other reason, to reset the device to its delivery state and to delete all personal data on the device.
+
+  It is highly recommended to clean the internal storage before disposing of the device.
+
+  The formatting function of the device must be used for this purpose (see chapter Deleting Data in these Instructions for Use).
+
+  You can use the backup function in the Archive to copy studies from the internal storage to a USB storage device before formatting the internal memory.
+
+  If MediCapture determines that personal data or PHI is stored on the device, or if there is only reasonable suspicion that this is the case, the device will be returned at the user's expense, and the user will be instructed to resend the device in the condition described hereinabove.
 * Customer covers inbound shipping costs to MediCapture.
 
 ## **Product Safety and Operational Specifications Summary**
