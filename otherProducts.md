@@ -39,7 +39,7 @@ This section describes the specifications and operation parameters for MediCaptu
 
 ### **Hardware & Software Compatibility**
 
-* **MediCapture Recorders:** Seamlessly compatible with MVR-series medical video recorders.  
+* **MediCapture Recorders:** Seamlessly compatible with MVR-series and MTR-series medical video recorders.  
 * **Third-Party Devices:** Compatible with any external host outputting video via HDMI or DVI alongside a USB port for touch controls.
 
 ### **General Installation & Operating Instructions**
@@ -86,7 +86,7 @@ This section describes the specifications and operation parameters for MediCaptu
 | **Brightness Adjustment** | None | 10 levels, ranging from 50 to 340 cd/m² (Press Menu key to save selection) |
 | **Volume Adjustment** | None | 10 audio volume levels |
 | **Video Input Selection** | None (locked to single physical input) | Options: Auto, HDMI, TypeC1, TypeC2 |
-| **Compatible Recorders** | MVR Pro (MVR409), MVR Lite, MVR (MVR420) | MVR Pro (MVR409), MVR Lite, MVR (MVR420), MVR435, MVR436, MVR450, MVR460, MTR133, MTR156 |
+| **Compatible Recorders** | MVR Pro (MVR409), MVR Lite, MVR (MVR420), MVR435, MVR436, MVR450, MVR460, MTR133, MTR156, MTR245 | MVR Pro (MVR409), MVR Lite, MVR (MVR420), MVR435, MVR436, MVR450, MVR460, MTR133, MTR156, MTR245 |
 
 *Note on Accessories: The MTS101 can be bundled with the **ST004MTS** acrylic desktop stand. The ST004MTS stand is designed exclusively for the 10.1" form factor; the 15.6" MTS156 is physically incompatible due to size and weight restrictions.*
 

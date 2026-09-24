@@ -107,5 +107,5 @@ MVR400, MVR409, MVR420, MVR435, MVR450, MVR460 body color is silver grey. MVR436
 | USB UVC camera support | None | None | None | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
 | Extra connectivity | None | None | None | None | None | DP Display Port input, 12G SDI input with loop output | DP Display Port input, 12G SDI input with loop output | None | None | None |
 | Maximum video input and recorded resolution | 4K30 | 4K30 | 4K30 | 4K60 | 4K60 | 4K60 | 4K60 | 4K60 | 4K60 | 4K60 |
-| Compatible MediCapture monitors | MTS101, MTS156 | MTS101, MTS156 | MTS101, MTS156 | MTS156 | MTS156 | MTS156 | MTS156 | MTS156 | MTS156 | MTS156 |
+| Compatible MediCapture monitors | MTS101, MTS156 | MTS101, MTS156 | MTS101, MTS156 | MTS101, MTS156 | MTS101, MTS156 | MTS101, MTS156 | MTS101, MTS156 | MTS101, MTS156 | MTS101, MTS156 | MTS101, MTS156 |
 | aiScope feature | no | no | no | no | yes | no | no | yes | yes | yes |
