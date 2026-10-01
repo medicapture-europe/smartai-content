@@ -56,7 +56,7 @@ A **Switching Mode** setting controls how the picture changes on a route change:
 - **Seamless** — any source can be routed to any output; resolution and color are
   automatically converted (scaled) to the output's setting, and switching an output from
   one source to another is seamless — the monitor never blinks black. Side effect: minor
-  video latency, around 1 frame.
+  video processing latency of under 2 frames (under 30 ms at 60 fps; see §12).
 - **Bypass** — the signal passes through unscaled, with zero added latency. Side effects:
   the monitor may show black for a few seconds while re-syncing when the source changes,
   and the monitor stays black if it does not support the source's signal format (e.g. a
@@ -223,7 +223,7 @@ Key 1.
   Multiview).
 - **Language** — English, Traditional Chinese, German, French, Spanish, Russian (more
   planned).
-- **Switching Mode** — Seamless (auto conversion, no black blink, ~1 frame latency) /
+- **Switching Mode** — Seamless (auto conversion, no black blink, under 2 frames latency) /
   Bypass (unscaled, zero latency, brief black on switch; see §2.1 for details).
 - **Theme** — Dark Mode / Light Mode.
 - **Pattern Style** — test/idle pattern for outputs with no source: Black, Blue,
@@ -316,8 +316,8 @@ challenges are covered by MediCapture accessories:
 | Cooling / noise       | Passive, fanless — 0 dB; housing gets warm (normal)                                                                                        |
 | Mechanical            | 270 × 166 × 30 mm (W×D×H, without connectors), 1.25 kg; steel housing, aluminum front, white RAL9016                                       |
 | Ingress protection    | IP21                                                                                                                                       |
-| Operating environment | 0…+40 °C, 700–1060 hPa, 20–80 % RH non-condensing                                                                                          |
-| Storage/transport     | −20…+60 °C, 700–1060 hPa, 10–90 % RH non-condensing                                                                                        |
+| Operating environment | 0…+40 °C, 540–1060 hPa, 20–80 % RH non-condensing                                                                                          |
+| Storage/transport     | −20…+60 °C, 700–1060 hPa, 10–90 % RH non-condensing                                                            |
 | Boot time             | <15 s (max 20 s); restores last routing after boot                                                                                         |
 | Box contents          | MVX441, medical power supply 12 V 3 A + power cable, RJ45 cat 7 patch cable, HDMI cable, 2 mounting ears + 8 screws, printed IFU (English) |
 
@@ -352,17 +352,72 @@ not protected against explosion (do not use in flammable anesthetic atmospheres)
 
 ## 11. Troubleshooting quick reference
 
-| Symptom                                          | Check / action                                                                                                                                                              |
-| ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Can't reach the Matrix Control UI                | Press Key 1 for the IP address on the displays; confirm control device is on the same subnet; default IP 192.168.0.100; toggle DHCP/static with Key 2 long-press + reboot.  |
-| "Activation Required" on MTR/MSP                 | The matrix-control feature needs activation key **AKMVX441**.                                                                                                               |
-| Settings ask for a password                      | The administrator set the settings password (see §6.1). Ask the administrator to unlock. Forgotten password → factory reset (erases all settings, presets, password).       |
+| Symptom                                          | Check / action                                                                                                                                                                                                                                                                                                                                           |
+| ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Can't reach the Matrix Control UI                | Press Key 1 for the IP address on the displays; confirm control device is on the same subnet; default IP 192.168.0.100; toggle DHCP/static with Key 2 long-press + reboot.                                                                                                                                                                               |
+| "Activation Required" on MTR/MSP                 | The matrix-control feature needs activation key **AKMVX441**.                                                                                                                                                                                                                                                                                            |
+| Settings ask for a password                      | The administrator set the settings password (see §6.1). Ask the administrator to unlock. Forgotten password → factory reset (erases all settings, presets, password).                                                                                                                                                                                    |
 | No picture on an output                          | Check source signal indicator on the home page; verify the output is Enabled and its Resolution suits the display (try "auto"); check cables (connect only with power off). In Bypass switching mode a monitor stays black if it cannot handle the source format (e.g. 4K source on HD-only monitor) — switch to Seamless mode for automatic conversion. |
-| Output shows a test pattern                      | No source routed / no signal — pattern style is configurable in Interface Settings.                                                                                         |
-| Routing change ignored right after a mode switch | Wait a few seconds after switching Matrix ↔ Multiview, then repeat the route.                                                                                               |
-| Picture flickers/black after lightning or ESD    | Power off, wait a few seconds, power on.                                                                                                                                    |
-| Network mode changed but nothing happened        | DHCP/static change via Key 2 requires a full power off/on reboot.                                                                                                           |
-| Device is very warm                              | Normal — passive fanless cooling. Ensure airflow, do not stack devices.                                                                                                     |
-| Reboot from the UI                               | Advanced Settings → Reboot Matrix; outputs and connection drop for ~15–20 s.                                                                                                |
+| Output shows a test pattern                      | No source routed / no signal — pattern style is configurable in Interface Settings.                                                                                                                                                                                                                                                                      |
+| Routing change ignored right after a mode switch | Wait a few seconds after switching Matrix ↔ Multiview, then repeat the route.                                                                                                                                                                                                                                                                            |
+| Picture flickers/black after lightning or ESD    | Power off, wait a few seconds, power on.                                                                                                                                                                                                                                                                                                                 |
+| Network mode changed but nothing happened        | DHCP/static change via Key 2 requires a full power off/on reboot.                                                                                                                                                                                                                                                                                        |
+| Device is very warm                              | Normal — passive fanless cooling. Ensure airflow, do not stack devices.                                                                                                                                                                                                                                                                                  |
+| Reboot from the UI                               | Advanced Settings → Reboot Matrix; outputs and connection drop for ~15–20 s.                                                                                                                                                                                                                                                                             |
+
+---
+
+## 12. Video processing latency
+
+Latency depends on the operating mode and output. The figures below describe **latency
+added by the MVX441**, rather than the total delay from camera to display.
+
+### 12.1 Latency by mode and output
+
+| Operating mode    | Video output(s)                      | MVX441 processing latency                                                                       |
+| ----------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------- |
+| Matrix / Bypass   | All outputs                          | Zero added latency                                                                              |
+| Matrix / Seamless | All outputs                          | Under 2 video frames; under 30 ms at 60 fps                                                     |
+| Multiview         | Output 1 — processed composite       | Under 2 video frames                                                                            |
+| Multiview         | Outputs 2 and 3 — Bypass             | Zero added latency                                                                              |
+| Multiview         | Output 4 — copy of output 1, 2, or 3 | Follows the selected output: processed when copying output 1; Bypass when copying output 2 or 3 |
+
+### 12.2 Which screens need low latency?
+
+Latency is typically most important on the **main surgical screen**, rather than every
+screen in the room. In endoscopy and other minimally invasive procedures, the surgeon
+uses the live screen image to guide movements, so the surgical viewing path should use
+a Bypass output. Any secondary screen used for the same purpose should also use a
+Bypass path.
+
+In microscope-based procedures, including neurosurgery **when the surgeon looks directly
+through the optics**, video display latency is generally less important because the
+screen is not the surgeon's primary view. The deciding factor is how the screen is used,
+rather than the specialty alone.
+
+### 12.3 Example: Multiview setup for endoscopy
+
+Multiview mode combines a room overview with Bypass paths for surgical viewing. A
+recommended input assignment is:
+
+| Input | Source                                       |
+| ----- | -------------------------------------------- |
+| 1     | Extra camera                                 |
+| 2     | Extra camera                                 |
+| 3     | Surgical camera                              |
+| 4     | Review/playback — video output of a recorder |
+
+Configure the outputs as follows:
+
+| Output | Configuration                          | Destination and purpose                                                                                                                |
+| ------ | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| 1      | Quad Multiview showing all four inputs | Large wall screen for room overview; the processing delay does not affect surgical guidance when this screen is used only for overview |
+| 2      | Bypass; select the required source     | Spare or extra screen with zero added latency                                                                                          |
+| 3      | Bypass; route input 3                  | Main surgical screen with zero added latency                                                                                           |
+| 4      | Copy of output 3                       | Secondary surgical screen and/or an HDMI split to a recorder                                                                           |
+
+This arrangement keeps the main and secondary surgical viewing paths in Bypass while
+the wall screen shows the Multiview composite. Camera, display, and any additional
+equipment in a viewing path can contribute their own latency.
 
 ---
