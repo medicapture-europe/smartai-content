@@ -540,7 +540,8 @@ Available options:
 
 Common features: medical grade, only two devices, compact size, 4×4 seamless switching,
 Multiview layouts and presets (see §2, §5). Matrix control on the MTR/MSP requires
-activation key **AKMVX441** (§7).
+activation key **AKMVX441** (§7); when sold as a VMS bundle, AKMVX441 is included and
+the MTR/MSP ships pre-activated.
 
 On the website the bundles are offered as **Video Management Solution Pro** and
 **Video Management Solution Lite**. Datasheets can be requested at
