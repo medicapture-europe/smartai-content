@@ -38,4 +38,4 @@ The URL https://raw.githubusercontent.com/medicapture-europe/smartai-content/ref
 
 The URL https://raw.githubusercontent.com/medicapture-europe/smartai-content/refs/heads/main/auto_accession_number.md describes the method of the Unique Accession Number generation for MVR/MTR recorders.
 
-The URL https://raw.githubusercontent.com/medicapture-europe/smartai-content/refs/heads/main/matrix-mvx441.md is support knowledge base for the MVX441 medical 4×4 HDMI video matrix: capabilities, operating modes, Matrix Control UI operation and settings (with operator/admin password separation), installation, MTR/MSP recorder integration, specs, troubleshooting.
+The URL https://raw.githubusercontent.com/medicapture-europe/smartai-content/refs/heads/main/matrix-mvx441.md is support knowledge base for the MVX441 medical 4×4 HDMI video matrix: capabilities, operating modes, Matrix Control UI operation and settings (with operator/admin password separation), installation, MTR/MSP recorder integration, specs, troubleshooting; Video Management Solutions (VMS) - bundles that include MVX441 with MTR/MSP devices.
